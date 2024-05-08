@@ -12,3 +12,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f226a1a2b92ceba429ea7db1772ff1c4, type: 3}
   m_Name: Dialogue_1
   m_EditorClassIdentifier: 
+  actor: {fileID: 7051398536344712320, guid: 876a67bd614b3214680de26d15bd7422, type: 3}
+  speakerSprite: {fileID: 0}
+  sentence: 'Bom dia '
+  dialogues:
+  - actorName: 
+    profile: {fileID: 0}
+    sentence:
+      Portugues: 
+  - actorName: 
+    profile: {fileID: 0}
+    sentence:
+      Portugues: 
+  - actorName: 
+    profile: {fileID: 0}
+    sentence:
+      Portugues: 
+  - actorName: 
+    profile: {fileID: 0}
+    sentence:
+      Portugues: 

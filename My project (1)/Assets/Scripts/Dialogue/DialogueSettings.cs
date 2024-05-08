@@ -30,3 +30,8 @@ public class Languages
     //public string ingles;
     //public string espanhol;
 }
+//if chamado apenas quando a unity atende uma determinada condição para determinada plataforma ou interface
+
+#if UNITY_EDITOR
+
+#endif
