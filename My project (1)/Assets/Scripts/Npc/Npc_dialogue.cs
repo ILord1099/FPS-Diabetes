@@ -28,7 +28,7 @@ public class Npc_dialogue : MonoBehaviour
         }
         else
         {
-
+            Debug.Log("Player saiu da area");
         }
     }
     private void OnDrawGizmosSelected()
