@@ -13,22 +13,10 @@ MonoBehaviour:
   m_Name: Dialogue_1
   m_EditorClassIdentifier: 
   actor: {fileID: 7051398536344712320, guid: 876a67bd614b3214680de26d15bd7422, type: 3}
-  speakerSprite: {fileID: 0}
-  sentence: 'Bom dia '
+  speakerSprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  sentence: 
   dialogues:
-  - actorName: 
-    profile: {fileID: 0}
+  - actorName: Npc_teste
+    profile: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
     sentence:
-      Portugues: 
-  - actorName: 
-    profile: {fileID: 0}
-    sentence:
-      Portugues: 
-  - actorName: 
-    profile: {fileID: 0}
-    sentence:
-      Portugues: 
-  - actorName: 
-    profile: {fileID: 0}
-    sentence:
-      Portugues: 
+      Portugues: 'Bom dia '

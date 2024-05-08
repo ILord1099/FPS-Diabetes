@@ -33,5 +33,32 @@ public class Languages
 //if chamado apenas quando a unity atende uma determinada condição para determinada plataforma ou interface
 
 #if UNITY_EDITOR
+[CustomEditor(typeof(DialogueSettings))]
+public class BiulderEditor : Editor
+{
+    public override void OnInspectorGUI()//override sobreescreve algum metodo na classe herdada.
+    {
+        DrawDefaultInspector();
 
+        DialogueSettings ds =  (DialogueSettings)target;// onde vai armazenar as informações/ configurações  
+        Languages l = new Languages();
+        l.Portugues =  ds.sentence;// armazena sentenças na lingua selecionada padronizada em portugues 
+
+        Sentences s = new Sentences();
+        s.profile =  ds.speakerSprite;// armazena foto do perfil do personagem falando 
+        s.sentence = l;
+
+        if (GUILayout.Button("Criate Dialogue"))
+        {
+            if (ds.sentence != "")
+            {
+                ds.dialogues.Add(s);
+
+                ds.speakerSprite = null;
+                ds.sentence = "";// apos criar fala, apaga fala e deixa o botão livre para criação de um novo dialogo
+
+            }
+        }
+    }
+}
 #endif
