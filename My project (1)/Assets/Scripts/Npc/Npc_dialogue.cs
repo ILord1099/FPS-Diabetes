@@ -26,13 +26,27 @@ public class Npc_dialogue : MonoBehaviour
     }
     void GetNPCInfo()
     {
-        for (int i = 0; i <dialogue.dialogues.Count;++i) // for sempre precisa de um controlador, repetir enquanto o npc tiver fala, se for uma vez vai repetir apenas uma vez.
+        for (int i = 0; i < dialogue.dialogues.Count; ++i) // for sempre precisa de um controlador, repetir enquanto o npc tiver fala, se for uma vez vai repetir apenas uma vez.
 
         {
-            sentences.Add(dialogue.dialogues[i].sentence.Portugues);
-        }
-      }
+            switch (DialogueControl.instance.lingua)
+            {
 
+                case DialogueControl.idioma.pt:
+                    sentences.Add(dialogue.dialogues[i].sentence.Portugues);
+
+                    break;
+                case DialogueControl.idioma.eng:
+                    sentences.Add(dialogue.dialogues[i].sentence.ingles);
+
+                    break;
+                case DialogueControl.idioma.spa:
+                    sentences.Add(dialogue.dialogues[i].sentence.espanhol);
+
+                    break;
+            }
+        }
+    }
     // Update is called once per frame
     
     void FixedUpdate ()//usado pela fisica

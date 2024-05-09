@@ -1852,7 +1852,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b575b22fd0271da459870fda24efff43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lingua: 0
+  lingua: 1
   dialogueObj: {fileID: 1285402518}
   profileSprite: {fileID: 650628596}
   speechText: {fileID: 1302006193}

@@ -6,6 +6,14 @@ using UnityEngine.UI;
 
 public class DialogueControl : MonoBehaviour
 {
+    public enum idioma
+    {
+        pt,
+        eng,
+        spa
+    }
+    public idioma lingua;
+
     [Header("Components")]// boa pratica para criar um cabeçalho 
     public GameObject dialogueObj;// janela do dialogo 
     public Image profileSprite;//foto de perfil
@@ -51,7 +59,24 @@ public class DialogueControl : MonoBehaviour
     // pular para proxima fala/frase
     public void NextSentence()
     {
+        if (speechText.text == sentences[index])//checar se a frase que apareceu, apareceu por completo e so assim pode clicar no bot?o
+        {
+            if (index < sentences.Length - 1)
+            {
+                index++;
+                speechText.text = "";
+                StartCoroutine(TypeSentence());
 
+            }
+            else // quando termina os textos 
+            {
+                speechText.text = "";
+                index = 0;
+                dialogueObj.SetActive(false);
+                sentences = null;
+                isShowing = false;
+            }
+        }
     }
     // chamar a fala do npc, chamado sempre que o player entrar em contato 
     public void Speech(string[]txt)
