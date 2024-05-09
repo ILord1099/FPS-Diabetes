@@ -20,6 +20,15 @@ public class DialogueControl : MonoBehaviour
     private bool isShowing;// se a janela esta visivel
     private int index;// index é usado para laços de repetição/index das sentenças, contagem de itens/texto dentro das falas 
     private string[] sentences;// recebe todas as falas do referido npc
+    
+    public static DialogueControl instance; //instanciando como variavel static posso utilizar qualquer variavel e metodo que esteja publico 
+
+    //awake é chamado antes dos starts() na hierarquita de execução de scripts
+    private void Awake()
+    {
+        instance = this;
+    }
+    //chamado ao inicalizar, sendo depois do awake
     void Start()
     {
         

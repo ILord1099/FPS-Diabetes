@@ -6,14 +6,36 @@ public class Npc_dialogue : MonoBehaviour
 {
     public float dialogueRange;
     public LayerMask playerLayer;
-    // Start is called before the first frame update
-    void Start()
-    {
+    public DialogueSettings dialogue;
 
+    public bool playerHit;
+
+    private List<string> sentences  =  new List<string>();// armazena aqui os dialogos e repassa pra variavel de controle 
+
+
+    private void Start()
+    {
+        GetNPCInfo();
     }
+    void Update()
+    { // variavel de controle 
+        if(Input.GetKeyDown(KeyCode.E) && playerHit)
+        {
+            DialogueControl.instance.Speech(sentences.ToArray());
+        }
+    }
+    void GetNPCInfo()
+    {
+        for (int i = 0; i <dialogue.dialogues.Count;++i) // for sempre precisa de um controlador, repetir enquanto o npc tiver fala, se for uma vez vai repetir apenas uma vez.
+
+        {
+            sentences.Add(dialogue.dialogues[i].sentence.Portugues);
+        }
+      }
 
     // Update is called once per frame
-    void FixedUpdate ()
+    
+    void FixedUpdate ()//usado pela fisica
     {
         ShowDialogue();
     }
@@ -24,11 +46,12 @@ public class Npc_dialogue : MonoBehaviour
 
         if (hit != null )
         {
-            Debug.Log("Player na area de colisão ");
+          playerHit = true;
         }
         else
         {
-            Debug.Log("Player saiu da area");
+           playerHit=false;
+            DialogueControl.instance.dialogueObj.SetActive(false);
         }
     }
     private void OnDrawGizmosSelected()
