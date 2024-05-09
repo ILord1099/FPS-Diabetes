@@ -29,7 +29,24 @@ public class Npc_dialogue : MonoBehaviour
         for (int i = 0; i <dialogue.dialogues.Count;++i) // for sempre precisa de um controlador, repetir enquanto o npc tiver fala, se for uma vez vai repetir apenas uma vez.
 
         {
-            sentences.Add(dialogue.dialogues[i].sentence.Portugues);
+            switch (DialogueControl.instance.lingua)
+            {
+                
+                case DialogueControl.idioma.pt:
+                    sentences.Add(dialogue.dialogues[i].sentence.Portugues);
+
+                    break;
+                case DialogueControl.idioma.eng:
+                    sentences.Add(dialogue.dialogues[i].sentence.ingles);
+
+                    break;
+                case DialogueControl.idioma.spa:
+                    sentences.Add(dialogue.dialogues[i].sentence.espanhol);
+
+                    break;
+            }
+
+           
         }
       }
 
@@ -51,7 +68,7 @@ public class Npc_dialogue : MonoBehaviour
         else
         {
            playerHit=false;
-            DialogueControl.instance.dialogueObj.SetActive(false);
+         
         }
     }
     private void OnDrawGizmosSelected()
