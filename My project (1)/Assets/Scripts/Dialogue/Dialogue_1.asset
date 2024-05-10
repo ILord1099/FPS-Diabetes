@@ -17,7 +17,7 @@ MonoBehaviour:
   sentence: 
   dialogues:
   - actorName: 
-    profile: {fileID: 21300000, guid: 4debf2734e148c64da878f78fb3a0c13, type: 3}
+    profile: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
     sentence:
       Portugues: 'Bom dia '
       ingles: good morning
@@ -25,8 +25,8 @@ MonoBehaviour:
   - actorName: 
     profile: {fileID: 21300000, guid: 4debf2734e148c64da878f78fb3a0c13, type: 3}
     sentence:
-      Portugues: 'Tudo bem ? '
-      ingles: how r u?
+      Portugues: "\xE9 isso ai"
+      ingles: "sei l\xE1 "
       espanhol: 
   - actorName: 
     profile: {fileID: 21300000, guid: 4debf2734e148c64da878f78fb3a0c13, type: 3}

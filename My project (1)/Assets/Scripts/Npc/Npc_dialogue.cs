@@ -19,7 +19,7 @@ public class Npc_dialogue : MonoBehaviour
     }
     void Update()
     { // variavel de controle 
-        if(Input.GetKeyDown(KeyCode.E) && playerHit)
+        if(/*Input.GetKeyDown(KeyCode.E) &&*/ playerHit)
         {
             DialogueControl.instance.Speech(sentences.ToArray());
         }
