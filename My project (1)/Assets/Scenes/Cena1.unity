@@ -140,7 +140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd80df3d2630b9045b433cd6abe95bfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueRange: 0.49
+  dialogueRange: 0.35
   playerLayer:
     serializedVersion: 2
     m_Bits: 4096
@@ -687,15 +687,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.6862745, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4debf2734e148c64da878f78fb3a0c13, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -870,18 +870,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.022565737, y: -0.07167972}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
+    border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.34, y: 0.28}
+    oldSize: {x: 0.16, y: 0.16}
     newSize: {x: 0.34, y: 0.28}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.15893948, y: 0.12391401}
+  m_Size: {x: 0.16, y: 0.16}
   m_EdgeRadius: 0
 --- !u!212 &779627983
 SpriteRenderer:
@@ -924,7 +924,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: 21300000, guid: 2d3edc0523194f14584a7a9f2776783e, type: 3}
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1852,7 +1852,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b575b22fd0271da459870fda24efff43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lingua: 1
+  lingua: 0
   dialogueObj: {fileID: 1285402518}
   profileSprite: {fileID: 650628596}
   speechText: {fileID: 1302006193}
@@ -2200,7 +2200,19 @@ PrefabInstance:
     - target: {fileID: 8990661411583637703, guid: 876a67bd614b3214680de26d15bd7422, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 4debf2734e148c64da878f78fb3a0c13, type: 3}
+      objectReference: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 8990661411583637703, guid: 876a67bd614b3214680de26d15bd7422, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8990661411583637703, guid: 876a67bd614b3214680de26d15bd7422, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8990661411583637703, guid: 876a67bd614b3214680de26d15bd7422, type: 3}
+      propertyPath: m_Color.r
+      value: 0.8207547
+      objectReference: {fileID: 0}
     - target: {fileID: 8990661411583637703, guid: 876a67bd614b3214680de26d15bd7422, type: 3}
       propertyPath: m_SortingOrder
       value: 3
