@@ -1,0 +1,356 @@
+fileFormatVersion: 2
+guid: 2dbe2335637836540bacf01b20bf4225
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Novo Atlas_layout_inicial_01-01 (1)_0
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 968
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d728c3bb273f86b4eb07b766afb4b99b
+      internalID: -562657753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Novo Atlas_layout_inicial_01-01 (1)_1
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 169
+        width: 745
+        height: 763
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc88efb74db59bd4c80a71c9ce22beac
+      internalID: 1772033661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Novo Atlas_layout_inicial_01-01 (1)_12
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 261
+        width: 1231
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 900ecea11d65ec244947284c74b19e39
+      internalID: 1443767815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Novo Atlas_layout_inicial_01-01 (1)_13
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 144
+        width: 94
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6e2547975c2b8843bd3c93e35ff84ab
+      internalID: 1464752418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Novo Atlas_layout_inicial_01-01 (1)_14
+      rect:
+        serializedVersion: 2
+        x: 1178
+        y: 124
+        width: 125
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5268f5233b6ea594b8c7108b8b0c5a42
+      internalID: -147396203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Novo Atlas_layout_inicial_01-01 (1)_15
+      rect:
+        serializedVersion: 2
+        x: 1979
+        y: 125
+        width: 61
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2c8dd20ecedc904a806a40323d9e9f2
+      internalID: 42609583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Novo Atlas_layout_inicial_01-01 (1)_16
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 17
+        width: 127
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0f7e9526d336cf458d016be2f739213
+      internalID: -2008569358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Novo Atlas_layout_inicial_01-01 (1)_17
+      rect:
+        serializedVersion: 2
+        x: 1178
+        y: 14
+        width: 125
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fa92c5d7af5e0646b9e9507c1b5d8fa
+      internalID: 968611293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Novo Atlas_layout_inicial_01-01 (1)_18
+      rect:
+        serializedVersion: 2
+        x: 1594
+        y: 0
+        width: 454
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2edde4204dd5554b82ec1695f980d07
+      internalID: -642540759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Novo Atlas_layout_inicial_01-01 (1)_2
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 436
+        width: 1019
+        height: 510
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2cbac131763c4d4098116fdb34ad817
+      internalID: 1106662281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Novo Atlas_layout_inicial_01-01 (1)_0: -562657753
+      Novo Atlas_layout_inicial_01-01 (1)_1: 1772033661
+      Novo Atlas_layout_inicial_01-01 (1)_10: 20036076
+      Novo Atlas_layout_inicial_01-01 (1)_11: 476993009
+      Novo Atlas_layout_inicial_01-01 (1)_12: 1443767815
+      Novo Atlas_layout_inicial_01-01 (1)_13: 1464752418
+      Novo Atlas_layout_inicial_01-01 (1)_14: -147396203
+      Novo Atlas_layout_inicial_01-01 (1)_15: 42609583
+      Novo Atlas_layout_inicial_01-01 (1)_16: -2008569358
+      Novo Atlas_layout_inicial_01-01 (1)_17: 968611293
+      Novo Atlas_layout_inicial_01-01 (1)_18: -642540759
+      Novo Atlas_layout_inicial_01-01 (1)_2: 1106662281
+      Novo Atlas_layout_inicial_01-01 (1)_3: 383740569
+      Novo Atlas_layout_inicial_01-01 (1)_4: 549945577
+      Novo Atlas_layout_inicial_01-01 (1)_5: -1140196542
+      Novo Atlas_layout_inicial_01-01 (1)_6: 1043703033
+      Novo Atlas_layout_inicial_01-01 (1)_7: -1921068747
+      Novo Atlas_layout_inicial_01-01 (1)_8: -979269396
+      Novo Atlas_layout_inicial_01-01 (1)_9: -1937143175
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
