@@ -637,6 +637,56 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1799591682
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1799591684}
+  - component: {fileID: 1799591683}
+  m_Layer: 5
+  m_Name: VideoController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1799591683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1799591682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8360dc43590cdb54085dae095d669d58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  videoPlayer: {fileID: 420095563}
+  yourButton: {fileID: 1895826161}
+--- !u!224 &1799591684
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1799591682}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 960, y: 540}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1895826159
 GameObject:
   m_ObjectHideFlags: 0
@@ -649,8 +699,9 @@ GameObject:
   - component: {fileID: 1895826163}
   - component: {fileID: 1895826162}
   - component: {fileID: 1895826161}
+  - component: {fileID: 1895826164}
   m_Layer: 5
-  m_Name: Button
+  m_Name: BotaoProximaCena
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -671,10 +722,10 @@ RectTransform:
   - {fileID: 511034045}
   m_Father: {fileID: 2137126719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -177, y: 76}
-  m_SizeDelta: {x: 316.23145, y: 100.49463}
+  m_AnchorMin: {x: 0.7215, y: 0.0871852}
+  m_AnchorMax: {x: 0.92600006, y: 0.24370371}
+  m_AnchoredPosition: {x: -2.5, y: -0.5}
+  m_SizeDelta: {x: -76.768555, y: -68.50537}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1895826161
 MonoBehaviour:
@@ -720,7 +771,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2137126715}
+      - m_Target: {fileID: 1895826164}
         m_TargetAssemblyTypeName: 
         m_MethodName: 
         m_Mode: 1
@@ -770,6 +821,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1895826159}
   m_CullTransparentMesh: 1
+--- !u!114 &1895826164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1895826159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65113f987c289b34a8b71194eb8a6ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextSceneName: Dialogue
 --- !u!1 &2137126715
 GameObject:
   m_ObjectHideFlags: 0
@@ -782,7 +846,6 @@ GameObject:
   - component: {fileID: 2137126718}
   - component: {fileID: 2137126717}
   - component: {fileID: 2137126716}
-  - component: {fileID: 2137126720}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -875,23 +938,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &2137126720
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2137126715}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6789e1a7869ff7549b29ff1771c6b87a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nomeCena: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1533549159}
+  - {fileID: 1799591684}
   - {fileID: 2137126719}
   - {fileID: 348503903}
