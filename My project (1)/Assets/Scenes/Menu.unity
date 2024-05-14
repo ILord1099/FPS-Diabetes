@@ -234,7 +234,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6789e1a7869ff7549b29ff1771c6b87a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeCena: Cena1
+  nomeCena: Video
 --- !u!114 &450333102
 MonoBehaviour:
   m_ObjectHideFlags: 0
