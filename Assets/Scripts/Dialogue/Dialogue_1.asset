@@ -19,7 +19,7 @@ MonoBehaviour:
   - actorName: Mentor
     profile: {fileID: -892086334, guid: 9167908b1de8b2d48807d56c3894cf5b, type: 3}
     sentence:
-      Portugues: "Bom dia, como est\xE1 se sentindo hoje?"
+      Portugues: "Mentor: Bom dia, como est\xE1 se sentindo hoje?"
       ingles: good morning
       espanhol: 
   - actorName: Paciente
@@ -28,9 +28,44 @@ MonoBehaviour:
       Portugues: "Estou sentindo cansa\xE7o e tontura ultimamente."
       ingles: "sei l\xE1 "
       espanhol: 
-  - actorName: 
-    profile: {fileID: 21300000, guid: 4debf2734e148c64da878f78fb3a0c13, type: 3}
+  - actorName: Aluno
+    profile: {fileID: -1461820486, guid: c5b5d74d9902fa54192a54e4358d7c91, type: 3}
     sentence:
-      Portugues: "\xE9 isso ai"
+      Portugues: "Aluno: Como anda sua alimenta\xE7\xE3o e sono?"
       ingles: "sei l\xE1 "
+      espanhol: 
+  - actorName: Paciente
+    profile: {fileID: -1599727536, guid: 5d2f7917d5c13b74c862fef05d8d4acb, type: 3}
+    sentence:
+      Portugues: "Paciente: Eu gosto muito de refrigerante, doces e fastfood, raramente
+        como coisas saud\xE1veis como vegetais ou frutas. E meu sono est\xE1 cada
+        vez pior, fico acordado at\xE9 tarde e acabo tendo que acordar cedo para
+        trabalhar."
+      ingles: "sei l\xE1 "
+      espanhol: 
+  - actorName: Aluno
+    profile: {fileID: 1303454291, guid: c5b5d74d9902fa54192a54e4358d7c91, type: 3}
+    sentence:
+      Portugues: "Aluno: Os h\xE1bitos do paciente e os sintomas... Talvez devemos
+        investigar Diabetes, o que acha mentor?"
+      ingles: Wow
+      espanhol: 
+  - actorName: Mentor
+    profile: {fileID: 1158332010, guid: 9167908b1de8b2d48807d56c3894cf5b, type: 3}
+    sentence:
+      Portugues: "Mentor: Interessante, parece uma \xF3tima oportunidade para testar
+        os conehcimentos em diabetes, voc\xEA est\xE1 pronto?"
+      ingles: Wow
+      espanhol: 
+  - actorName: 'Aluno:'
+    profile: {fileID: -867982408, guid: c5b5d74d9902fa54192a54e4358d7c91, type: 3}
+    sentence:
+      Portugues: 'Aluno: Claro, tudo para que o paciente se sinta melhor!'
+      ingles: Sure.
+      espanhol: 
+  - actorName: Quiz
+    profile: {fileID: 0}
+    sentence:
+      Portugues: 
+      ingles: 
       espanhol: 
