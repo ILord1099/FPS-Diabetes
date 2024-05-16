@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
+
 public class DialogueControl : MonoBehaviour
 {
     public enum idioma

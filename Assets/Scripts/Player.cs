@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -70,6 +71,11 @@ public class Player : MonoBehaviour
         {
             isJumping=false;
         }
+        if (colisor.gameObject.layer == 7)
+        {
+            SceneManager.LoadScene("Dialogue");
+        }
     }
+   
     #endregion
 }
