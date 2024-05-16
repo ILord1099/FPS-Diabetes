@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 
@@ -45,7 +46,7 @@ public class DialogueControl : MonoBehaviour
 
     void Update()
     {
-        
+       
     }
 
     //currotina metodo controlado por tempo.
@@ -77,7 +78,12 @@ public class DialogueControl : MonoBehaviour
                 sentences = null;
                 isShowing = false;
             }
+            Debug.Log(index);
+
+
         }
+
+        MudarCena();
     }
     // chamar a fala do npc, chamado sempre que o player entrar em contato 
     public void Speech(string[]txt)
@@ -88,6 +94,18 @@ public class DialogueControl : MonoBehaviour
             sentences = txt;
             StartCoroutine(TypeSentence());
             isShowing = true;
+        }
+    }
+
+    public void MudarCena()
+    {
+        Debug.Log("Chamou.Mudarcena");
+        if (index == 7)
+
+        {
+            Debug.Log("index 7 ");           
+            SceneManager.LoadScene("Quiz");
+
         }
     }
 }
