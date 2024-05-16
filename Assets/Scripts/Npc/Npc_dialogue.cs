@@ -8,7 +8,7 @@ public class Npc_dialogue : MonoBehaviour
     public LayerMask playerLayer;
     public DialogueSettings dialogue;
 
-    public bool playerHit;
+    public bool playerHit = true;
 
     private List<string> sentences  =  new List<string>();// armazena aqui os dialogos e repassa pra variavel de controle 
 
@@ -19,7 +19,7 @@ public class Npc_dialogue : MonoBehaviour
     }
     void Update()
     { // variavel de controle 
-        if(/*Input.GetKeyDown(KeyCode.E) &&*/ playerHit)
+        if(/*Input.GetKeyDown(KeyCode.E) &&*/playerHit = true)
         {
             DialogueControl.instance.Speech(sentences.ToArray());
         }
@@ -49,10 +49,7 @@ public class Npc_dialogue : MonoBehaviour
     }
     // Update is called once per frame
     
-    void FixedUpdate ()//usado pela fisica
-    {
-        ShowDialogue();
-    }
+
 
     void ShowDialogue()
     {
@@ -64,7 +61,7 @@ public class Npc_dialogue : MonoBehaviour
         }
         else
         {
-           playerHit=false;
+            playerHit=false;
             DialogueControl.instance.dialogueObj.SetActive(false);
         }
     }

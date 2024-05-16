@@ -82,9 +82,9 @@ public class DialogueControl : MonoBehaviour
     // chamar a fala do npc, chamado sempre que o player entrar em contato 
     public void Speech(string[]txt)
     {
-        if (!isShowing) 
+       if (!isShowing) 
         {
-         dialogueObj.SetActive(true);
+            dialogueObj.SetActive(true);
             sentences = txt;
             StartCoroutine(TypeSentence());
             isShowing = true;

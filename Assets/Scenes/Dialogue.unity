@@ -138,9 +138,9 @@ MonoBehaviour:
   dialogueRange: 0.35
   playerLayer:
     serializedVersion: 2
-    m_Bits: 4096
+    m_Bits: 0
   dialogue: {fileID: 11400000, guid: 3823aec9d751b9d4db59e4db6303dede, type: 2}
-  playerHit: 0
+  playerHit: 1
 --- !u!1 &445301096
 GameObject:
   m_ObjectHideFlags: 0
