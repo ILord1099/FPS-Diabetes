@@ -71,10 +71,15 @@ public class Player : MonoBehaviour
         {
             isJumping=false;
         }
+<<<<<<< Updated upstream
         if (colisor.gameObject.layer == 7)
         {
             SceneManager.LoadScene("Dialogue");
         }
+=======
+        if (colisor.gameObject.layer == 9)
+            SceneManager.LoadScene("Dialogue");
+>>>>>>> Stashed changes
     }
    
     #endregion
