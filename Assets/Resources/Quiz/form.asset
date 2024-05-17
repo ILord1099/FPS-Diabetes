@@ -23,3 +23,14 @@ MonoBehaviour:
       isCorrect: 0
     - text: Hiperglicemia
       isCorrect: 1
+  - question: ' Quais classes de medicamentos podem ser utilizadas para controlar
+      o DM tipo II?'
+    answers:
+    - text: hipoglicemiantes orais
+      isCorrect: 1
+    - text: Antidepressivos
+      isCorrect: 0
+    - text: Vitaminas
+      isCorrect: 0
+    - text: "Anti-inflamat\xF3rios"
+      isCorrect: 0

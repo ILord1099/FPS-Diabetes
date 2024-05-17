@@ -604,7 +604,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1550ffe044634b18a123dbcf1e2d25be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  seconds: 10
+  seconds: 60
   timerText: {fileID: 88034397}
 --- !u!4 &324608576
 Transform:
@@ -1470,6 +1470,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf4b690a4fae4148be3a58381fcfb207, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delayNextQuestion: 1.5
   timer: {fileID: 324608575}
   answerButtons:
   - {fileID: 1372643946}
