@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -86,6 +87,16 @@ public class Player : MonoBehaviour
         if (colisor.gameObject.layer ==  8)
         {
             isJumping=false;
+        }
+        if (colisor.gameObject.layer == 9)
+        {
+            
+            SceneManager.LoadScene("Menu");
+        }
+        if (colisor.gameObject.layer == 10)
+        {
+
+            SceneManager.LoadScene("Dialogue");
         }
     }
     #endregion
