@@ -26,4 +26,5 @@ namespace Quiz
         [TextArea(2, 5)] public string text;
         public bool isCorrect;
     }
+
 }

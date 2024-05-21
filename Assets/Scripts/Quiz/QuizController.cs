@@ -27,7 +27,6 @@ namespace Quiz
             quizView.SetQuestion(question.question);
             quizView.SetAnswers(question.answers);
         }
-
         private void EndTimeQuestion()
         {
             _currentQuestionIndex++;
