@@ -9,6 +9,8 @@ public class Player : MonoBehaviour
     private Rigidbody2D rig;
     public float speed;
     public float jumpForce;
+
+    public Animator anim;
     private bool isJumping;
     private bool doubleJump;
 
@@ -34,25 +36,39 @@ public class Player : MonoBehaviour
 
         rig.velocity = new Vector2 (movement * speed, rig.velocity.y);
 
-        /*if (movement < 0 )
+        if (movement > 0 )
+
         {
             //mudança de angulo da sprite(direita) 
-            transform.eulerAngles =  new Vector3(0, 0, 0);
+            if (!isJumping)
+            {
+                anim.SetInteger("Transition", 1);
+
+            }
+            transform.eulerAngles = new Vector3 (0, 0, 0);
         }
-        if(movement > 0 )
+        if(movement < 0 )
         {
+            if (!isJumping)
+            {
+                anim.SetInteger("Transition", 1);
+            }
             //mudança de angulo da sprite(esquerda)
             transform.eulerAngles =  new Vector3(0, 180, 0);
             //ativar apenas quando inserir as sprites
-        }*/
+        }
+        if (movement ==  0 && !isJumping)
+        {
+            anim.SetInteger("Transition", 0 );
+        }
     }
     void Jump()
     {
         if(Input.GetKeyDown(KeyCode.Space))
         {
            if (!isJumping) 
-            {   
-                
+            {
+                anim.SetInteger("Transition", 2);
                 rig.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
                 isJumping = true;
                 doubleJump =  true;
@@ -60,6 +76,7 @@ public class Player : MonoBehaviour
            else if (doubleJump) 
             {
                 //
+                anim.SetInteger("Transition", 2);
                 rig.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
                 doubleJump = false;
             }
@@ -71,16 +88,16 @@ public class Player : MonoBehaviour
         {
             isJumping=false;
         }
-<<<<<<< Updated upstream
-        if (colisor.gameObject.layer == 7)
+        if (colisor.gameObject.layer == 9)
         {
+            
+            SceneManager.LoadScene("Menu");
+        }
+        if (colisor.gameObject.layer == 10)
+        {
+
             SceneManager.LoadScene("Dialogue");
         }
-=======
-        if (colisor.gameObject.layer == 9)
-            SceneManager.LoadScene("Dialogue");
->>>>>>> Stashed changes
     }
-   
     #endregion
 }
