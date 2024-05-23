@@ -1,3 +1,5 @@
+using UnityEngine;
+
 namespace Helper
 {
     [System.Serializable]
@@ -24,7 +26,8 @@ namespace Helper
 
             for (var i = 0; i < _buffer.Length; i++)
             {
-                if (_buffer[i].Equals(item))
+                var t = _buffer[i];
+                if (t.Equals(item))
                 {
                     return true;
                 }
@@ -35,7 +38,7 @@ namespace Helper
 
         public void Enqueue(T item)
         {
-            if (IsFull || Contains(item)) return;
+            if (IsFull) return;
 
             Count++;
             _buffer[_back] = item;
