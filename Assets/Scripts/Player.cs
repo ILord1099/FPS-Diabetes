@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
     public Animator anim;
     private bool isJumping;
     private bool doubleJump;
+    public string sceneName;
 
 
     // Start is called before the first frame update
@@ -91,12 +92,12 @@ public class Player : MonoBehaviour
         if (colisor.gameObject.layer == 9)
         {
             
-            SceneManager.LoadScene("Menu");
+            SceneManager.LoadScene(sceneName);
         }
         if (colisor.gameObject.layer == 10)
         {
 
-            SceneManager.LoadScene("Dialogue");
+            SceneManager.LoadScene("Dialogue");   
         }
     }
     #endregion

@@ -12,8 +12,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Cena1/Video.unity
     guid: 0d11b68425b6bae4c87c0af62b4ea813
   - enabled: 1
-    path: Assets/Scenes/PlataformScene/Platform 1.unity
-    guid: 1047cd180c917604e9cba1479c9388a4
+    path: Assets/Scenes/Cena1/Platform1.unity
+    guid: ebe933b7100c1044a8c2697867703e9e
   - enabled: 1
     path: Assets/Scenes/Cena1/Dialogue.unity
     guid: 2cda990e2423bbf4892e6590ba056729

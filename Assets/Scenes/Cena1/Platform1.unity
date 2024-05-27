@@ -2512,6 +2512,7 @@ MonoBehaviour:
   speed: 6
   jumpForce: 8
   anim: {fileID: 779627987}
+  sceneName: Platform1
 --- !u!111 &779627986
 Animation:
   m_ObjectHideFlags: 0
