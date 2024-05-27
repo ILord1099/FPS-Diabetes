@@ -1,5 +1,5 @@
-using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Quiz
 {
@@ -7,6 +7,7 @@ namespace Quiz
     {
         [SerializeField] private Form form;
         [SerializeField] private QuizView quizView;
+        [SerializeField] private string sceneToLoad;
 
         private int _currentQuestionIndex = 0;
 
@@ -27,12 +28,14 @@ namespace Quiz
             quizView.SetQuestion(question.question);
             quizView.SetAnswers(question.answers);
         }
+
         private void EndTimeQuestion()
         {
             _currentQuestionIndex++;
 
             if (_currentQuestionIndex == form.GetQuestionsCount())
             {
+                SceneManager.LoadScene(sceneToLoad);
                 return;
             }
 
