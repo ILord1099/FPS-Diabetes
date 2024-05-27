@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     private Rigidbody2D rig;
     public float speed;
     public float jumpForce;
+    private sound playerAudio;
 
     public Animator anim;
     private bool isJumping;
@@ -20,6 +21,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         rig = GetComponent<Rigidbody2D>();
+        playerAudio = GetComponent<sound>();
     }
     // Update is called once per frame
     void Update()
@@ -40,6 +42,7 @@ public class Player : MonoBehaviour
         if (movement > 0 )
 
         {
+            //playerAudio.PlaySFX(playerAudio.walkSound);
             //mudança de angulo da sprite(direita) 
             if (!isJumping)
             {
@@ -50,6 +53,7 @@ public class Player : MonoBehaviour
         }
         if(movement < 0 )
         {
+          //  playerAudio.PlaySFX(playerAudio.walkSound);
             if (!isJumping)
             {
                 anim.SetInteger("Transition", 1);
@@ -73,6 +77,7 @@ public class Player : MonoBehaviour
                 rig.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
                 isJumping = true;
                 doubleJump =  true;
+                playerAudio.PlaySFX(playerAudio.jumpSound);
             }
            else if (doubleJump) 
             {
@@ -80,7 +85,9 @@ public class Player : MonoBehaviour
                 anim.SetInteger("Transition", 2);
                 rig.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
                 doubleJump = false;
+                playerAudio.PlaySFX(playerAudio.jumpSound);
             }
+
         }
     }
     void OnCollisionEnter2D(Collision2D colisor)
