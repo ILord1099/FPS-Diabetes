@@ -32,6 +32,18 @@ namespace Quiz
         
         private bool _isInteractable;
 
+        private Vector3 _scaleTo;
+        private Vector3 _originalScale;
+        
+
+
+
+        void Start()
+        {
+            _originalScale = transform.localScale;
+            _scaleTo = _originalScale * 1.3f;
+        }
+
         private void Awake()
         {
             IsCorrect = false;
@@ -68,7 +80,16 @@ namespace Quiz
         {
             if (IsCorrect)
             {
-                _image.color = correctColor;              
+                _image.color = correctColor;
+                transform.DOScale(_scaleTo, 0.1f)
+                .SetEase(Ease.InOutSine)
+                .OnComplete(() =>
+                {
+                transform.DOScale(_originalScale, 0.3f)
+                    .SetEase(Ease.OutBounce)
+                    .SetDelay(0.1f);
+
+                });
             }
             else
             {
