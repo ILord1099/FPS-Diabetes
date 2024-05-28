@@ -23,14 +23,6 @@ public class ButtonController : MonoBehaviour
         SceneManager.LoadScene(nextSceneName);
     }
 
-    public void Punch()
-    {
-        var duration = 0.5f;
-        _punch.DOPunchPosition(
-            punch: Vector3.right * 2,
-            duration: duration,
-            vibrato: 0,
-            elasticity: 0); 
-    }
+
 
 }

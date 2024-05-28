@@ -459,6 +459,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1730981777}
+        m_TargetAssemblyTypeName: DialogueControl, Assembly-CSharp
+        m_MethodName: Punch
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &529926479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -814,6 +826,7 @@ MonoBehaviour:
   speed: 5
   jumpForce: 7
   anim: {fileID: 0}
+  sceneName: 
 --- !u!1 &825137018
 GameObject:
   m_ObjectHideFlags: 0
@@ -1596,11 +1609,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b575b22fd0271da459870fda24efff43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _punch: {fileID: 529926477}
   lingua: 0
   dialogueObj: {fileID: 1285402518}
   profileSprite: {fileID: 650628596}
   speechText: {fileID: 1302006193}
   actorNameText: {fileID: 0}
+  nextButton: {fileID: 529926478}
   typingSpeed: 0.05
 --- !u!4 &1730981778
 Transform:
