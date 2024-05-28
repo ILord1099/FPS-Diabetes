@@ -7,8 +7,7 @@ using DG.Tweening;
 
 public class ButtonController : MonoBehaviour
 {
-    public RectTransform _Rect;
-    public CanvasGroup _fade;
+    public Transform _punch;
     public string nextSceneName;
 
     void Start()
@@ -24,12 +23,14 @@ public class ButtonController : MonoBehaviour
         SceneManager.LoadScene(nextSceneName);
     }
 
-    public void Fade()
+    public void Punch()
     {
-        _fade.alpha = 0f;
-        _Rect.transform.localPosition = new Vector3(15.38428f, 9.252686f, 0f);
-        _Rect.DOAnchorPos(new Vector2(15.38428f, 9.252686f), 1.6f, false);
-        _fade.DOFade(1, 1f);
+        var duration = 0.5f;
+        _punch.DOPunchPosition(
+            punch: Vector3.right * 2,
+            duration: duration,
+            vibrato: 0,
+            elasticity: 0); 
     }
 
 }
