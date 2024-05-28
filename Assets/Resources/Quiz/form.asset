@@ -34,3 +34,17 @@ MonoBehaviour:
       isCorrect: 0
     - text: "Anti-inflamat\xF3rios"
       isCorrect: 0
+  - question: " Voc\xEA consegue identificar quais os principais exames que ir\xE3o
+      ajudar a diagnosticar um paciente com DM tipo II?\r\n"
+    answers:
+    - text: Glicemia em jejum, TOTG e Hemoglobina Glicada
+      isCorrect: 1
+    - text: 'Exame de Colesterol,Colonoscopia e Eletrocardiograma
+
+'
+      isCorrect: 0
+    - text: "Dosagem de Vitamina D, Teste de Coagula\xE7\xE3o e Dosagem de TSH\r\n"
+      isCorrect: 0
+    - text: "Teste de Fun\xE7\xE3o Renal, Teste de Fun\xE7\xE3o Hep\xE1tica e  Hemograma
+        Completo\r\n"
+      isCorrect: 0
