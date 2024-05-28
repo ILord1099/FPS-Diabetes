@@ -2518,7 +2518,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 2
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 33f29f92da9f3f7488acd190b085ba1c, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -2698,6 +2698,8 @@ MonoBehaviour:
   walkSound: {fileID: 0}
   jumpSound: {fileID: 8300000, guid: d8046e802633e114288530cb5685e404, type: 3}
   deadSound: {fileID: 8300000, guid: 6c05149e5a2fba64ba172e25a61074b7, type: 3}
+  correctSound: {fileID: 0}
+  incorrectSound: {fileID: 0}
 --- !u!82 &779627990
 AudioSource:
   m_ObjectHideFlags: 0

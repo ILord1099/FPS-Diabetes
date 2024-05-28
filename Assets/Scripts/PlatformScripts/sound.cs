@@ -10,6 +10,8 @@ public class sound : MonoBehaviour
     public AudioClip walkSound;
     public AudioClip jumpSound;
     public AudioClip deadSound;
+    public AudioClip correctSound;
+    public AudioClip incorrectSound;
     void Start()
     {
         audioSource = GetComponent<AudioSource>();

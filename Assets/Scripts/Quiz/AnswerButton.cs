@@ -42,6 +42,7 @@ namespace Quiz
         {
             _originalScale = transform.localScale;
             _scaleTo = _originalScale * 1.3f;
+           
         }
 
         private void Awake()
@@ -90,11 +91,13 @@ namespace Quiz
                     .SetDelay(0.1f);
 
                 });
+               
             }
             else
             {
                 _image.color = wrongColor;
                 transform.DOShakePosition(1f, 17f, 20, 100f);
+                
             }
             
         }
