@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -35,13 +36,23 @@ namespace Quiz
 
             if (_currentQuestionIndex == form.GetQuestionsCount())
             {
-                SceneManager.LoadScene(sceneToLoad);
+
+                StartSceneTransition();
                 return;
             }
 
             var question = form.GetQuestion(_currentQuestionIndex);
             quizView.SetQuestion(question.question);
             quizView.SetAnswers(question.answers);
+        }
+        public void StartSceneTransition()
+        {
+            StartCoroutine(LoadSceneAfterDelay());
+        }
+        private IEnumerator LoadSceneAfterDelay()
+        {
+            yield return new WaitForSeconds(2f);
+            SceneManager.LoadScene(sceneToLoad);
         }
     }
 }
