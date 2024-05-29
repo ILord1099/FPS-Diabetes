@@ -65,6 +65,6 @@ MonoBehaviour:
   - actorName: Quiz
     profile: {fileID: 0}
     sentence:
-      Portugues: 
+      Portugues: .
       ingles: 
       espanhol: 

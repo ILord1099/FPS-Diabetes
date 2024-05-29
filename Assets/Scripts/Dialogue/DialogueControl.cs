@@ -27,7 +27,11 @@ public class DialogueControl : MonoBehaviour
     public Button nextButton; // botão para a próxima fala
     public CanvasGroup canvasGroup;
     public RectTransform rectTransform;
-    
+    public Image Mentor;
+    public Image Paciente;
+    public Image Aluno;
+
+
 
     [Header("Settings")]
     public float typingSpeed;// velocidade de fala 
@@ -49,7 +53,9 @@ public class DialogueControl : MonoBehaviour
     //chamado ao inicalizar, sendo depois do awake
     void Start()
     {
-       
+        Mentor.DOColor(Color.white, 0f);
+        Aluno.DOColor(Color.black, 0f);
+        Paciente.DOColor(Color.black, 0f);
         AvatarFade();
         // Adicionar listener ao botão para chamar a função Punch e NextSentence
         if (nextButton != null)
@@ -60,7 +66,7 @@ public class DialogueControl : MonoBehaviour
 
     void Update()
     {
-       
+
     }
 
     private void OnNextButtonClick()
@@ -89,14 +95,18 @@ public class DialogueControl : MonoBehaviour
     // pular para proxima fala/frase
     public void NextSentence()
     {
+       
         if (speechText.text == sentences[index])//checar se a frase que apareceu, apareceu por completo e so assim pode clicar no bot?o
         {
             if (index < sentences.Length - 1)
             {
+               
                 index++;
+                Debug.Log(index);
                 speechText.text = "";
                 StartCoroutine(TypeSentence());
                 Debug.Log("chama");
+                
             }
             else // quando termina os textos 
             {
@@ -111,12 +121,14 @@ public class DialogueControl : MonoBehaviour
         }
 
         MudarCena();
+        ChangeColor();
     }
     // chamar a fala do npc, chamado sempre que o player entrar em contato 
-    public void Speech(string[]txt)
+    public void Speech(string[] txt)
     {
-       if (!isShowing) 
+        if (!isShowing)
         {
+           
             dialogueObj.SetActive(true);
             sentences = txt;
             StartCoroutine(TypeSentence());
@@ -130,7 +142,7 @@ public class DialogueControl : MonoBehaviour
         if (index == 7)
 
         {
-            Debug.Log("index 7 ");           
+            Debug.Log("index 7 ");
             SceneManager.LoadScene("Quiz");
 
         }
@@ -148,9 +160,55 @@ public class DialogueControl : MonoBehaviour
     public void AvatarFade()
     {
         canvasGroup.alpha = 0f;
-       // rectTransform.transform.localPosition = new Vector3(0f, 0f, 0f);
+        // rectTransform.transform.localPosition = new Vector3(0f, 0f, 0f);
         canvasGroup.DOFade(1, 1f);
     }
 
+    public void ChangeColor()
+    {
 
+        if (index == 1)
+        {
+            Debug.Log("Chamou Color1");
+            Mentor.DOColor(Color.black, 1f);
+            Aluno.DOColor(Color.black, 1f);
+            Paciente.DOColor(Color.white, 1f);
+
+        }
+        if (index == 2)
+        {
+            Debug.Log("Chamou Color2");
+            Aluno.DOColor(Color.white, 1f);
+            Paciente.DOColor(Color.black, 1f);
+        }
+
+        if (index == 3)
+        {
+            Debug.Log("Chamou Color3");
+            Aluno.DOColor(Color.black, 1f);
+            Paciente.DOColor(Color.white, 1f);
+
+        }
+        if (index == 4)
+        {
+            Debug.Log("Chamou Color4");
+            Aluno.DOColor(Color.white, 1f);
+            Paciente.DOColor(Color.black, 1f);
+
+        }
+        if (index == 5)
+        {
+            Mentor.DOColor(Color.white, 1f);
+            Aluno.DOColor(Color.black, 1f);
+
+
+        }
+        if (index == 6)
+        {
+            Mentor.DOColor(Color.black, 1f);
+            Aluno.DOColor(Color.white, 1f);
+
+
+        }
+    }
 }
