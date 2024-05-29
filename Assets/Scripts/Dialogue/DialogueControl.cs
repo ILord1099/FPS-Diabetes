@@ -3,6 +3,7 @@ using DG.Tweening;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.ShaderGraph;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -41,6 +42,9 @@ public class DialogueControl : MonoBehaviour
     private int index;// index é usado para laços de repetição/index das sentenças, contagem de itens/texto dentro das falas 
     private string[] sentences;// recebe todas as falas do referido npc
     private bool dialogueInProgress = false;
+    public float duration = 1f;
+   
+    
 
 
     public static DialogueControl instance; //instanciando como variavel static posso utilizar qualquer variavel e metodo que esteja publico 
@@ -53,11 +57,13 @@ public class DialogueControl : MonoBehaviour
     //chamado ao inicalizar, sendo depois do awake
     void Start()
     {
+
+       
         
-        Aluno.DOColor(Color.gray, 0f);
-        Paciente.DOColor(Color.gray, 0f);
-        AvatarFade();
-        // Adicionar listener ao botão para chamar a função Punch e NextSentence
+        Aluno.DOColor(Color.black, 0f);
+        Paciente.DOColor(Color.black, 0f);
+        //AvatarFade();
+           // Adicionar listener ao botão para chamar a função Punch e NextSentence
         if (nextButton != null)
         {
             nextButton.onClick.AddListener(OnNextButtonClick);
@@ -167,45 +173,46 @@ public class DialogueControl : MonoBehaviour
         
         if (index == 1)
         {
-            Mentor.DOColor(Color.gray, 1f);
-            Aluno.DOColor(Color.gray, 1f);
-            Paciente.DOColor(Color.white, 1f);
+           
+            Mentor.DOColor(Color.black , 2f);
+            Aluno.DOColor(Color.black, 2f);
+            Paciente.DOColor(Color.white, 2f);
 
         }
         if (index == 2)
         {
 
             Aluno.DOColor(Color.white, 1f);
-            Paciente.DOColor(Color.gray, 1f);
+            Paciente.DOColor(Color.black, 1f);
         }
 
         if (index == 3)
         {
-            Aluno.DOColor(Color.gray, 1f);
+            Aluno.DOColor(Color.black, 1f);
             Paciente.DOColor(Color.white, 1f);
 
         }
         if (index == 4)
         {
             Aluno.DOColor(Color.white, 1f);
-            Paciente.DOColor(Color.gray, 1f);
+            Paciente.DOColor(Color.black, 1f);
 
         }
         if (index == 5)
         {
             Mentor.DOColor(Color.white, 1f);
-           Aluno.DOColor(Color.gray, 1f);
+           Aluno.DOColor(Color.black, 1f);
 
 
         }
         if (index == 6)
         {
-            Mentor.DOColor(Color.gray, 1f);
+            Mentor.DOColor(Color.black, 1f);
             Aluno.DOColor(Color.white, 1f);
 
 
         }
 
     }
-
+    
 }
