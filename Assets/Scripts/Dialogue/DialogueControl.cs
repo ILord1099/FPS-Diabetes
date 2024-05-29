@@ -38,6 +38,7 @@ public class DialogueControl : MonoBehaviour
     private string[] sentences;// recebe todas as falas do referido npc
     private bool dialogueInProgress = false;
 
+
     public static DialogueControl instance; //instanciando como variavel static posso utilizar qualquer variavel e metodo que esteja publico 
 
     //awake é chamado antes dos starts() na hierarquita de execução de scripts
@@ -147,8 +148,9 @@ public class DialogueControl : MonoBehaviour
     public void AvatarFade()
     {
         canvasGroup.alpha = 0f;
-        rectTransform.transform.localPosition = new Vector3(0f, -1000f, 0f);
-        rectTransform.DOAnchorPos(new Vector2(0f, -70f), 1f, false);
+       // rectTransform.transform.localPosition = new Vector3(0f, 0f, 0f);
         canvasGroup.DOFade(1, 1f);
     }
+
+
 }
