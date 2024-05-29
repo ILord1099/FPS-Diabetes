@@ -1,5 +1,6 @@
 
 using DG.Tweening;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -24,7 +25,9 @@ public class DialogueControl : MonoBehaviour
     public Text speechText;//texto da fala 
     public Text actorNameText;//nome do npc
     public Button nextButton; // botão para a próxima fala
-
+    public CanvasGroup canvasGroup;
+    public RectTransform rectTransform;
+    
 
     [Header("Settings")]
     public float typingSpeed;// velocidade de fala 
@@ -45,6 +48,8 @@ public class DialogueControl : MonoBehaviour
     //chamado ao inicalizar, sendo depois do awake
     void Start()
     {
+       
+        AvatarFade();
         // Adicionar listener ao botão para chamar a função Punch e NextSentence
         if (nextButton != null)
         {
@@ -137,5 +142,13 @@ public class DialogueControl : MonoBehaviour
             duration: duration,
             vibrato: 0,
             elasticity: 0);
+    }
+
+    public void AvatarFade()
+    {
+        canvasGroup.alpha = 0f;
+        rectTransform.transform.localPosition = new Vector3(0f, -1000f, 0f);
+        rectTransform.DOAnchorPos(new Vector2(0f, -70f), 1f, false);
+        canvasGroup.DOFade(1, 1f);
     }
 }

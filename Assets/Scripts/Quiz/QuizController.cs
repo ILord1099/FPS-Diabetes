@@ -37,7 +37,7 @@ namespace Quiz
             if (_currentQuestionIndex == form.GetQuestionsCount())
             {
 
-                StartSceneTransition();
+                StartSceneTransition();  
                 return;
             }
 

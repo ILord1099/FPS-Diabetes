@@ -588,6 +588,8 @@ GameObject:
   - component: {fileID: 650628595}
   - component: {fileID: 650628597}
   - component: {fileID: 650628596}
+  - component: {fileID: 650628599}
+  - component: {fileID: 650628598}
   m_Layer: 5
   m_Name: Aluno
   m_TagString: Untagged
@@ -652,6 +654,40 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 650628594}
   m_CullTransparentMesh: 1
+--- !u!225 &650628598
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 650628594}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &650628599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 650628594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b575b22fd0271da459870fda24efff43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _punch: {fileID: 0}
+  lingua: 0
+  dialogueObj: {fileID: 0}
+  profileSprite: {fileID: 0}
+  speechText: {fileID: 0}
+  actorNameText: {fileID: 0}
+  nextButton: {fileID: 0}
+  canvasGroup: {fileID: 650628598}
+  rectTransform: {fileID: 650628595}
+  typingSpeed: 0
 --- !u!1 &779627980
 GameObject:
   m_ObjectHideFlags: 0
@@ -1616,6 +1652,8 @@ MonoBehaviour:
   speechText: {fileID: 1302006193}
   actorNameText: {fileID: 0}
   nextButton: {fileID: 529926478}
+  canvasGroup: {fileID: 0}
+  rectTransform: {fileID: 0}
   typingSpeed: 0.05
 --- !u!4 &1730981778
 Transform:

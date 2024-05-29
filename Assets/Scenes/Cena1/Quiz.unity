@@ -408,6 +408,8 @@ GameObject:
   - component: {fileID: 91110753}
   - component: {fileID: 91110755}
   - component: {fileID: 91110754}
+  - component: {fileID: 91110756}
+  - component: {fileID: 91110757}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -478,6 +480,41 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 91110752}
   m_CullTransparentMesh: 1
+--- !u!114 &91110756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 91110752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6789e1a7869ff7549b29ff1771c6b87a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadetime: 1
+  canvasGroup: {fileID: 91110757}
+  rectTransform: {fileID: 91110753}
+  itens:
+  - {fileID: 638691605}
+  - {fileID: 824393985}
+  - {fileID: 88034396}
+  - {fileID: 1769219099}
+  - {fileID: 1972482459}
+  - {fileID: 1615904765}
+  nomeCena: 
+--- !u!225 &91110757
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 91110752}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &117355929
 GameObject:
   m_ObjectHideFlags: 0
@@ -1706,8 +1743,8 @@ MonoBehaviour:
   timer: {fileID: 324608575}
   answerButtons:
   - {fileID: 1372643946}
-  - {fileID: 815430093}
   - {fileID: 1258943079}
+  - {fileID: 815430093}
   - {fileID: 1042627109}
   questionText: {fileID: 2045101957}
 --- !u!4 &1420092963

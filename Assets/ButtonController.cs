@@ -7,7 +7,7 @@ using DG.Tweening;
 
 public class ButtonController : MonoBehaviour
 {
-    public Transform _punch;
+    
     public string nextSceneName;
 
     void Start()
