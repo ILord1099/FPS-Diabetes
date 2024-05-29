@@ -25,7 +25,7 @@ MonoBehaviour:
   - actorName: Paciente
     profile: {fileID: -63671856, guid: 5d2f7917d5c13b74c862fef05d8d4acb, type: 3}
     sentence:
-      Portugues: "Estou sentindo cansa\xE7o e tontura ultimamente."
+      Portugues: "Paciente:Estou sentindo cansa\xE7o e tontura ultimamente."
       ingles: "sei l\xE1 "
       espanhol: 
   - actorName: Aluno
@@ -39,8 +39,7 @@ MonoBehaviour:
     sentence:
       Portugues: "Paciente: Eu gosto muito de refrigerante, doces e fastfood, raramente
         como coisas saud\xE1veis como vegetais ou frutas. E meu sono est\xE1 cada
-        vez pior, fico acordado at\xE9 tarde e acabo tendo que acordar cedo para
-        trabalhar."
+        vez pior"
       ingles: "sei l\xE1 "
       espanhol: 
   - actorName: Aluno
@@ -54,7 +53,7 @@ MonoBehaviour:
     profile: {fileID: 1158332010, guid: 9167908b1de8b2d48807d56c3894cf5b, type: 3}
     sentence:
       Portugues: "Mentor: Interessante, parece uma \xF3tima oportunidade para testar
-        os conehcimentos em diabetes, voc\xEA est\xE1 pronto?"
+        os conhecimentos em diabetes, voc\xEA est\xE1 pronto?"
       ingles: Wow
       espanhol: 
   - actorName: 'Aluno:'
@@ -66,6 +65,6 @@ MonoBehaviour:
   - actorName: Quiz
     profile: {fileID: 0}
     sentence:
-      Portugues: 
+      Portugues: .
       ingles: 
       espanhol: 
