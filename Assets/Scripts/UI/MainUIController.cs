@@ -81,7 +81,7 @@ namespace Platformer.UI
         void AnimateTick()
         {
             // Anima a escala do logo para tickScale e de volta para a escala original
-            logoTransform.DOScale(13, duration).OnComplete(BackAnim);
+            logoTransform.DOScale(5, duration).OnComplete(BackAnim);
 
         }
         void BackAnim()
