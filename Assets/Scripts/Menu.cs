@@ -14,7 +14,9 @@ public class Menu : MonoBehaviour
     public string nomeCena;
     private List<Vector3> originalScales = new List<Vector3>();
     // Start is called before the first frame update
-
+    public UnityEngine.Transform logoTransform;
+    public Vector3 tickScale = new Vector3(10f, 10f, 0f); // Escala do "tick"
+    private Vector3 originalScale;
     void Start()
     {
 
@@ -31,11 +33,8 @@ public class Menu : MonoBehaviour
         SceneManager.LoadScene(nomeCena);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+ 
+
     public void PanelFadeaain()
     {
         canvasGroup.alpha = 0f;
@@ -47,6 +46,7 @@ public class Menu : MonoBehaviour
     }
     IEnumerator ItensAnimaition()
     {
+       
         foreach (var item in itens)
         {
             item.transform.localScale = Vector2.zero;
@@ -55,6 +55,9 @@ public class Menu : MonoBehaviour
         {
             itens[i].transform.DOScale(originalScales[i], 1f).SetEase(Ease.InCubic);
             yield return new WaitForSeconds(0.25f);
+            
         }
     }
+
+
 }
