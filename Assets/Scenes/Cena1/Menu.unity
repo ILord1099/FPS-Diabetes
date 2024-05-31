@@ -789,7 +789,6 @@ GameObject:
   - component: {fileID: 640321070}
   - component: {fileID: 640321072}
   - component: {fileID: 640321071}
-  - component: {fileID: 640321073}
   m_Layer: 5
   m_Name: Logo_IMG
   m_TagString: Untagged
@@ -854,25 +853,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 640321069}
   m_CullTransparentMesh: 1
---- !u!114 &640321073
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 640321069}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75fa2f9ea4cb54f34aaac731aabe3733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  logoTransform: {fileID: 640321070}
-  minScale: 9
-  maxScale: 10
-  duration: 0.5
-  idleTime: 5
-  panels: []
-  tickScale: {x: 10, y: 10, z: 0}
 --- !u!1 &647775870
 GameObject:
   m_ObjectHideFlags: 0
@@ -1361,6 +1341,7 @@ GameObject:
   - component: {fileID: 1051744307}
   - component: {fileID: 1051744306}
   - component: {fileID: 1051744305}
+  - component: {fileID: 1051744308}
   m_Layer: 5
   m_Name: BNT_Start
   m_TagString: Untagged
@@ -1494,6 +1475,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1051744303}
   m_CullTransparentMesh: 1
+--- !u!114 &1051744308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1051744303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75fa2f9ea4cb54f34aaac731aabe3733, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  logoTransform: {fileID: 1051744304}
+  minScale: 9
+  maxScale: 10
+  duration: 0.5
+  idleTime: 5
+  panels: []
+  tickScale: {x: 10, y: 10, z: 0}
 --- !u!1 &1284772958
 GameObject:
   m_ObjectHideFlags: 0
