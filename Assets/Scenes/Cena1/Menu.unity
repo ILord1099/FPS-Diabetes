@@ -1154,7 +1154,7 @@ MonoBehaviour:
   - {fileID: 64727618}
   - {fileID: 160325831}
   nomeCena: 
-  logoTransform: {fileID: 0}
+  logoTransform: {fileID: 640321070}
   tickScale: {x: 10, y: 10, z: 0}
 --- !u!114 &801087061
 MonoBehaviour:
@@ -1358,7 +1358,7 @@ RectTransform:
   m_GameObject: {fileID: 1051744303}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.9337587, y: 2.9337587, z: 2.9337587}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1652555438}

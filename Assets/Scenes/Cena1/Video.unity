@@ -247,7 +247,7 @@ VideoPlayer:
   m_AspectRatio: 2
   m_DataSource: 0
   m_TimeUpdateMode: 2
-  m_PlaybackSpeed: 10
+  m_PlaybackSpeed: 4
   m_AudioOutputMode: 2
   m_TargetAudioSources:
   - {fileID: 0}
@@ -711,8 +711,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65113f987c289b34a8b71194eb8a6ce7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Rect: {fileID: 0}
-  _fade: {fileID: 0}
   nextSceneName: Platform1
 --- !u!225 &1895826165
 CanvasGroup:
