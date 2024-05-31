@@ -23,7 +23,6 @@ namespace Platformer.UI
         public GameObject[] panels;
         public Vector3 tickScale = new Vector3(10f, 10f, 0f); // Escala do "tick"
         private Vector3 originalScale;
-        private float Timer;
         private int segundos = 0;
 
         void Start ()
