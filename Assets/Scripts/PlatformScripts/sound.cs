@@ -12,6 +12,7 @@ public class sound : MonoBehaviour
     public AudioClip deadSound;
     public AudioClip correctSound;
     public AudioClip incorrectSound;
+    public AudioClip selectSound;
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
