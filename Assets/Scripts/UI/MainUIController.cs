@@ -22,17 +22,14 @@ namespace Platformer.UI
         public float idleTime = 5.0f;
         public GameObject[] panels;
         public Vector3 tickScale = new Vector3(10f, 10f, 0f); // Escala do "tick"
-        private Vector3 originalScale;
+        private Vector3 originalScale = new Vector3(3f, 3f, 3f);
         private int segundos = 0;
 
         void Start ()
         {
-            // Certifique-se de que o logoTransform está atribuído
-            if (logoTransform == null)
-            {
-                logoTransform = transform;
-            }
-            originalScale = logoTransform.localScale;
+
+            //originalScale = logoTransform.localScale;
+            Debug.Log(logoTransform);
 
             // Iniciar a coroutine de verificação de interação
             
