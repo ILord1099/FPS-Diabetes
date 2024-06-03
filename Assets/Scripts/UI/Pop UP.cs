@@ -8,7 +8,7 @@ public class PopUpManager : MonoBehaviour
     public float duration = 0.5f; // Duração da animação
 
     private Vector3 hiddenScale = new Vector3(0, 0, 0); // Escala inicial do pop-up (escondido)
-    private Vector3 shownScale = new Vector3(6, 6, 0); // Escala final do pop-up (visível)
+    private Vector3 shownScale = new Vector3(12, 8, 0); // Escala final do pop-up (visível)
 
     void Start()
     {
