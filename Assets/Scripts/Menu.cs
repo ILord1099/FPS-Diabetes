@@ -14,11 +14,10 @@ public class Menu : MonoBehaviour
     public string nomeCena;
     private List<Vector3> originalScales = new List<Vector3>();
     // Start is called before the first frame update
-    public UnityEngine.Transform logoTransform;
-    public Vector3 tickScale = new Vector3(10f, 10f, 0f); // Escala do "tick"
-    private Vector3 originalScale;
+    public CanvasGroup Fade;
     void Start()
     {
+        
 
         foreach (var item in itens)
         {
@@ -59,5 +58,10 @@ public class Menu : MonoBehaviour
         }
     }
 
+    public void FadeButton()
+    {
+        Fade.alpha = 0f;
+        Fade.DOFade(1, 0.5f);
+    }
 
 }

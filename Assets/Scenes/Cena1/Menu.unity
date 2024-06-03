@@ -135,6 +135,8 @@ GameObject:
   - component: {fileID: 64727622}
   - component: {fileID: 64727621}
   - component: {fileID: 64727620}
+  - component: {fileID: 64727623}
+  - component: {fileID: 64727624}
   m_Layer: 5
   m_Name: Btn_LinkExternos
   m_TagString: Untagged
@@ -208,23 +210,23 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 450333101}
         m_TargetAssemblyTypeName: Menu, Assembly-CSharp
-        m_MethodName: scene_changer
-        m_Mode: 5
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Links
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
-        m_MethodName: 
+      - m_Target: {fileID: 64727624}
+        m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
+        m_MethodName: FadeButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -268,6 +270,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 64727618}
   m_CullTransparentMesh: 1
+--- !u!225 &64727623
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 64727618}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &64727624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 64727618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65113f987c289b34a8b71194eb8a6ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Fade: {fileID: 64727623}
+  nextSceneName: 
 --- !u!1 &160325831
 GameObject:
   m_ObjectHideFlags: 0
@@ -606,8 +634,7 @@ MonoBehaviour:
   rectTransform: {fileID: 450333105}
   itens: []
   nomeCena: Video
-  logoTransform: {fileID: 0}
-  tickScale: {x: 10, y: 10, z: 0}
+  Fade: {fileID: 0}
 --- !u!114 &450333102
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1154,8 +1181,7 @@ MonoBehaviour:
   - {fileID: 64727618}
   - {fileID: 160325831}
   nomeCena: 
-  logoTransform: {fileID: 640321070}
-  tickScale: {x: 10, y: 10, z: 0}
+  Fade: {fileID: 0}
 --- !u!114 &801087061
 MonoBehaviour:
   m_ObjectHideFlags: 0
