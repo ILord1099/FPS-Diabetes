@@ -32,5 +32,7 @@ public class PopUpManager : MonoBehaviour
         // Anima o pop-up de volta para a escala escondida
         popUpTransform.DOScale(hiddenScale, duration).SetEase(Ease.InBack);
     }
+
+
 }
 
