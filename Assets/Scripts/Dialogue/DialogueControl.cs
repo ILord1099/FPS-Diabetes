@@ -3,6 +3,7 @@ using DG.Tweening;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -22,7 +23,7 @@ public class DialogueControl : MonoBehaviour
     [Header("Components")]// boa pratica para criar um cabeçalho 
     public GameObject dialogueObj;// janela do dialogo 
     public Image profileSprite;//foto de perfil
-    public Text speechText;//texto da fala 
+    public TextMeshProUGUI speechText;//texto da fala 
     public Text actorNameText;//nome do npc
     public Button nextButton; // botão para a próxima fala
     public CanvasGroup canvasGroup;
