@@ -58,10 +58,6 @@ public class Menu : MonoBehaviour
         }
     }
 
-    public void FadeButton()
-    {
-        Fade.alpha = 0f;
-        Fade.DOFade(1, 0.5f);
-    }
+
 
 }
