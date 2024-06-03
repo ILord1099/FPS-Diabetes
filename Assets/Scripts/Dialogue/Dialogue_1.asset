@@ -25,7 +25,7 @@ MonoBehaviour:
   - actorName: Paciente
     profile: {fileID: -63671856, guid: 5d2f7917d5c13b74c862fef05d8d4acb, type: 3}
     sentence:
-      Portugues: "Estou sentindo cansa\xE7o e tontura ultimamente."
+      Portugues: "Paciente:Estou sentindo cansa\xE7o e tontura ultimamente."
       ingles: "sei l\xE1 "
       espanhol: 
   - actorName: Aluno
