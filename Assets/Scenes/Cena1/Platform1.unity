@@ -25960,15 +25960,35 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 298261899719230363, guid: 5cc4ad9e031b3b449bee454adb0cc89f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 1659301053874785380, guid: 5cc4ad9e031b3b449bee454adb0cc89f,
         type: 3}
       propertyPath: m_SortingOrder
       value: -50
       objectReference: {fileID: 0}
+    - target: {fileID: 2141902177562118037, guid: 5cc4ad9e031b3b449bee454adb0cc89f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 2824476445259328127, guid: 5cc4ad9e031b3b449bee454adb0cc89f,
         type: 3}
       propertyPath: m_SortingOrder
       value: -20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2883067424643667457, guid: 5cc4ad9e031b3b449bee454adb0cc89f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3136938099840089200, guid: 5cc4ad9e031b3b449bee454adb0cc89f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4031438675267157404, guid: 5cc4ad9e031b3b449bee454adb0cc89f,
         type: 3}
@@ -25989,6 +26009,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SortingOrder
       value: -50
+      objectReference: {fileID: 0}
+    - target: {fileID: 5091458316222038719, guid: 5cc4ad9e031b3b449bee454adb0cc89f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5093003607236258671, guid: 5cc4ad9e031b3b449bee454adb0cc89f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 5344901478777366182, guid: 5cc4ad9e031b3b449bee454adb0cc89f,
         type: 3}
@@ -26014,6 +26044,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Spikes
+      objectReference: {fileID: 0}
+    - target: {fileID: 5747524574852760541, guid: 5cc4ad9e031b3b449bee454adb0cc89f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6941371317672307693, guid: 5cc4ad9e031b3b449bee454adb0cc89f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7345644437362935077, guid: 5cc4ad9e031b3b449bee454adb0cc89f,
         type: 3}

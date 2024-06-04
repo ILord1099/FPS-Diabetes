@@ -106,6 +106,11 @@ public class Player : MonoBehaviour
 
             SceneManager.LoadScene("Dialogue");   
         }
+        if (colisor.gameObject.layer == 11)
+        {
+
+            SceneManager.LoadScene("");
+        }
     }
     #endregion
 }
