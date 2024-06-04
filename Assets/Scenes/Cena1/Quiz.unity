@@ -503,6 +503,7 @@ MonoBehaviour:
   - {fileID: 1972482459}
   - {fileID: 1615904765}
   nomeCena: 
+  Fade: {fileID: 0}
 --- !u!225 &91110757
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -663,7 +664,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   form: {fileID: 11400000, guid: b348e6711c8d1b74c8918b450c78cacb, type: 2}
   quizView: {fileID: 1420092962}
-  sceneToLoad: Menu
+  sceneToLoad: Video2
 --- !u!1 &324608574
 GameObject:
   m_ObjectHideFlags: 0
