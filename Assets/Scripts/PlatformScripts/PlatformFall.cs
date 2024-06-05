@@ -6,12 +6,12 @@ public class PlatformFall : MonoBehaviour
 {
     public float fallingTime;
 
-    private TargetJoint2D target;
+    //private TargetJoint2D target;
     private CapsuleCollider2D boxColl;
     // Start is called before the first frame update
     void Start()
     {
-        target =  GetComponent<TargetJoint2D>();
+        //target =  GetComponent<TargetJoint2D>();
         boxColl = GetComponent<CapsuleCollider2D>();
     }
 
@@ -29,7 +29,7 @@ public class PlatformFall : MonoBehaviour
     }
     void Falling()
     {
-        target.enabled = false;
+        //target.enabled = false;
         boxColl.isTrigger = true;
     }
 }

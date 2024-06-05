@@ -28,7 +28,7 @@ EditorBuildSettings:
     guid: da1ceb98a7f75be44a9f80c2ffd15066
   - enabled: 1
     path: Assets/Scenes/Cena2/Quiz2.unity
-    guid: fc0296703078e734486190f604f2440a
+    guid: f28f7e28e32bdd742bfe76318a8d054d
   - enabled: 1
     path: Assets/Scenes/Cena3/Video3.unity
     guid: e5ba7aa1742c2694aab19d3eb54c890a
@@ -38,4 +38,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cena3/Quiz3.unity
     guid: 8f572747791cf8940a218bbae8e990c9
+  - enabled: 1
+    path: Assets/Scenes/Cena4/Video2.unity
+    guid: 3aa95bded5388d345b331bee43c1c83c
+  - enabled: 1
+    path: Assets/Scenes/Cena4/Platforma4.unity
+    guid: ff51554307f153b48af6f5badc124f3c
+  - enabled: 1
+    path: Assets/Scenes/Cena4/Quiz2.unity
+    guid: e1a871302cf5dab48a5e942e3477dc84
+  - enabled: 1
+    path: Assets/Scenes/Cena4/DialogueMeio.unity
+    guid: 4e25a983195928f41962132d8426846a
   m_configObjects: {}
