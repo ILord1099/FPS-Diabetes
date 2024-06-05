@@ -21,15 +21,21 @@ EditorBuildSettings:
     path: Assets/Scenes/Cena1/Quiz.unity
     guid: 1ad411e12990cd042bd53ddccbf99566
   - enabled: 1
-    path: Assets/Scenes/Cena2/Quiz2.unity
-    guid: fc0296703078e734486190f604f2440a
-  - enabled: 1
     path: Assets/Scenes/Cena2/Video2.unity
     guid: 5e86eb73570cef442bece3ad2383424e
   - enabled: 1
     path: Assets/Scenes/Cena2/Platform 2.unity
     guid: da1ceb98a7f75be44a9f80c2ffd15066
   - enabled: 1
-    path: Assets/Scenes/Cena2/Menu.unity
-    guid: 140a698bd6ac3cf41b6ed82a18694405
+    path: Assets/Scenes/Cena2/Quiz2.unity
+    guid: fc0296703078e734486190f604f2440a
+  - enabled: 1
+    path: Assets/Scenes/Cena3/Video3.unity
+    guid: e5ba7aa1742c2694aab19d3eb54c890a
+  - enabled: 1
+    path: Assets/Scenes/Cena3/Platforma3.unity
+    guid: 6782443055a386149a191788ea5ec2ba
+  - enabled: 1
+    path: Assets/Scenes/Cena3/Quiz3.unity
+    guid: 8f572747791cf8940a218bbae8e990c9
   m_configObjects: {}

@@ -111,6 +111,11 @@ public class Player : MonoBehaviour
 
             SceneManager.LoadScene("");
         }
+        if (colisor.gameObject.layer == 13)
+        {
+
+            SceneManager.LoadScene("Quiz3");
+        }
     }
     #endregion
 }
