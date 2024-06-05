@@ -139,11 +139,11 @@ public class DialogueControl : MonoBehaviour
 
     public void MudarCena()
     {
-        Debug.Log("Chamou.Mudarcena");
-        if (index == 7)
+        
+        if (index == 8)
 
         {
-            Debug.Log("index 7 ");
+            Debug.Log("index 8 ");
             SceneManager.LoadScene("Quiz");
 
         }
@@ -170,6 +170,7 @@ public class DialogueControl : MonoBehaviour
 
         if (index == 1)
         {
+            //Mentor On
             Debug.Log("Chamou Color1");
             Mentor.DOColor(Color.black, 1f);
             Aluno.DOColor(Color.black, 1f);
@@ -178,6 +179,7 @@ public class DialogueControl : MonoBehaviour
         }
         if (index == 2)
         {
+            //Paciente On
             Debug.Log("Chamou Color2");
             Aluno.DOColor(Color.white, 1f);
             Paciente.DOColor(Color.black, 1f);
@@ -185,6 +187,7 @@ public class DialogueControl : MonoBehaviour
 
         if (index == 3)
         {
+            //Aluno On
             Debug.Log("Chamou Color3");
             Aluno.DOColor(Color.black, 1f);
             Paciente.DOColor(Color.white, 1f);
@@ -192,20 +195,32 @@ public class DialogueControl : MonoBehaviour
         }
         if (index == 4)
         {
+            //Mentor On
             Debug.Log("Chamou Color4");
-            Aluno.DOColor(Color.white, 1f);
+            Mentor.DOColor(Color.white, 1f);
+            Aluno.DOColor(Color.black, 1f);
             Paciente.DOColor(Color.black, 1f);
 
         }
         if (index == 5)
         {
-            Mentor.DOColor(Color.white, 1f);
-            Aluno.DOColor(Color.black, 1f);
+            //alunoOn
+            Mentor.DOColor(Color.black, 1f);
+            Aluno.DOColor(Color.white, 1f);
 
 
         }
         if (index == 6)
         {
+            //Mentor on
+            Mentor.DOColor(Color.white, 1f);
+            Aluno.DOColor(Color.black, 1f);
+
+
+        }
+        if (index == 7)
+        {
+            //aluno On
             Mentor.DOColor(Color.black, 1f);
             Aluno.DOColor(Color.white, 1f);
 

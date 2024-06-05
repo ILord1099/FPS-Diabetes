@@ -19,13 +19,14 @@ MonoBehaviour:
   - actorName: Mentor
     profile: {fileID: -892086334, guid: 9167908b1de8b2d48807d56c3894cf5b, type: 3}
     sentence:
-      Portugues: "Mentor: Bom dia, como est\xE1 se sentindo hoje?"
+      Portugues: 'Mentor: Bom dia, qual o Motivo da sua consulta hoje?'
       ingles: good morning
       espanhol: 
   - actorName: Paciente
     profile: {fileID: -63671856, guid: 5d2f7917d5c13b74c862fef05d8d4acb, type: 3}
     sentence:
-      Portugues: "Paciente:Estou sentindo cansa\xE7o e tontura ultimamente."
+      Portugues: 'Paciente: Estou acordando muitas vezes durante a noite, para fazer
+        xixi e sentindo mais sede do que o normal.'
       ingles: "sei l\xE1 "
       espanhol: 
   - actorName: Aluno
@@ -37,34 +38,41 @@ MonoBehaviour:
   - actorName: Paciente
     profile: {fileID: -1599727536, guid: 5d2f7917d5c13b74c862fef05d8d4acb, type: 3}
     sentence:
-      Portugues: "Paciente: Eu gosto muito de refrigerante, doces e fastfood, raramente
-        como coisas saud\xE1veis como vegetais ou frutas. E meu sono est\xE1 cada
-        vez pior"
+      Portugues: "Paciente: Eu gosto muito de refrigerante, doces e fast food, raramente
+        como coisas saud\xE1veis. Alem disso ultimamente Estou comendo mais que o
+        normal e mesmo assim estou perdendo peso."
+      ingles: "sei l\xE1 "
+      espanhol: 
+  - actorName: Mentor
+    profile: {fileID: -1599727536, guid: 5d2f7917d5c13b74c862fef05d8d4acb, type: 3}
+    sentence:
+      Portugues: "Mentor: Diante das queixas do paciente o que voc\xEA acha que deveriamos
+        investigar?"
       ingles: "sei l\xE1 "
       espanhol: 
   - actorName: Aluno
-    profile: {fileID: 1303454291, guid: c5b5d74d9902fa54192a54e4358d7c91, type: 3}
+    profile: {fileID: -1599727536, guid: 5d2f7917d5c13b74c862fef05d8d4acb, type: 3}
     sentence:
       Portugues: "Aluno: Os h\xE1bitos do paciente e os sintomas... Talvez devemos
-        investigar Diabetes, o que acha mentor?"
-      ingles: Wow
+        investigar Diabetes!"
+      ingles: "sei l\xE1 "
       espanhol: 
   - actorName: Mentor
-    profile: {fileID: 1158332010, guid: 9167908b1de8b2d48807d56c3894cf5b, type: 3}
+    profile: {fileID: -1599727536, guid: 5d2f7917d5c13b74c862fef05d8d4acb, type: 3}
     sentence:
       Portugues: "Mentor: Interessante, parece uma \xF3tima oportunidade para testar
-        os conhecimentos em diabetes, voc\xEA est\xE1 pronto?"
-      ingles: Wow
+        seus conhecimentos, voc\xEA est\xE1 pronto?"
+      ingles: "sei l\xE1 "
       espanhol: 
-  - actorName: 'Aluno:'
-    profile: {fileID: -867982408, guid: c5b5d74d9902fa54192a54e4358d7c91, type: 3}
+  - actorName: Aluno
+    profile: {fileID: -1599727536, guid: 5d2f7917d5c13b74c862fef05d8d4acb, type: 3}
     sentence:
-      Portugues: 'Aluno: Claro, tudo para que o paciente se sinta melhor!'
-      ingles: Sure.
+      Portugues: "Aluno: Claro vamos l\xE1!"
+      ingles: "sei l\xE1 "
       espanhol: 
-  - actorName: Quiz
-    profile: {fileID: 0}
+  - actorName: empty
+    profile: {fileID: -1599727536, guid: 5d2f7917d5c13b74c862fef05d8d4acb, type: 3}
     sentence:
-      Portugues: .
-      ingles: 
+      Portugues: 
+      ingles: "sei l\xE1 "
       espanhol: 
