@@ -106,7 +106,7 @@ public class DialogueControl : MonoBehaviour
                 Debug.Log(index);
                 speechText.text = "";
                 StartCoroutine(TypeSentence());
-                Debug.Log("chama");
+                
                 
             }
             else // quando termina os textos 
