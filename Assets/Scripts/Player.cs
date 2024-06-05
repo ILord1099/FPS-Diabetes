@@ -109,7 +109,7 @@ public class Player : MonoBehaviour
         if (colisor.gameObject.layer == 11)
         {
 
-            SceneManager.LoadScene("");
+            SceneManager.LoadScene("Quiz2");
         }
         if (colisor.gameObject.layer == 13)
         {

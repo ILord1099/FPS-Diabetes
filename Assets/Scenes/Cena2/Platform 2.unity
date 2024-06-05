@@ -10058,8 +10058,8 @@ Transform:
   m_GameObject: {fileID: 1160649458}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: -23.171972, y: 5.786471, z: 0.05949308}
-  m_LocalScale: {x: 1.2822571, y: 1.2822571, z: 1.2822571}
+  m_LocalPosition: {x: -23.1952, y: 5.8097, z: 0.05949308}
+  m_LocalScale: {x: 1.2476361, y: 1.2476361, z: 1.2822571}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 616908589}
@@ -11329,7 +11329,7 @@ GameObject:
   - component: {fileID: 1282727293}
   - component: {fileID: 1282727292}
   - component: {fileID: 1282727294}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Gui3_4 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11376,7 +11376,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -3
   m_Sprite: {fileID: -1431684039, guid: ccad3a1b00ccad047b8eef338255a3ad, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -11553,7 +11553,7 @@ GameObject:
   - component: {fileID: 1304650599}
   - component: {fileID: 1304650598}
   - component: {fileID: 1304650600}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Gui3_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13977,6 +13977,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.63
+      objectReference: {fileID: 0}
+    - target: {fileID: 5067708919128595068, guid: 5cc4ad9e031b3b449bee454adb0cc89f,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 5091458316222038719, guid: 5cc4ad9e031b3b449bee454adb0cc89f,
         type: 3}
@@ -17604,7 +17609,7 @@ GameObject:
   - component: {fileID: 2031346660}
   - component: {fileID: 2031346659}
   - component: {fileID: 2031346658}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Portal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
