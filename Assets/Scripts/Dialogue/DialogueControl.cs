@@ -145,8 +145,17 @@ public class DialogueControl : MonoBehaviour
         {
             Debug.Log("index 8 ");
             SceneManager.LoadScene("Quiz");
+            index = 9;
 
         }
+
+        /*if (index == 9 )
+
+        {
+            Debug.Log("index 9 ");
+            SceneManager.LoadScene("Quiz4");
+            
+        }*/
     }
     public void Punch()
     {

@@ -626,6 +626,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   form: {fileID: 11400000, guid: b348e6711c8d1b74c8918b450c78cacb, type: 2}
   quizView: {fileID: 1420092962}
+  sceneToLoad: Video4
 --- !u!1 &324608574
 GameObject:
   m_ObjectHideFlags: 0

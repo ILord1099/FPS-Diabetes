@@ -22,6 +22,7 @@ public class Player : MonoBehaviour
     {
         rig = GetComponent<Rigidbody2D>();
         playerAudio = GetComponent<sound>();
+
     }
     // Update is called once per frame
     void Update()
@@ -115,6 +116,13 @@ public class Player : MonoBehaviour
         {
 
             SceneManager.LoadScene("Quiz3");
+        }
+
+        if (colisor.gameObject.layer == 14)
+        {
+
+            SceneManager.LoadScene("Dialogue4");
+           
         }
     }
     #endregion
