@@ -17,6 +17,8 @@ public class Player : MonoBehaviour
     public string sceneName;
 
 
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +30,7 @@ public class Player : MonoBehaviour
     void Update()
     {
         Jump();
+        
     }
     void FixedUpdate()
     {
@@ -124,6 +127,11 @@ public class Player : MonoBehaviour
             SceneManager.LoadScene("Dialogue4");
            
         }
+
     }
     #endregion
+
+    
+   
+
 }
