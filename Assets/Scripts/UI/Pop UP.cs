@@ -11,7 +11,6 @@ public class PopUpManager : MonoBehaviour
     public Button triggerButton; // Referência ao botão que aciona o pop-up
     public float duration = 0.5f; // Duração da animação
     public Image imageToControl;
-    public LinkManager linkManager;
 
     private Vector3 hiddenScale = new Vector3(0, 0, 0); // Escala inicial do pop-up (escondido)
     private Vector3 shownScale = new Vector3(12,8 , 0); // Escala final do pop-up (visível)
@@ -25,10 +24,7 @@ public class PopUpManager : MonoBehaviour
         // Inicialmente, esconder o pop-up
         popUpTransform.localScale = hiddenScale;
 
- 
-            linkManager.AddLink("Example", "https://dotween.demigiant.com/documentation.php#coroutines");
-            linkManager.AddLink("Unity", "https://ge.globo.com/futebol/futebol-internacional/liga-dos-campeoes/noticia/2024/06/02/champions-league-202425-veja-classificados-para-primeira-edicao-com-36-clubes.ghtml");
-            // Adicione quantos links quiser
+
 
     }
 

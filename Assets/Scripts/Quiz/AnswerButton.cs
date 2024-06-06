@@ -7,6 +7,7 @@ using DG.Tweening;
 using Unity.VisualScripting;
 using System.Text;
 using JetBrains.Annotations;
+using System.Collections;
 
 
 
@@ -35,6 +36,8 @@ namespace Quiz
         private Vector3 _scaleTo;
         private Vector3 _originalScale;
         private sound soundButtons;
+
+
 
 
 
@@ -94,7 +97,8 @@ namespace Quiz
                         .SetEase(Ease.OutBounce)
                         .SetDelay(0.1f);
 
-                });
+                }); 
+                                            
 
             }
             if (IsCorrect==false)
@@ -115,6 +119,8 @@ namespace Quiz
             soundButtons.PlaySFX(soundButtons.incorrectSound);
         }
         public void SetText(string text) => _text.text = text;
+
+
 
     }
 }

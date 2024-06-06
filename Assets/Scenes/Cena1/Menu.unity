@@ -286,6 +286,7 @@ MonoBehaviour:
   triggerButton: {fileID: 64727620}
   duration: 0.5
   imageToControl: {fileID: 160325833}
+  linkManager: {fileID: 0}
 --- !u!1 &160325831
 GameObject:
   m_ObjectHideFlags: 0
@@ -1759,7 +1760,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1199250311}
         m_TargetAssemblyTypeName: PopUpManager, Assembly-CSharp
-        m_MethodName: EnableImage
+        m_MethodName: StartDelayedAction
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1823,6 +1824,7 @@ MonoBehaviour:
   triggerButton: {fileID: 64727620}
   duration: 0.5
   imageToControl: {fileID: 160325833}
+  linkManager: {fileID: 1734235297}
 --- !u!1 &1207381503
 GameObject:
   m_ObjectHideFlags: 0
@@ -2838,8 +2840,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4368d401d9868694b9f197d4a2e4eda6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textPrefab: {fileID: 0}
-  content: {fileID: 0}
+  textPrefab: {fileID: 1734235295}
+  content: {fileID: 1734235296}
+  linkManager: {fileID: 0}
 --- !u!114 &1734235298
 MonoBehaviour:
   m_ObjectHideFlags: 0
