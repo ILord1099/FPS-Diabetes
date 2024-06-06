@@ -455,7 +455,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4198113, g: 0.88181746, b: 1, a: 0.8235294}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -496,12 +496,11 @@ MonoBehaviour:
   canvasGroup: {fileID: 91110757}
   rectTransform: {fileID: 91110753}
   itens:
-  - {fileID: 638691605}
   - {fileID: 824393985}
   - {fileID: 88034396}
   - {fileID: 1769219099}
-  - {fileID: 1972482459}
   - {fileID: 1615904765}
+  - {fileID: 1972482459}
   nomeCena: 
   Fade: {fileID: 0}
 --- !u!225 &91110757
@@ -818,7 +817,7 @@ RectTransform:
   m_GameObject: {fileID: 571822890}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1870069711}
@@ -1013,6 +1012,7 @@ GameObject:
   - component: {fileID: 667686284}
   - component: {fileID: 667686283}
   - component: {fileID: 667686282}
+  - component: {fileID: 667686285}
   m_Layer: 5
   m_Name: Saida Pop UP
   m_TagString: Untagged
@@ -1083,13 +1083,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 667686285}
+        m_TargetAssemblyTypeName: Quiz.AnswerButton, Assembly-CSharp
+        m_MethodName: HidePopUp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1133,6 +1133,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 667686280}
   m_CullTransparentMesh: 1
+--- !u!114 &667686285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667686280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e48eed77c4041cab6a8db99d1f3d48d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  normalColor: {r: 0, g: 0, b: 0, a: 0}
+  selectedColor: {r: 0, g: 0, b: 0, a: 0}
+  correctColor: {r: 0, g: 0, b: 0, a: 0}
+  wrongColor: {r: 0, g: 0, b: 0, a: 0}
+  popUpTransform: {fileID: 1870069711}
+  duration: 0.5
 --- !u!1 &743401935
 GameObject:
   m_ObjectHideFlags: 0
@@ -1681,6 +1699,8 @@ MonoBehaviour:
   selectedColor: {r: 0, g: 1, b: 0.94308615, a: 1}
   correctColor: {r: 0, g: 1, b: 0.021812677, a: 1}
   wrongColor: {r: 1, g: 0, b: 0, a: 1}
+  popUpTransform: {fileID: 1870069711}
+  duration: 0.5
 --- !u!114 &1042627110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1994,6 +2014,8 @@ MonoBehaviour:
   selectedColor: {r: 0, g: 1, b: 0.94308615, a: 1}
   correctColor: {r: 0, g: 1, b: 0.021812677, a: 1}
   wrongColor: {r: 1, g: 0, b: 0, a: 1}
+  popUpTransform: {fileID: 1870069711}
+  duration: 0.5
 --- !u!114 &1113410378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2219,6 +2241,8 @@ MonoBehaviour:
   selectedColor: {r: 0, g: 1, b: 0.94308615, a: 1}
   correctColor: {r: 0, g: 1, b: 0.021812677, a: 1}
   wrongColor: {r: 1, g: 0, b: 0, a: 1}
+  popUpTransform: {fileID: 1870069711}
+  duration: 0.5
 --- !u!114 &1258943080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2520,6 +2544,8 @@ MonoBehaviour:
   selectedColor: {r: 0, g: 1, b: 0.94308615, a: 1}
   correctColor: {r: 0, g: 1, b: 0.021812677, a: 1}
   wrongColor: {r: 1, g: 0, b: 0, a: 1}
+  popUpTransform: {fileID: 1870069711}
+  duration: 0.5
 --- !u!114 &1372643947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3086,14 +3112,13 @@ GameObject:
   - component: {fileID: 1870069711}
   - component: {fileID: 1870069713}
   - component: {fileID: 1870069712}
-  - component: {fileID: 1870069714}
   m_Layer: 5
   m_Name: Tela Feedback
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1870069711
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3103,7 +3128,7 @@ RectTransform:
   m_GameObject: {fileID: 1870069710}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 15, y: 8, z: 1}
+  m_LocalScale: {x: 0, y: 0, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1341901786}
@@ -3158,22 +3183,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1870069710}
   m_CullTransparentMesh: 1
---- !u!114 &1870069714
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1870069710}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e48eed77c4041cab6a8db99d1f3d48d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  normalColor: {r: 0, g: 0, b: 0, a: 0}
-  selectedColor: {r: 0, g: 0, b: 0, a: 0}
-  correctColor: {r: 0, g: 0, b: 0, a: 0}
-  wrongColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1972482459
 GameObject:
   m_ObjectHideFlags: 0
@@ -3300,7 +3309,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -26.077026, y: 5}
+  m_AnchoredPosition: {x: -26.076904, y: 5}
   m_SizeDelta: {x: -52.1536, y: -10}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2045101957
