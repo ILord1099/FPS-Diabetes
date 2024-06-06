@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - TutorialRequirement
+  - Platform
   layers:
   - Default
   - TransparentFX
@@ -21,8 +22,8 @@ TagManager:
   - 
   - Quiz3
   - Dialogue4
-  - 
-  - 
+  - Quiz5
+  - Quiz6
   - 
   - 
   - 

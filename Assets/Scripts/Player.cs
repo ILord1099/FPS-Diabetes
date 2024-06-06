@@ -123,11 +123,19 @@ public class Player : MonoBehaviour
 
         if (colisor.gameObject.layer == 14)
         {
-
             SceneManager.LoadScene("Dialogue4");
            
         }
+        if (colisor.gameObject.layer == 15)
+        {
+            SceneManager.LoadScene("Quiz5");
 
+        }
+        if (colisor.gameObject.layer == 16)
+        {
+            SceneManager.LoadScene("Quiz6");
+
+        }
     }
     #endregion
 
