@@ -37,7 +37,10 @@ namespace Quiz
         private Vector3 _originalScale;
         private sound soundButtons;
 
-
+        public UnityEngine.Transform popUpTransform; // Referência ao Transform do pop-up
+        public float duration = 0.5f; // Duração da animação
+        private Vector3 hiddenScale = new Vector3(0, 0, 0); // Escala inicial do pop-up (escondido)
+        private Vector3 shownScale = new Vector3(12, 8, 0); // Escala final do pop-up (visível)
 
 
 
@@ -46,6 +49,7 @@ namespace Quiz
         {
             _originalScale = transform.localScale;
             _scaleTo = _originalScale * 1.3f;
+            popUpTransform.localScale = hiddenScale;
             soundButtons = GetComponent<sound>();
 
         }
@@ -87,6 +91,7 @@ namespace Quiz
         {
             if (IsCorrect)
             {
+                ShowPopUp();
                 _image.color = correctColor;
                 correctSoundplay();
                 transform.DOScale(_scaleTo, 0.1f)
@@ -120,7 +125,17 @@ namespace Quiz
         }
         public void SetText(string text) => _text.text = text;
 
+        void ShowPopUp()
+        {
+            // Anima o pop-up para a escala visível
+            popUpTransform.DOScale(shownScale, duration).SetEase(Ease.OutBack);
+         
+        }
+        public void HidePopUp()
+        {
+            // Anima o pop-up de volta para a escala escondida
+            popUpTransform.DOScale(hiddenScale, duration).SetEase(Ease.InBack);
 
-
+        }
     }
 }
