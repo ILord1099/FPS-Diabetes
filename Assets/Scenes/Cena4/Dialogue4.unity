@@ -674,7 +674,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1730981777}
         m_TargetAssemblyTypeName: DialogueControl, Assembly-CSharp
-        m_MethodName: MudarCena
+        m_MethodName: Punch
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -686,7 +686,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1730981777}
         m_TargetAssemblyTypeName: DialogueControl, Assembly-CSharp
-        m_MethodName: Punch
+        m_MethodName: MudarCena
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -915,6 +915,7 @@ MonoBehaviour:
   Mentor: {fileID: 1748112440}
   Paciente: {fileID: 445301098}
   Aluno: {fileID: 650628596}
+  proximaCena: 
   typingSpeed: 0
 --- !u!1 &779627980
 GameObject:
@@ -1412,6 +1413,7 @@ MonoBehaviour:
   Mentor: {fileID: 1748112440}
   Paciente: {fileID: 650628596}
   Aluno: {fileID: 445301098}
+  proximaCena: 
   typingSpeed: 0
 --- !u!225 &1212799423
 CanvasGroup:
@@ -1921,6 +1923,7 @@ MonoBehaviour:
   Mentor: {fileID: 1748112440}
   Paciente: {fileID: 445301098}
   Aluno: {fileID: 650628596}
+  proximaCena: Quiz4
   typingSpeed: 0.05
 --- !u!4 &1730981778
 Transform:

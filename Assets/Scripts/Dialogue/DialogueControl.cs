@@ -9,6 +9,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 
+
 public class DialogueControl : MonoBehaviour
 {
     public Transform _punch;
@@ -31,6 +32,7 @@ public class DialogueControl : MonoBehaviour
     public Image Mentor;
     public Image Paciente;
     public Image Aluno;
+    public string proximaCena;
 
 
 
@@ -42,6 +44,7 @@ public class DialogueControl : MonoBehaviour
     private int index;// index é usado para laços de repetição/index das sentenças, contagem de itens/texto dentro das falas 
     private string[] sentences;// recebe todas as falas do referido npc
     private bool dialogueInProgress = false;
+    
 
 
     public static DialogueControl instance; //instanciando como variavel static posso utilizar qualquer variavel e metodo que esteja publico 
@@ -54,6 +57,7 @@ public class DialogueControl : MonoBehaviour
     //chamado ao inicalizar, sendo depois do awake
     void Start()
     {
+        
         Mentor.DOColor(Color.white, 0f);
         Aluno.DOColor(Color.black, 0f);
         Paciente.DOColor(Color.black, 0f);
@@ -64,10 +68,9 @@ public class DialogueControl : MonoBehaviour
             nextButton.onClick.AddListener(OnNextButtonClick);
         }
     }
-
     void Update()
     {
-
+        //Debug.Log(proximaCena);
     }
 
     private void OnNextButtonClick()
@@ -143,8 +146,10 @@ public class DialogueControl : MonoBehaviour
         if (index == 8)
 
         {
-            Debug.Log("index 8 ");
-            SceneManager.LoadScene("Quiz");
+            proximaCena = proximaCena;
+            Debug.Log(proximaCena);
+            //Debug.Log("index 8 ");
+            SceneManager.LoadScene(proximaCena);
            // index = 9;
 
         }
@@ -180,7 +185,7 @@ public class DialogueControl : MonoBehaviour
         if (index == 1)
         {
             //Mentor On
-            Debug.Log("Chamou Color1");
+            
             Mentor.DOColor(Color.black, 1f);
             Aluno.DOColor(Color.black, 1f);
             Paciente.DOColor(Color.white, 1f);
@@ -189,7 +194,7 @@ public class DialogueControl : MonoBehaviour
         if (index == 2)
         {
             //Paciente On
-            Debug.Log("Chamou Color2");
+           
             Aluno.DOColor(Color.white, 1f);
             Paciente.DOColor(Color.black, 1f);
         }
@@ -197,7 +202,7 @@ public class DialogueControl : MonoBehaviour
         if (index == 3)
         {
             //Aluno On
-            Debug.Log("Chamou Color3");
+            
             Aluno.DOColor(Color.black, 1f);
             Paciente.DOColor(Color.white, 1f);
 
@@ -205,7 +210,7 @@ public class DialogueControl : MonoBehaviour
         if (index == 4)
         {
             //Mentor On
-            Debug.Log("Chamou Color4");
+            
             Mentor.DOColor(Color.white, 1f);
             Aluno.DOColor(Color.black, 1f);
             Paciente.DOColor(Color.black, 1f);
