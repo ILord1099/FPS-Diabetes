@@ -1,6 +1,10 @@
 using DG.Tweening;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections.Generic;
+
+using JetBrains.Annotations;
 public class PopUpManager : MonoBehaviour
 {
     public Transform popUpTransform; // Referência ao Transform do pop-up
@@ -33,6 +37,7 @@ public class PopUpManager : MonoBehaviour
     {
         // Anima o pop-up de volta para a escala escondida
         popUpTransform.DOScale(hiddenScale, duration).SetEase(Ease.InBack);
+        StartDelayedAction();
         EnableImage();
     }
 
@@ -52,6 +57,17 @@ public class PopUpManager : MonoBehaviour
         {
             imageToControl.enabled = true;
         }
+    }
+
+    public void StartDelayedAction()
+    {
+        StartCoroutine(DelayedAction(3.0f)); // Espera 3 segundos antes de executar a ação
+    }
+
+    private IEnumerator DelayedAction(float delay)
+    {
+        yield return new WaitForSeconds(delay); // Espera pelo tempo especificado
+        
     }
 }
 

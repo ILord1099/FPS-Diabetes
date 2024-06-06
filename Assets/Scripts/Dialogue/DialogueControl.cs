@@ -145,7 +145,7 @@ public class DialogueControl : MonoBehaviour
         {
             Debug.Log("index 8 ");
             SceneManager.LoadScene("Quiz");
-            index = 9;
+           // index = 9;
 
         }
 
