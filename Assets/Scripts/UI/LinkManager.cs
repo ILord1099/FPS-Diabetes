@@ -6,6 +6,14 @@ public class LinkManager : MonoBehaviour
 {
     public GameObject textPrefab; // Prefab do texto
     public Transform content;     // O content do Scroll View
+    public LinkManager linkManager;
+
+    void Start()
+    {
+        linkManager.AddLink("Example", "https://dotween.demigiant.com/documentation.php#coroutines");
+        linkManager.AddLink("Unity", "https://chatgpt.com/c/73e0b907-5a12-433f-be4b-b41718d01d98");
+        // Adicione quantos links quiser
+    }
 
     public void AddLink(string linkText, string url)
     {
@@ -22,6 +30,6 @@ public class LinkManager : MonoBehaviour
 
     public void OpenLink(string url)
     {
-        Application.OpenURL("https://www.youtube.com/watch?v=JDDxo7lcckI&list=PLC_GuOiNYmDkHjGBQSsdwADALp4lgBhdC&index=4"); // Abre o link no navegador
+        Application.OpenURL(url); // Abre o link no navegador
     }
 }

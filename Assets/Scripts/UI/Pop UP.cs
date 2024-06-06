@@ -11,6 +11,7 @@ public class PopUpManager : MonoBehaviour
     public Button triggerButton; // Referência ao botão que aciona o pop-up
     public float duration = 0.5f; // Duração da animação
     public Image imageToControl;
+    public LinkManager linkManager;
 
     private Vector3 hiddenScale = new Vector3(0, 0, 0); // Escala inicial do pop-up (escondido)
     private Vector3 shownScale = new Vector3(12,8 , 0); // Escala final do pop-up (visível)
@@ -23,6 +24,12 @@ public class PopUpManager : MonoBehaviour
 
         // Inicialmente, esconder o pop-up
         popUpTransform.localScale = hiddenScale;
+
+ 
+            linkManager.AddLink("Example", "https://dotween.demigiant.com/documentation.php#coroutines");
+            linkManager.AddLink("Unity", "https://ge.globo.com/futebol/futebol-internacional/liga-dos-campeoes/noticia/2024/06/02/champions-league-202425-veja-classificados-para-primeira-edicao-com-36-clubes.ghtml");
+            // Adicione quantos links quiser
+
     }
 
     void ShowPopUp()
@@ -36,9 +43,8 @@ public class PopUpManager : MonoBehaviour
     public void HidePopUp()
     {
         // Anima o pop-up de volta para a escala escondida
-        popUpTransform.DOScale(hiddenScale, duration).SetEase(Ease.InBack);
-        StartDelayedAction();
-        EnableImage();
+        popUpTransform.DOScale(hiddenScale, duration).SetEase(Ease.InBack).OnComplete(StartDelayedAction);
+        
     }
 
     // Função para desativar a imagem
@@ -61,13 +67,13 @@ public class PopUpManager : MonoBehaviour
 
     public void StartDelayedAction()
     {
-        StartCoroutine(DelayedAction(3.0f)); // Espera 3 segundos antes de executar a ação
+        StartCoroutine(DelayedAction(0.5f)); // Espera 3 segundos antes de executar a ação
     }
 
     private IEnumerator DelayedAction(float delay)
     {
         yield return new WaitForSeconds(delay); // Espera pelo tempo especificado
-        
+        EnableImage();
     }
 }
 
