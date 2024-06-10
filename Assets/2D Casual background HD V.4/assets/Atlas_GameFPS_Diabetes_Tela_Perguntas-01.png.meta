@@ -1,0 +1,721 @@
+fileFormatVersion: 2
+guid: 78c7b4922d1b77a478c9cc1ee00e2d96
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Atlas_GameFPS_Diabetes_Tela_Perguntas-01_0
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 968
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cee039641c499a347ab7414744cdaa38
+      internalID: -175352222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GameFPS_Diabetes_Tela_Perguntas-01_1
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 373
+        width: 545
+        height: 559
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99d696830c815394aa4ed109390e0dbd
+      internalID: -1570075396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GameFPS_Diabetes_Tela_Perguntas-01_2
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 837
+        width: 294
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 372870d2f7a1b8b46af213d55f779bca
+      internalID: 1782698787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GameFPS_Diabetes_Tela_Perguntas-01_3
+      rect:
+        serializedVersion: 2
+        x: 1821
+        y: 755
+        width: 201
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a17a9ae3056ce4d479307c2634ce684b
+      internalID: -1995589142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GameFPS_Diabetes_Tela_Perguntas-01_4
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 459
+        width: 294
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50f6a3921e8e1dd48a5df0718a90da10
+      internalID: 1646681024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GameFPS_Diabetes_Tela_Perguntas-01_5
+      rect:
+        serializedVersion: 2
+        x: 1252
+        y: 582
+        width: 146
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 493166aea013a984f9f6ceee776c1ee0
+      internalID: 1982320226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GameFPS_Diabetes_Tela_Perguntas-01_6
+      rect:
+        serializedVersion: 2
+        x: 1423
+        y: 582
+        width: 166
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9c5950b6ef5b034ba7278970cc52401
+      internalID: -634992253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GameFPS_Diabetes_Tela_Perguntas-01_7
+      rect:
+        serializedVersion: 2
+        x: 1609
+        y: 578
+        width: 159
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 977cecf2035a306478d9dde17975466e
+      internalID: -603490295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GameFPS_Diabetes_Tela_Perguntas-01_8
+      rect:
+        serializedVersion: 2
+        x: 1824
+        y: 545
+        width: 198
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9c5a07256382b74f8869ea979ff2f83
+      internalID: -581128477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GameFPS_Diabetes_Tela_Perguntas-01_9
+      rect:
+        serializedVersion: 2
+        x: 1253
+        y: 487
+        width: 78
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f4a366bb6c54704a9047b93b2a0a330
+      internalID: -393387495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GameFPS_Diabetes_Tela_Perguntas-01_10
+      rect:
+        serializedVersion: 2
+        x: 1367
+        y: 487
+        width: 79
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5e17d5e92cf8974b8d308575937b968
+      internalID: -1963479695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GameFPS_Diabetes_Tela_Perguntas-01_11
+      rect:
+        serializedVersion: 2
+        x: 1485
+        y: 487
+        width: 89
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d73331caa82143a4ea764694065fe5d9
+      internalID: -932842843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GameFPS_Diabetes_Tela_Perguntas-01_12
+      rect:
+        serializedVersion: 2
+        x: 1618
+        y: 487
+        width: 49
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7af9b6a4ce763b49a5396d5e348e345
+      internalID: 359691349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GameFPS_Diabetes_Tela_Perguntas-01_13
+      rect:
+        serializedVersion: 2
+        x: 1707
+        y: 486
+        width: 60
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e687c76d1fcc7c48a8cf25250f49822
+      internalID: 262565308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GameFPS_Diabetes_Tela_Perguntas-01_14
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 414
+        width: 84
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17523b798f6764d43a04aa7a12ab9567
+      internalID: -817234533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GameFPS_Diabetes_Tela_Perguntas-01_15
+      rect:
+        serializedVersion: 2
+        x: 1943
+        y: 414
+        width: 86
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0db6461ea9c3774c895711aaa3c6a58
+      internalID: 2035076324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GameFPS_Diabetes_Tela_Perguntas-01_16
+      rect:
+        serializedVersion: 2
+        x: 1812
+        y: 380
+        width: 41
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68c567e341e9ae44ba953deee5de95c0
+      internalID: -1463308869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GameFPS_Diabetes_Tela_Perguntas-01_17
+      rect:
+        serializedVersion: 2
+        x: 1863
+        y: 380
+        width: 41
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f9ad4dd00a30e2428f7fe6ab4abb4e3
+      internalID: -1013989409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GameFPS_Diabetes_Tela_Perguntas-01_18
+      rect:
+        serializedVersion: 2
+        x: 1919
+        y: 342
+        width: 61
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a773094e6d8b62f48b45db8272ed37d7
+      internalID: -90645733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GameFPS_Diabetes_Tela_Perguntas-01_19
+      rect:
+        serializedVersion: 2
+        x: 1984
+        y: 342
+        width: 61
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38df9e6a5760ed145ba2fb15123afc4f
+      internalID: 787467954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GameFPS_Diabetes_Tela_Perguntas-01_20
+      rect:
+        serializedVersion: 2
+        x: 1812
+        y: 337
+        width: 41
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 427e51ace447b19438d0bc92f9c7b105
+      internalID: 1932396034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GameFPS_Diabetes_Tela_Perguntas-01_21
+      rect:
+        serializedVersion: 2
+        x: 1864
+        y: 337
+        width: 41
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b66aa854228faa4a931195b23fc5d76
+      internalID: -1226272914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GameFPS_Diabetes_Tela_Perguntas-01_22
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 1
+        width: 1231
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8edb0649ff97754eb18b6c5eba1263e
+      internalID: -545789395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GameFPS_Diabetes_Tela_Perguntas-01_23
+      rect:
+        serializedVersion: 2
+        x: 1779
+        y: 144
+        width: 94
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85f3f67f73c2dfe47b4fa9654cd8209d
+      internalID: -1364139936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GameFPS_Diabetes_Tela_Perguntas-01_24
+      rect:
+        serializedVersion: 2
+        x: 1903
+        y: 141
+        width: 125
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e645db18ccf2ef4469a9936e4abb344a
+      internalID: -250291312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GameFPS_Diabetes_Tela_Perguntas-01_25
+      rect:
+        serializedVersion: 2
+        x: 1690
+        y: 17
+        width: 127
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64e4bd7fd7124e64a837b4bdc26ca6bd
+      internalID: 901777941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GameFPS_Diabetes_Tela_Perguntas-01_26
+      rect:
+        serializedVersion: 2
+        x: 1903
+        y: 32
+        width: 125
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b66b68681e013bf408124bae87da6e07
+      internalID: 1952682438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Atlas_GameFPS_Diabetes_Tela_Perguntas-01_0: -175352222
+      Atlas_GameFPS_Diabetes_Tela_Perguntas-01_1: -1570075396
+      Atlas_GameFPS_Diabetes_Tela_Perguntas-01_10: -1963479695
+      Atlas_GameFPS_Diabetes_Tela_Perguntas-01_11: -932842843
+      Atlas_GameFPS_Diabetes_Tela_Perguntas-01_12: 359691349
+      Atlas_GameFPS_Diabetes_Tela_Perguntas-01_13: 262565308
+      Atlas_GameFPS_Diabetes_Tela_Perguntas-01_14: -817234533
+      Atlas_GameFPS_Diabetes_Tela_Perguntas-01_15: 2035076324
+      Atlas_GameFPS_Diabetes_Tela_Perguntas-01_16: -1463308869
+      Atlas_GameFPS_Diabetes_Tela_Perguntas-01_17: -1013989409
+      Atlas_GameFPS_Diabetes_Tela_Perguntas-01_18: -90645733
+      Atlas_GameFPS_Diabetes_Tela_Perguntas-01_19: 787467954
+      Atlas_GameFPS_Diabetes_Tela_Perguntas-01_2: 1782698787
+      Atlas_GameFPS_Diabetes_Tela_Perguntas-01_20: 1932396034
+      Atlas_GameFPS_Diabetes_Tela_Perguntas-01_21: -1226272914
+      Atlas_GameFPS_Diabetes_Tela_Perguntas-01_22: -545789395
+      Atlas_GameFPS_Diabetes_Tela_Perguntas-01_23: -1364139936
+      Atlas_GameFPS_Diabetes_Tela_Perguntas-01_24: -250291312
+      Atlas_GameFPS_Diabetes_Tela_Perguntas-01_25: 901777941
+      Atlas_GameFPS_Diabetes_Tela_Perguntas-01_26: 1952682438
+      Atlas_GameFPS_Diabetes_Tela_Perguntas-01_3: -1995589142
+      Atlas_GameFPS_Diabetes_Tela_Perguntas-01_4: 1646681024
+      Atlas_GameFPS_Diabetes_Tela_Perguntas-01_5: 1982320226
+      Atlas_GameFPS_Diabetes_Tela_Perguntas-01_6: -634992253
+      Atlas_GameFPS_Diabetes_Tela_Perguntas-01_7: -603490295
+      Atlas_GameFPS_Diabetes_Tela_Perguntas-01_8: -581128477
+      Atlas_GameFPS_Diabetes_Tela_Perguntas-01_9: -393387495
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

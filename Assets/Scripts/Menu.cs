@@ -15,6 +15,7 @@ public class Menu : MonoBehaviour
     private List<Vector3> originalScales = new List<Vector3>();
     // Start is called before the first frame update
     public CanvasGroup Fade;
+    public RectTransform PersonagemTransform;
     void Start()
     {
         
@@ -57,6 +58,7 @@ public class Menu : MonoBehaviour
             
         }
     }
+
 
 
 
