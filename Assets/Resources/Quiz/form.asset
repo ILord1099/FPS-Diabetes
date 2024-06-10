@@ -13,38 +13,43 @@ MonoBehaviour:
   m_Name: form
   m_EditorClassIdentifier: 
   questions:
-  - question: "Qual \xE9 o principal indicador cl\xEDnico da Diabetes tipo II?"
+  - question: "Ap\xF3s o conhecimento adquirido no v\xEDdeo anterior, o que melhor
+      caracteriza o diabetes mellitus tipo 2?\r"
     answers:
-    - text: "Hipertens\xE3o"
+    - text: "Produ\xE7\xE3o insuficiente de insulina pelo p\xE2ncreas"
       isCorrect: 0
-    - text: Leucopenia
-      isCorrect: 0
-    - text: Hipercolesterolemia
-      isCorrect: 0
-    - text: Hiperglicemia
+    - text: "Resist\xEAncia \xE0 insulina produzida\r\n"
       isCorrect: 1
-  - question: ' Quais classes de medicamentos podem ser utilizadas para controlar
-      o DM tipo II?'
-    answers:
-    - text: hipoglicemiantes orais
-      isCorrect: 1
-    - text: Antidepressivos
+    - text: "Aus\xEAncia de insulina\r\n"
       isCorrect: 0
-    - text: Vitaminas
-      isCorrect: 0
-    - text: "Anti-inflamat\xF3rios"
-      isCorrect: 0
-  - question: " Voc\xEA consegue identificar quais os principais exames que ir\xE3o
-      ajudar a diagnosticar um paciente com DM tipo II?\r\n"
-    answers:
-    - text: Glicemia em jejum, TOTG e Hemoglobina Glicada
-      isCorrect: 1
-    - text: 'Exame de Colesterol,Colonoscopia e Eletrocardiograma
+    - text: 'Excesso de insulina
 
 '
       isCorrect: 0
-    - text: "Dosagem de Vitamina D, Teste de Coagula\xE7\xE3o e Dosagem de TSH\r\n"
+  - question: 'Qual alternativa melhor justifica a etiologia do diabetes mellitus
+      tipo 2?
+
+'
+    answers:
+    - text: 'Autoimune
+
+'
       isCorrect: 0
-    - text: "Teste de Fun\xE7\xE3o Renal, Teste de Fun\xE7\xE3o Hep\xE1tica e  Hemograma
-        Completo\r\n"
+    - text: "Muta\xE7\xF5es gen\xE9ticas\r\n"
+      isCorrect: 0
+    - text: "Intera\xE7\xE3o de fatores g\xEAnicos e ambientais\r\n"
+      isCorrect: 1
+    - text: "Alimenta\xE7\xE3o rica em gordura poliinsaturada\r\n"
+      isCorrect: 0
+  - question: "Quais s\xE3o as complica\xE7\xF5es mais frequentes em decorr\xEAncia
+      do DM II?\r\n"
+    answers:
+    - text: "Doen\xE7as infecciosas\r\n"
+      isCorrect: 0
+    - text: "Hipertens\xE3o Arterial Sit\xEAmica"
+      isCorrect: 0
+    - text: "Complica\xE7\xF5es AVC (Aciente Vascular cerebral), Infarto agudo do
+        mioc\xE1rdio, arteriopatia perif\xE9rica.\r\n"
+      isCorrect: 1
+    - text: "Doen\xE7as autoimones e neurodegenerativas\r\n"
       isCorrect: 0
