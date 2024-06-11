@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Menu : MonoBehaviour
 {
@@ -14,17 +15,18 @@ public class Menu : MonoBehaviour
     public string nomeCena;
     private List<Vector3> originalScales = new List<Vector3>();
     // Start is called before the first frame update
-    public CanvasGroup Fade;
-    public RectTransform PersonagemTransform;
+    public CanvasGroup Avatar;
+    
     void Start()
     {
-        
 
+        AvatarFade();
         foreach (var item in itens)
         {
             originalScales.Add(item.transform.localScale);
         }
         PanelFadeaain();
+        
     }
     public void scene_changer(string scene_name)
 
@@ -58,8 +60,12 @@ public class Menu : MonoBehaviour
             
         }
     }
-        
 
+    public void AvatarFade()
+    {
+        Avatar.alpha = 0f;
+        Avatar.DOFade(1, 3f);
+    }
 
 
 }
