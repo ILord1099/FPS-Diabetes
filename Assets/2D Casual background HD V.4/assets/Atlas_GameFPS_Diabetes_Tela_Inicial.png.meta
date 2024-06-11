@@ -1,0 +1,919 @@
+fileFormatVersion: 2
+guid: 06b5af44215958646b28d78977d05d29
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Atlas_GameFPS_Diabetes_Tela_Inicial_0
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 963
+        width: 1920
+        height: 1084
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d7f321b80ed01d4181a35ce1d5ea30d
+      internalID: 1748671579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GameFPS_Diabetes_Tela_Inicial_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 372
+        width: 545
+        height: 559
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fbdbc3a41e8b64408f4409089d3d62f
+      internalID: -815547339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GameFPS_Diabetes_Tela_Inicial_2
+      rect:
+        serializedVersion: 2
+        x: 1121
+        y: 899
+        width: 50
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 045e76be202dcbf448ef1c0bf04eea49
+      internalID: 1030729289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GameFPS_Diabetes_Tela_Inicial_3
+      rect:
+        serializedVersion: 2
+        x: 1803
+        y: 754
+        width: 201
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 173ed09f551c3e64588c7ec1502a220c
+      internalID: -787713044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GameFPS_Diabetes_Tela_Inicial_4
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 847
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fb067061c51abe4facfbd805319598a
+      internalID: -485678774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GameFPS_Diabetes_Tela_Inicial_5
+      rect:
+        serializedVersion: 2
+        x: 1297
+        y: 861
+        width: 39
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a79d360498ff064f859e564658920f1
+      internalID: 1689192908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GameFPS_Diabetes_Tela_Inicial_6
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 827
+        width: 39
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e46ae639108d3e49aef5ff86ab50ae1
+      internalID: 98216834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GameFPS_Diabetes_Tela_Inicial_7
+      rect:
+        serializedVersion: 2
+        x: 1361
+        y: 835
+        width: 56
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6772550603882744a9a590acbe3f3f13
+      internalID: -40493033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GameFPS_Diabetes_Tela_Inicial_8
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 512
+        width: 977
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1405c3aff06088a4394932cc30b4c0f7
+      internalID: -1290919882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GameFPS_Diabetes_Tela_Inicial_9
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 738
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 888ebc8709789264aa17e32e42fbb65e
+      internalID: 1757237550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GameFPS_Diabetes_Tela_Inicial_10
+      rect:
+        serializedVersion: 2
+        x: 1736
+        y: 733
+        width: 41
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3139e4f07214dbc4ba4c12f8c460a29d
+      internalID: 1534169267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GameFPS_Diabetes_Tela_Inicial_11
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 705
+        width: 29
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62c680d5f67d3e84988ad22efde0e301
+      internalID: 631524203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GameFPS_Diabetes_Tela_Inicial_12
+      rect:
+        serializedVersion: 2
+        x: 1806
+        y: 544
+        width: 198
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f43bd307dd10714ebde038024e433c3
+      internalID: -1325197530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GameFPS_Diabetes_Tela_Inicial_13
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 672
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc15f4fd66d831d4fb65207d7461e85b
+      internalID: 212495333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GameFPS_Diabetes_Tela_Inicial_14
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 648
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 103fd443089796144aab24f466421d6e
+      internalID: 39304655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GameFPS_Diabetes_Tela_Inicial_15
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 621
+        width: 96
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 649d853580d0f6f47add57ac26e00f69
+      internalID: -1098367305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GameFPS_Diabetes_Tela_Inicial_16
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 614
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b7e3e529e9a00444b016072558ce486
+      internalID: 906593926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GameFPS_Diabetes_Tela_Inicial_17
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 583
+        width: 34
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6631d4d37127819488feac3526a330b9
+      internalID: 2108555755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GameFPS_Diabetes_Tela_Inicial_18
+      rect:
+        serializedVersion: 2
+        x: 1802
+        y: 413
+        width: 84
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce97bedce22553e438d8e0af7cd071e7
+      internalID: 1670425170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GameFPS_Diabetes_Tela_Inicial_19
+      rect:
+        serializedVersion: 2
+        x: 1925
+        y: 413
+        width: 86
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f85ade2d54eec9945b9eccfde725ab92
+      internalID: 790310593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GameFPS_Diabetes_Tela_Inicial_20
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 391
+        width: 107
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba95dde6a9e03d5408224e17d49ed69d
+      internalID: 82826416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GameFPS_Diabetes_Tela_Inicial_21
+      rect:
+        serializedVersion: 2
+        x: 1794
+        y: 379
+        width: 41
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8b4d8535a97f3246a79021f46ff3ef0
+      internalID: -708995700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GameFPS_Diabetes_Tela_Inicial_22
+      rect:
+        serializedVersion: 2
+        x: 1845
+        y: 379
+        width: 41
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8827b4ac7b259bb4f97878cac62f7ce4
+      internalID: 1926266928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GameFPS_Diabetes_Tela_Inicial_23
+      rect:
+        serializedVersion: 2
+        x: 1901
+        y: 341
+        width: 61
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aff4e9591788c464f81f50b140bfef55
+      internalID: -1330084916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GameFPS_Diabetes_Tela_Inicial_24
+      rect:
+        serializedVersion: 2
+        x: 1966
+        y: 341
+        width: 61
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4f2dd60e7b2c29438d6698670a95f48
+      internalID: -1241494558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GameFPS_Diabetes_Tela_Inicial_25
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 255
+        width: 111
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 943ad2597b569db469ecbe69260468ab
+      internalID: 1194929918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GameFPS_Diabetes_Tela_Inicial_26
+      rect:
+        serializedVersion: 2
+        x: 1102
+        y: 285
+        width: 54
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fff3de15f4f4fd34b9dd199d73910759
+      internalID: 53091356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GameFPS_Diabetes_Tela_Inicial_27
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 285
+        width: 61
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa2b8bfb8f006674a82c30ea90f7e2fd
+      internalID: -2134594984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GameFPS_Diabetes_Tela_Inicial_28
+      rect:
+        serializedVersion: 2
+        x: 1101
+        y: 284
+        width: 189
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30301800b7161454bb07a03d78dcf195
+      internalID: 213444780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GameFPS_Diabetes_Tela_Inicial_29
+      rect:
+        serializedVersion: 2
+        x: 1794
+        y: 336
+        width: 41
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dc22fed6614262418a4e3ed65b329ce
+      internalID: -1982164972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GameFPS_Diabetes_Tela_Inicial_30
+      rect:
+        serializedVersion: 2
+        x: 1846
+        y: 336
+        width: 41
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 173fc4b4868ece2438db1d5314b27e6b
+      internalID: -1523779477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GameFPS_Diabetes_Tela_Inicial_31
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 0
+        width: 1231
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19e6bcde7f6de3f4d85368d14b0d76da
+      internalID: 1375896535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GameFPS_Diabetes_Tela_Inicial_32
+      rect:
+        serializedVersion: 2
+        x: 1761
+        y: 143
+        width: 94
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 493aa3b3e3a77954e8b6205af5594024
+      internalID: -82705773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GameFPS_Diabetes_Tela_Inicial_33
+      rect:
+        serializedVersion: 2
+        x: 1885
+        y: 140
+        width: 125
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 434ef2072aa208943915be668a247607
+      internalID: 1428680209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GameFPS_Diabetes_Tela_Inicial_34
+      rect:
+        serializedVersion: 2
+        x: 1672
+        y: 16
+        width: 127
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fbfe589973bf2a4f9a4964d724ad672
+      internalID: -2007514929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GameFPS_Diabetes_Tela_Inicial_35
+      rect:
+        serializedVersion: 2
+        x: 1885
+        y: 31
+        width: 125
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a0d21cd3ac49f644864575d4b95a76d
+      internalID: 603357668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Atlas_GameFPS_Diabetes_Tela_Inicial_0: 1748671579
+      Atlas_GameFPS_Diabetes_Tela_Inicial_1: -815547339
+      Atlas_GameFPS_Diabetes_Tela_Inicial_10: 1534169267
+      Atlas_GameFPS_Diabetes_Tela_Inicial_11: 631524203
+      Atlas_GameFPS_Diabetes_Tela_Inicial_12: -1325197530
+      Atlas_GameFPS_Diabetes_Tela_Inicial_13: 212495333
+      Atlas_GameFPS_Diabetes_Tela_Inicial_14: 39304655
+      Atlas_GameFPS_Diabetes_Tela_Inicial_15: -1098367305
+      Atlas_GameFPS_Diabetes_Tela_Inicial_16: 906593926
+      Atlas_GameFPS_Diabetes_Tela_Inicial_17: 2108555755
+      Atlas_GameFPS_Diabetes_Tela_Inicial_18: 1670425170
+      Atlas_GameFPS_Diabetes_Tela_Inicial_19: 790310593
+      Atlas_GameFPS_Diabetes_Tela_Inicial_2: 1030729289
+      Atlas_GameFPS_Diabetes_Tela_Inicial_20: 82826416
+      Atlas_GameFPS_Diabetes_Tela_Inicial_21: -708995700
+      Atlas_GameFPS_Diabetes_Tela_Inicial_22: 1926266928
+      Atlas_GameFPS_Diabetes_Tela_Inicial_23: -1330084916
+      Atlas_GameFPS_Diabetes_Tela_Inicial_24: -1241494558
+      Atlas_GameFPS_Diabetes_Tela_Inicial_25: 1194929918
+      Atlas_GameFPS_Diabetes_Tela_Inicial_26: 53091356
+      Atlas_GameFPS_Diabetes_Tela_Inicial_27: -2134594984
+      Atlas_GameFPS_Diabetes_Tela_Inicial_28: 213444780
+      Atlas_GameFPS_Diabetes_Tela_Inicial_29: -1982164972
+      Atlas_GameFPS_Diabetes_Tela_Inicial_3: -787713044
+      Atlas_GameFPS_Diabetes_Tela_Inicial_30: -1523779477
+      Atlas_GameFPS_Diabetes_Tela_Inicial_31: 1375896535
+      Atlas_GameFPS_Diabetes_Tela_Inicial_32: -82705773
+      Atlas_GameFPS_Diabetes_Tela_Inicial_33: 1428680209
+      Atlas_GameFPS_Diabetes_Tela_Inicial_34: -2007514929
+      Atlas_GameFPS_Diabetes_Tela_Inicial_35: 603357668
+      Atlas_GameFPS_Diabetes_Tela_Inicial_4: -485678774
+      Atlas_GameFPS_Diabetes_Tela_Inicial_5: 1689192908
+      Atlas_GameFPS_Diabetes_Tela_Inicial_6: 98216834
+      Atlas_GameFPS_Diabetes_Tela_Inicial_7: -40493033
+      Atlas_GameFPS_Diabetes_Tela_Inicial_8: -1290919882
+      Atlas_GameFPS_Diabetes_Tela_Inicial_9: 1757237550
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
