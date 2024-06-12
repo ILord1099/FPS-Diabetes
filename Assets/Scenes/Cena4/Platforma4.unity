@@ -881,7 +881,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -30
   m_Sprite: {fileID: 1158397578, guid: ccad3a1b00ccad047b8eef338255a3ad, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.56078434, g: 0.6117647, b: 0.74509805, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1412,13 +1412,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7763204047284141120, guid: 4bb92a84968fc914480ab37ebfa3a5ac,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.9887
+      objectReference: {fileID: 0}
+    - target: {fileID: 7763204047284141120, guid: 4bb92a84968fc914480ab37ebfa3a5ac,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.0394
+      objectReference: {fileID: 0}
+    - target: {fileID: 7763204047284141120, guid: 4bb92a84968fc914480ab37ebfa3a5ac,
+        type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.7099991
+      value: 0.7196
       objectReference: {fileID: 0}
     - target: {fileID: 7763204047284141120, guid: 4bb92a84968fc914480ab37ebfa3a5ac,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.68
+      value: -2.6587
       objectReference: {fileID: 0}
     - target: {fileID: 7763204047284141120, guid: 4bb92a84968fc914480ab37ebfa3a5ac,
         type: 3}
@@ -1577,7 +1587,7 @@ MonoBehaviour:
   m_LookAt: {fileID: 0}
   m_Follow: {fileID: 779627984}
   m_Lens:
-    FieldOfView: 46.918396
+    FieldOfView: 47.50916
     OrthographicSize: 8.777392
     NearClipPlane: 0.4
     FarClipPlane: 1000
@@ -2133,7 +2143,7 @@ Camera:
     height: 1
   near clip plane: 0.4
   far clip plane: 1000
-  field of view: 46.918396
+  field of view: 47.50916
   orthographic: 0
   orthographic size: 8.777392
   m_Depth: -1
@@ -6762,13 +6772,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7763204047284141120, guid: 4bb92a84968fc914480ab37ebfa3a5ac,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.9887
+      objectReference: {fileID: 0}
+    - target: {fileID: 7763204047284141120, guid: 4bb92a84968fc914480ab37ebfa3a5ac,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.0394
+      objectReference: {fileID: 0}
+    - target: {fileID: 7763204047284141120, guid: 4bb92a84968fc914480ab37ebfa3a5ac,
+        type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.71
+      value: 0.7196
       objectReference: {fileID: 0}
     - target: {fileID: 7763204047284141120, guid: 4bb92a84968fc914480ab37ebfa3a5ac,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.14
+      value: -4.1762
       objectReference: {fileID: 0}
     - target: {fileID: 7763204047284141120, guid: 4bb92a84968fc914480ab37ebfa3a5ac,
         type: 3}

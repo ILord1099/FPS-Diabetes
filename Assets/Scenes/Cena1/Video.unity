@@ -224,8 +224,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.1581, y: 2.07134}
-  m_SizeDelta: {x: 86.806, y: 86.73318}
+  m_AnchoredPosition: {x: -0.000024676, y: -0.00009346}
+  m_SizeDelta: {x: 91.573, y: 86.617}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!328 &420095563
 VideoPlayer:
@@ -373,8 +373,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5, y: -3.544}
-  m_SizeDelta: {x: 91.0007, y: 95.5738}
+  m_AnchoredPosition: {x: -10.1251, y: 3.253}
+  m_SizeDelta: {x: 98.4405, y: 93.1128}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1109913326
 MonoBehaviour:
