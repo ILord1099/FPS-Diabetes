@@ -58,3 +58,17 @@ MonoBehaviour:
         os custos com essa patologia n\xE3o afeta diretamente a economia do sistema
         de sa\xFAde mundial.\r\n"
       isCorrect: 0
+  - question: "Quais os cuidados de sa\xFAde que o paciente com DM II deve ter na
+      sua rotina di\xE1ria para controle da patologia?\r\n"
+    answers:
+    - text: "Realizar exames laboratoriais mensalmente para acompanhamento de suas
+        taxas bioqu\xEDmicas.\r\n"
+      isCorrect: 0
+    - text: "Controle diet\xE9tico e utiliza\xE7\xE3o de hipoglicemiantes orais.\r\n"
+      isCorrect: 0
+    - text: "Praticar atividade f\xEDsica, alimenta\xE7\xE3o saud\xE1vel reduzida
+        em carboidratos simples, controle glic\xEAmico regularmente.\r\n"
+      isCorrect: 1
+    - text: "Associar o uso de hipoglicemiantes orais com insulina e controle glic\xEAmico
+        regularmente.\r\n"
+      isCorrect: 0

@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26746d77eb744d73b578365aff4a098f, type: 3}
+  m_Name: formQuiz3
+  m_EditorClassIdentifier: 
+  questions:
+  - question: "Qual \xE9 o principal fator de risco modific\xE1vel para o desenvolvimento
+      do diabetes mellitus tipo 2?"
+    answers:
+    - text: "Idade avan\xE7ada\r\n"
+      isCorrect: 0
+    - text: "Heran\xE7a gen\xE9tica\r\n"
+      isCorrect: 0
+    - text: "Hist\xF3rico familiar\r\n"
+      isCorrect: 0
+    - text: Sedentarismo
+      isCorrect: 1
+  - question: "Qual a melhor estrat\xE9gia nutricional para um paciente com diabetes
+      tipo 2?\r\n"
+    answers:
+    - text: "Restri\xE7\xE3o severa de carboidratos"
+      isCorrect: 0
+    - text: Dieta rica em alimentos processados
+      isCorrect: 0
+    - text: "Restri\xE7\xE3o de fibras e de gordura poliinsaturada\r\n"
+      isCorrect: 0
+    - text: "Priorizar vegetais, gr\xE3os integrais e prote\xEDnas magras\r\n"
+      isCorrect: 1
+  - question: "Por que a obesidade \xE9 considerada como um dos principais fatores
+      de risco para DM II?\r\n"
+    answers:
+    - text: "A obesidade dificulta que a  digest\xE3o e metabolismo dos carboidratos
+        aconte\xE7a de forma adequada.\r\n"
+      isCorrect: 0
+    - text: "O tecido adiposo em excesso no corpo humano, leva a quadro de defici\xEAncia
+        das enzimas digestivas envolvidas no metabolismo dos carboidratos.\r\n"
+      isCorrect: 0
+    - text: "O excesso de tecido adiposo na regi\xE3o abdominal leva a um quadro
+        de resist\xEAncia \xE0 insulina.\r\n"
+      isCorrect: 1
+    - text: "A obesidade impede que o paciente pratique atividade f\xEDsica e com
+        isso seu metabolismo fica alterado impossibilitando de metabolizar os carboidratos
+        ingeridos na dieta.\r\n"
+      isCorrect: 0
+  - question: "Escolha qual das op\xE7\xF5es abaixo de alimentos que s\xE3o ben\xE9ficos
+      para um paciente diab\xE9tico:\r\n"
+    answers:
+    - text: "Batata doce, macaxeira, p\xE3o integral, frango, banana "
+      isCorrect: 1
+    - text: "Cuscuz, presunto, tapioca, ma\xE7\xE3, batata doce"
+      isCorrect: 0
+    - text: "Sorvete de fruta, uvas, p\xE3o integral,  feij\xE3o, biscoitos integrais\r\n"
+      isCorrect: 1
+    - text: "Arroz integral, feij\xE3o, carne magra, mam\xE3o, p\xE3o branco\r\n"
+      isCorrect: 0

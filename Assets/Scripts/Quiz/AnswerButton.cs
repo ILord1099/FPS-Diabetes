@@ -8,6 +8,7 @@ using Unity.VisualScripting;
 using System.Text;
 using JetBrains.Annotations;
 using System.Collections;
+using TMPro;
 
 
 
@@ -27,7 +28,7 @@ namespace Quiz
 
         private Image _image;
 
-        private Text _text;
+        public TextMeshProUGUI _text;
 
         private bool _isSelected;
 
@@ -59,7 +60,7 @@ namespace Quiz
             IsCorrect = false;
             _isSelected = false;
             _image = GetComponent<Image>();
-            _text = GetComponentInChildren<Text>();
+            _text = GetComponentInChildren<TextMeshProUGUI>();
         }
 
         public void OnPointerClick(PointerEventData eventData)
