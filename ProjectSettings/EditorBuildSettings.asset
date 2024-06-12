@@ -42,7 +42,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Cena4/Video4.unity
     guid: 37393cfe0ac064248ab5e09a5851ea01
   - enabled: 1
-    path: Assets/Scenes/Cena4/Platforma4.unity
+    path: Assets/Scenes/Cena4/Platform.unity
     guid: ff51554307f153b48af6f5badc124f3c
   - enabled: 1
     path: Assets/Scenes/Cena4/Dialogue4.unity
