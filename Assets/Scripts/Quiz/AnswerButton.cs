@@ -1,142 +1,67 @@
 using System;
-using UnityEngine;
-using UnityEngine.EventSystems;
-using UnityEngine.UI;
-using static UnityEngine.RuleTile.TilingRuleOutput;
-using DG.Tweening;
-using Unity.VisualScripting;
-using System.Text;
-using JetBrains.Annotations;
-using System.Collections;
 using TMPro;
-
-
-
+using UnityEngine;
+using UnityEngine.UI;
 
 namespace Quiz
 {
-    public class AnswerButton : MonoBehaviour, IPointerClickHandler
+    [RequireComponent(typeof(Button))]
+    
+    public class AnswerButton : MonoBehaviour
     {
-        [SerializeField] private Color normalColor;
-        [SerializeField] private Color selectedColor;
-        [SerializeField] private Color correctColor;
-        [SerializeField] private Color wrongColor;
+        private Button _button;
 
-        public bool IsCorrect { get; set; }
+        private Color _defaultColor;
 
-        public event Action<AnswerButton> OnAnswerSelected;
+        private TMP_Text _text;
 
-        private Image _image;
-
-        public TextMeshProUGUI _text;
-
-        private bool _isSelected;
-
-        private bool _isInteractable;
-
-        private Vector3 _scaleTo;
-        private Vector3 _originalScale;
-        private sound soundButtons;
-
-        public UnityEngine.Transform popUpTransform; // Referência ao Transform do pop-up
-        public float duration = 0.5f; // Duração da animação
-        private Vector3 hiddenScale = new Vector3(0, 0, 0); // Escala inicial do pop-up (escondido)
-        private Vector3 shownScale = new Vector3(12, 8, 0); // Escala final do pop-up (visível)
-
-
-
-
-        void Start()
+        public string Text
         {
-            _originalScale = transform.localScale;
-            _scaleTo = _originalScale * 1.3f;
-            popUpTransform.localScale = hiddenScale;
-            soundButtons = GetComponent<sound>();
-
+            get => _text.text;
+            set => _text.SetText(value);
         }
 
-        private void Awake()
+        public event Action<AnswerButton> OnSelected;
+
+        public bool Interactable
         {
-            IsCorrect = false;
-            _isSelected = false;
-            _image = GetComponent<Image>();
-            _text = GetComponentInChildren<TextMeshProUGUI>();
+            get => _button.interactable;
+            set => _button.interactable = value;
         }
 
-        public void OnPointerClick(PointerEventData eventData)
+        private void OnEnable()
         {
-            if (!_isInteractable) return;
-            if (_isSelected) return;
-            Select();
+            if (_button == null)
+                _button = GetComponent<Button>();
 
+            if (_text == null)
+                _text = GetComponentInChildren<TMP_Text>();
 
+            _defaultColor = _button.colors.normalColor;
+            _button.onClick.AddListener(OnButtonClicked);
         }
+
+        private void OnDisable()
+        {
+            _button.onClick.RemoveListener(OnButtonClicked);
+        }
+
+        private void OnButtonClicked() => OnSelected?.Invoke(this);
 
         public void Select()
         {
-            _isSelected = true;
-            _image.color = selectedColor;
-            OnAnswerSelected?.Invoke(this);
-            soundButtons.PlaySFX(soundButtons.selectSound);
+            var buttonColors = _button.colors;
+            buttonColors.normalColor = buttonColors.selectedColor;
+            _button.targetGraphic.color = buttonColors.selectedColor;
         }
 
         public void Deselect()
         {
-            _isSelected = false;
-            _image.color = normalColor;
+            var buttonColors = _button.colors;
+            buttonColors.normalColor = _defaultColor;
+            _button.targetGraphic.color = _button.colors.normalColor;
         }
 
-        public void SetInteractable(bool value) => _isInteractable = value;
-
-        public void UpdateAnswerColor()
-        {
-            if (IsCorrect)
-            {
-                ShowPopUp();
-                _image.color = correctColor;
-                correctSoundplay();
-                transform.DOScale(_scaleTo, 0.1f)
-                .SetEase(Ease.InOutSine)
-                .OnComplete(() =>
-                {
-                    transform.DOScale(_originalScale, 0.3f)
-                        .SetEase(Ease.OutBounce)
-                        .SetDelay(0.1f);
-
-                }); 
-                                            
-
-            }
-            if (IsCorrect==false)
-            {
-                incorrectSoundplay();
-                _image.color = wrongColor;
-                transform.DOShakePosition(1f, 17f, 20, 100f);
-
-            }
-
-        }
-        public void correctSoundplay()
-        {
-            soundButtons.PlaySFX(soundButtons.correctSound);
-        }
-        public void incorrectSoundplay()
-        {
-            soundButtons.PlaySFX(soundButtons.incorrectSound);
-        }
-        public void SetText(string text) => _text.text = text;
-
-        void ShowPopUp()
-        {
-            // Anima o pop-up para a escala visível
-            popUpTransform.DOScale(shownScale, duration).SetEase(Ease.OutBack);
-         
-        }
-        public void HidePopUp()
-        {
-            // Anima o pop-up de volta para a escala escondida
-            popUpTransform.DOScale(hiddenScale, duration).SetEase(Ease.InBack);
-
-        }
+        public void UpdateColor(Color color) => _button.targetGraphic.color = color;
     }
 }
