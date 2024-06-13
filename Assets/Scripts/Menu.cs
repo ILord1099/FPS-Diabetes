@@ -20,7 +20,7 @@ public class Menu : MonoBehaviour
     void Start()
     {
 
-        AvatarFade();
+        
         foreach (var item in itens)
         {
             originalScales.Add(item.transform.localScale);
@@ -61,11 +61,9 @@ public class Menu : MonoBehaviour
         }
     }
 
-    public void AvatarFade()
-    {
-        Avatar.alpha = 0f;
-        Avatar.DOFade(1, 3f);
-    }
 
+
+
+   
 
 }
