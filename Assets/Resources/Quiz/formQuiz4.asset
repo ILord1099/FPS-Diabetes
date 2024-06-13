@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26746d77eb744d73b578365aff4a098f, type: 3}
+  m_Name: formQuiz4
+  m_EditorClassIdentifier: 
+  questions:
+  - question: "Como o paciente com DM2 se apresenta ao diagn\xF3stico?\r\n"
+    answers:
+    - text: 'Com polifagia e perda de peso
+
+'
+      isCorrect: 0
+    - text: "Apresentando vis\xE3o emba\xE7ada e tonturas\r\n"
+      isCorrect: 0
+    - text: "Com poli\xFAria e polidipsia"
+      isCorrect: 0
+    - text: "Geralmente assintom\xE1tico\r\n"
+      isCorrect: 1
+  - question: "Qual dos seguintes conjuntos de sintomas \xE9 comumente associado
+      aos \"4 Ps\" do diabetes mellitus?\r\n"
+    answers:
+    - text: "Fadiga, pele seca, perda de peso e vis\xE3o emba\xE7ada.\r\n"
+      isCorrect: 0
+    - text: "Sede excessiva, mic\xE7\xE3o frequente, aumento da fome e perda de peso
+        inexplicada.\r\n"
+      isCorrect: 1
+    - text: 'Dor abdominal, tonturas, suores noturnos e desmaios.
+
+'
+      isCorrect: 0
+    - text: "Falta de ar, dor no peito, palpita\xE7\xF5es e aumento da press\xE3o
+        arterial\r\n"
+      isCorrect: 0
+  - question: "Quais s\xE3o as complica\xE7\xF5es microvasculares do diabetes tipo
+      II?\r"
+    answers:
+    - text: "Retinopatia, neuropatia e doen\xE7a renal do diabetes\r\n"
+      isCorrect: 1
+    - text: "Infarto agudo do mioc\xE1rdio e acidente vascular cerebral\r\n"
+      isCorrect: 0
+    - text: "Vulvovaginite de repeti\xE7\xE3o e disfun\xE7\xE3o er\xE9til\r\n"
+      isCorrect: 0
+    - text: "Doen\xE7as cardiovasculares\r\n"
+      isCorrect: 0
+  - question: "A manifesta\xE7\xE3o mais precoce de doen\xE7a renal cr\xF4nica em
+      pacientes portadores de diabetes \xE9 a presen\xE7a de:\r\n"
+    answers:
+    - text: Azotemia
+      isCorrect: 0
+    - text: "Protein\xFAria nefr\xF3tica "
+      isCorrect: 1
+    - text: "Lipid\xFAria\r\n"
+      isCorrect: 0
+    - text: "Poli\xFAria\r\n"
+      isCorrect: 0

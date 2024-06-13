@@ -1148,6 +1148,7 @@ MonoBehaviour:
   selectedColor: {r: 0, g: 0, b: 0, a: 0}
   correctColor: {r: 0, g: 0, b: 0, a: 0}
   wrongColor: {r: 0, g: 0, b: 0, a: 0}
+  _text: {fileID: 0}
   popUpTransform: {fileID: 1870069711}
   duration: 0.5
 --- !u!1 &743401935
@@ -1619,7 +1620,7 @@ RectTransform:
   m_GameObject: {fileID: 1042627104}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.063125, y: 1.46625, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 348066923}
@@ -1699,6 +1700,7 @@ MonoBehaviour:
   selectedColor: {r: 0, g: 1, b: 0.94308615, a: 1}
   correctColor: {r: 0.3254902, g: 0.8509804, b: 0.3372549, a: 1}
   wrongColor: {r: 1, g: 0.42745098, b: 0.42745098, a: 1}
+  _text: {fileID: 0}
   popUpTransform: {fileID: 1870069711}
   duration: 0.5
 --- !u!114 &1042627110
@@ -1740,7 +1742,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 459.49487
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -1921,7 +1923,7 @@ RectTransform:
   m_GameObject: {fileID: 1113410371}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.063125, y: 1.46625, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 868461861}
@@ -2001,6 +2003,7 @@ MonoBehaviour:
   selectedColor: {r: 0, g: 1, b: 0.94308615, a: 1}
   correctColor: {r: 0.3254902, g: 0.8509804, b: 0.3372549, a: 1}
   wrongColor: {r: 1, g: 0.427451, b: 0.427451, a: 1}
+  _text: {fileID: 0}
   popUpTransform: {fileID: 1870069711}
   duration: 0.5
 --- !u!114 &1113410378
@@ -2148,7 +2151,7 @@ RectTransform:
   m_GameObject: {fileID: 1258943074}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.063125, y: 1.46625, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 914109836}
@@ -2228,6 +2231,7 @@ MonoBehaviour:
   selectedColor: {r: 0, g: 1, b: 0.94308615, a: 1}
   correctColor: {r: 0.3254902, g: 0.8509804, b: 0.3372549, a: 1}
   wrongColor: {r: 1, g: 0.42745098, b: 0.42745098, a: 1}
+  _text: {fileID: 0}
   popUpTransform: {fileID: 1870069711}
   duration: 0.5
 --- !u!114 &1258943080
@@ -2450,7 +2454,7 @@ RectTransform:
   m_GameObject: {fileID: 1372643940}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.063125, y: 1.46625, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1378182001}
@@ -2530,6 +2534,7 @@ MonoBehaviour:
   selectedColor: {r: 0, g: 1, b: 0.94308615, a: 1}
   correctColor: {r: 0.3244037, g: 0.8490566, b: 0.33674854, a: 1}
   wrongColor: {r: 1, g: 0.42745098, b: 0.42745098, a: 1}
+  _text: {fileID: 0}
   popUpTransform: {fileID: 1870069711}
   duration: 0.5
 --- !u!114 &1372643948

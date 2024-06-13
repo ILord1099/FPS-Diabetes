@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26746d77eb744d73b578365aff4a098f, type: 3}
+  m_Name: formQuiz5
+  m_EditorClassIdentifier: 
+  questions:
+  - question: "Qual \xE9 o principal par\xE2metro preditor de complica\xE7\xF5es
+      cr\xF4nicas relacionadas ao diabetes mellitus tipo 2, de acordo com o texto
+      fornecido?\r"
+    answers:
+    - text: 'Glicemia em jejum
+
+'
+      isCorrect: 0
+    - text: "Teste de toler\xE2ncia oral \xE0 glicose (TOTG)\r\n"
+      isCorrect: 0
+    - text: 'Hemoglobina glicada
+
+'
+      isCorrect: 1
+    - text: 'Colesterol total
+
+'
+      isCorrect: 0
+  - question: "Sobre o diagn\xF3stico dos casos de Diabetes mellitus tipo 2:\r\n"
+    answers:
+    - text: "Pode ser feito por meio da dosagem aleat\xF3ria de glicose sangu\xEDnea
+        \"maior ou igual\" 200 mg/dl, associada a sintomas de diabetes;\r"
+      isCorrect: 1
+    - text: "\xC9 considerado se a glicose plasm\xE1tica for > 126 mg/dl;\r\n"
+      isCorrect: 0
+    - text: "\xC9 considerado se a glicose plasm\xE1tica ap\xF3s 2h for \"menor ou
+        igual a\" 200 mg/dl, durante teste oral de toler\xE2ncia com a glicose de
+        75 g;\r\n"
+      isCorrect: 0
+    - text: "\xC9 considerado na presen\xE7a de hemoglobina glicosilada> que 5,7%.\r\n"
+      isCorrect: 0
+  - question: 'Qual a periodicidade recomendada para rastreio da diabetes tipo II?
+
+'
+    answers:
+    - text: 
+      isCorrect: 0
+    - text: 
+      isCorrect: 0
+    - text: 
+      isCorrect: 0
+    - text: 
+      isCorrect: 0
+  - question: "Quais s\xE3o os grupos populacionais recomendados para realizar o
+      rastreamento para diabetes mellitus tipo 2, de acordo com as diretrizes mencionadas
+      no texto"
+    answers:
+    - text: "Indiv\xEDduos com < 45 anos"
+      isCorrect: 0
+    - text: "Indiv\xEDduos com sobrepeso/obesidade, associados a algum fator de risco
+        para DM2, independentemente da idade\r\n"
+      isCorrect: 1
+    - text: "Indiv\xEDduos que n\xE3o praticam atividade f\xEDsica regular"
+      isCorrect: 0
+    - text: "Indiv\xEDduos que consomem dietas pobres em fibras e prote\xEDnas\r\n"
+      isCorrect: 0
