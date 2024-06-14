@@ -59,6 +59,6 @@ MonoBehaviour:
     - text: "Cuscuz, presunto, tapioca, ma\xE7\xE3, batata doce"
       isCorrect: 0
     - text: "Sorvete de fruta, uvas, p\xE3o integral,  feij\xE3o, biscoitos integrais\r\n"
-      isCorrect: 1
+      isCorrect: 0
     - text: "Arroz integral, feij\xE3o, carne magra, mam\xE3o, p\xE3o branco\r\n"
       isCorrect: 0

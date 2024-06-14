@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f226a1a2b92ceba429ea7db1772ff1c4, type: 3}
+  m_Name: Dialogue4
+  m_EditorClassIdentifier: 
+  actor: {fileID: 7051398536344712320, guid: 876a67bd614b3214680de26d15bd7422, type: 3}
+  speakerSprite: {fileID: 0}
+  sentence: 
+  dialogues:
+  - actorName: Mentor
+    profile: {fileID: 0}
+    sentence:
+      Portugues: "Preceptor: agora que temos nossa principal hip\xF3tese diagnostica,
+        quais exames devemos solicitar?  "
+      ingles: 
+      espanhol: 
+  - actorName: Aluno
+    profile: {fileID: 0}
+    sentence:
+      Portugues: 'Aluno: Talvez a glicemia de jejum?  '
+      ingles: 
+      espanhol: 
+  - actorName: Paciente
+    profile: {fileID: 0}
+    sentence:
+      Portugues: "Paciente: eu comi tantos doces que esses dias, doutor, ser\xE1
+        que isso vai interferir?  "
+      ingles: 
+      espanhol: 
+  - actorName: Mentor
+    profile: {fileID: 0}
+    sentence:
+      Portugues: "Preceptor: voc\xEA sabe responder a d\xFAvida da paciente? "
+      ingles: 
+      espanhol: 
+  - actorName: Aluno
+    profile: {fileID: 0}
+    sentence:
+      Portugues: "Aluno: Humm.. n\xE3o tenho certeza  "
+      ingles: 
+      espanhol: 
+  - actorName: Mentor
+    profile: {fileID: 0}
+    sentence:
+      Portugues: "Preceptor: ent\xE3o vamos aprender sobre isso! "
+      ingles: 
+      espanhol: 

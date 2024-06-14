@@ -235,7 +235,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 420095561}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 9247b7eac04c23849a83eba70e8a91b6, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: a4c9848e87e89ef4c8e6911bf85948da, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -257,7 +257,7 @@ VideoPlayer:
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_SkipOnDrop: 1
   m_Looping: 0
   m_WaitForFirstFrame: 1
@@ -579,6 +579,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   videoPlayer: {fileID: 420095563}
   yourButton: {fileID: 1895826161}
+  videoName: Objetivo1.mp4
 --- !u!224 &1799591684
 RectTransform:
   m_ObjectHideFlags: 0

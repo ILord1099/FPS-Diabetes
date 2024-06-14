@@ -6,22 +6,26 @@ public class VideoController : MonoBehaviour
 {
     public VideoPlayer videoPlayer;
     public Button yourButton;
+    public string videoName;
 
     void Start()
     {
-        // Adiciona um listener para detectar quando o vídeo termina
+        var videoPath = System.IO.Path.Combine(Application.streamingAssetsPath, videoName);
+        videoPlayer.url = videoPath;
+        videoPlayer.Play();
+        // Adiciona um listener para detectar quando o vï¿½deo termina
         videoPlayer.loopPointReached += EndReached;
     }
 
-    void EndReached(UnityEngine.Video.VideoPlayer vp)
+    void EndReached(VideoPlayer vp)
     {
-        // Ativa o botão quando o vídeo termina
+        // Ativa o botï¿½o quando o vï¿½deo termina
         yourButton.gameObject.SetActive(true);
     }
 
     public void PlayVideo()
     {
-        // Inicia a reprodução do vídeo
+        // Inicia a reproduï¿½ï¿½o do vï¿½deo
         videoPlayer.Play();
     }
 }

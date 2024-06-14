@@ -235,7 +235,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 420095561}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: e5d3e90046235c642b3f7e2effde5fdd, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: c8f2e7ab1da80044bbe9800df8e3ae9f, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -534,6 +534,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   videoPlayer: {fileID: 420095563}
   yourButton: {fileID: 1895826161}
+  videoName: Objetivo6.mp4
 --- !u!224 &1799591684
 RectTransform:
   m_ObjectHideFlags: 0

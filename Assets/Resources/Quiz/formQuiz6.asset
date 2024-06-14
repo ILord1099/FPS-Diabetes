@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26746d77eb744d73b578365aff4a098f, type: 3}
+  m_Name: formQuiz6
+  m_EditorClassIdentifier: 
+  questions:
+  - question: "Quais dessas recomenda\xE7\xF5es abaixo s\xE3o consideradas as mais
+      indicadas para preven\xE7\xE3o do diabetes mellitus ?\r"
+    answers:
+    - text: "Consumir alimentos ricos em a\xE7\xFAcar refinado e gorduras de baixa
+        qualidade.\r\n"
+      isCorrect: 0
+    - text: "Realizar atividades f\xEDsicas de baixa intensidade 1 vez por semana.\r\n"
+      isCorrect: 0
+    - text: "Ajuste de medica\xE7\xE3o de acordo com o peso do paciente deve ser
+        a primeira interven\xE7\xE3o"
+      isCorrect: 0
+    - text: "Priorizar uma dieta equilibrada com alimentos ricos em fibras, gr\xE3os,
+        prote\xEDnas magras, frutas e vegetais.\r\n"
+      isCorrect: 1
+  - question: "Qual \xE9 a recomenda\xE7\xE3o do Minist\xE9rio da Sa\xFAde brasileiro
+      em rela\xE7\xE3o \xE0 atividade f\xEDsica para adultos/idosos ?\r\n"
+    answers:
+    - text: "Realizar 75 a 150 minutos de atividade f\xEDsica de baixa intensidade
+        por semana.\r\n"
+      isCorrect: 0
+    - text: "Realizar 150 a 300 minutos de atividade f\xEDsica de baixa intensidade
+        por semana.\r\n"
+      isCorrect: 1
+    - text: Adotar uma dieta equilibrada.
+      isCorrect: 0
+    - text: "Realizar de 30 a 60 minutos de atividade f\xEDsica intensa por dia.\r\n"
+      isCorrect: 0
+  - question: "Quando as medidas de mudan\xE7a de estilo de vida n\xE3o s\xE3o suficientes
+      para controlar as taxas de glicose, qual \xE9 o pr\xF3ximo passo no tratamento
+      do diabetes tipo II, de acordo com o texto?\r"
+    answers:
+    - text: Iniciar tratamento com insulina.
+      isCorrect: 0
+    - text: "Adicionar medicamentos orais para reduzir os riscos de complica\xE7\xF5es
+        cr\xF4nicas.\r\n"
+      isCorrect: 1
+    - text: "Realizar uma cirurgia de redu\xE7\xE3o de est\xF4mago.\r\n"
+      isCorrect: 0
+    - text: 'Adicionar medicamentos orais e tratamento com insulina.
+
+'
+      isCorrect: 0
+  - question: '.Quando deve ser iniciado o o tratamento com insulina para o paciente
+      com DM tipo II?
+
+'
+    answers:
+    - text: "Ap\xF3s a primeira consulta m\xE9dica, independentemente dos n\xEDveis
+        de glicose.\r\n"
+      isCorrect: 0
+    - text: "Somente quando todas as outras op\xE7\xF5es de tratamento, como mudan\xE7a
+        na dieta e aumento da atividade f\xEDsica e uso medicamentos orais, falharem
+        em controlar adequadamente os n\xEDveis de glicose.\r\n"
+      isCorrect: 1
+    - text: "Antes mesmo de tentar outras op\xE7\xF5es de tratamento, como mudan\xE7a
+        na dieta e aumento da atividade f\xEDsica.\r\n"
+      isCorrect: 0
+    - text: "Ao iniciar o tratamento com os hipoglicemiantes orais.\r"
+      isCorrect: 0
