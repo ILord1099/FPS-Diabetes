@@ -4,7 +4,7 @@
             {
                 "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
                 "key": "buildOutputDirList",
-                "value": "{\"m_Value\":\"C:/Users/Mangrove 03/Documents/Mellitus_WEB_1.0;C:/Users/Mangrove 03/Documents/BuildTeste;;;;;;;;\"}"
+                "value": "{\"m_Value\":\"C:/Users/Carlos dos Anjos/Documents/BiuldTestWeb_Melitus2;C:/Users/Carlos dos Anjos/Documents/BiuldTestWEB_Mellitus;C:/Users/Mangrove 03/Documents/Mellitus_WEB_1.0;C:/Users/Mangrove 03/Documents/BuildTeste;;;;;;\"}"
             }
         ]
     }
