@@ -1,12 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using Platformer.Mechanics;
+﻿using Platformer.Mechanics;
 using UnityEditor;
 using UnityEngine;
 namespace Platformer
 {
     [CustomEditor(typeof(PatrolPath))]
-    public class PatrolPathGizmo : Editor
+    public class PatrolPathGizmo : UnityEditor.Editor
     {
         public void OnSceneGUI()
         {

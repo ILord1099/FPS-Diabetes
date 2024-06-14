@@ -13,43 +13,16 @@ MonoBehaviour:
   m_Name: form
   m_EditorClassIdentifier: 
   questions:
-  - question: "Ap\xF3s o conhecimento adquirido no v\xEDdeo anterior, o que melhor
-      caracteriza o diabetes mellitus tipo 2?\r"
-    answers:
-    - text: "Produ\xE7\xE3o insuficiente de insulina pelo p\xE2ncreas"
-      isCorrect: 0
-    - text: "Resist\xEAncia \xE0 insulina produzida\r\n"
-      isCorrect: 1
-    - text: "Aus\xEAncia de insulina\r\n"
-      isCorrect: 0
-    - text: 'Excesso de insulina
-
-'
-      isCorrect: 0
-  - question: 'Qual alternativa melhor justifica a etiologia do diabetes mellitus
-      tipo 2?
-
-'
-    answers:
-    - text: 'Autoimune
-
-'
-      isCorrect: 0
-    - text: "Muta\xE7\xF5es gen\xE9ticas\r\n"
-      isCorrect: 0
-    - text: "Intera\xE7\xE3o de fatores g\xEAnicos e ambientais\r\n"
-      isCorrect: 1
-    - text: "Alimenta\xE7\xE3o rica em gordura poliinsaturada\r\n"
-      isCorrect: 0
-  - question: "Quais s\xE3o as complica\xE7\xF5es mais frequentes em decorr\xEAncia
-      do DM II?\r\n"
-    answers:
-    - text: "Doen\xE7as infecciosas\r\n"
-      isCorrect: 0
-    - text: "Hipertens\xE3o Arterial Sit\xEAmica"
-      isCorrect: 0
-    - text: "Complica\xE7\xF5es AVC (Aciente Vascular cerebral), Infarto agudo do
-        mioc\xE1rdio, arteriopatia perif\xE9rica.\r\n"
-      isCorrect: 1
-    - text: "Doen\xE7as autoimones e neurodegenerativas\r\n"
-      isCorrect: 0
+    questions:
+    - id: 
+      title: 
+      options: []
+      correctOption: 
+      difficulty: 0
+      category: 
+    - id: 
+      title: 
+      options: []
+      correctOption: 
+      difficulty: 0
+      category: 

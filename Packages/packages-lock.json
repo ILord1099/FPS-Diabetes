@@ -1,5 +1,14 @@
 {
   "dependencies": {
+    "com.notask.quiz-http-wrapper": {
+      "version": "https://github.com/Magrove-Game-Studio/QuizHttpWrapper.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.nuget.newtonsoft-json": "3.2.1"
+      },
+      "hash": "641845ef4c6f6ef5ec5ad3e5e32bb38070f718cf"
+    },
     "com.unity.2d.animation": {
       "version": "9.1.0",
       "depth": 0,
@@ -220,6 +229,13 @@
     },
     "com.unity.mathematics": {
       "version": "1.2.6",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.nuget.newtonsoft-json": {
+      "version": "3.2.1",
       "depth": 1,
       "source": "registry",
       "dependencies": {},

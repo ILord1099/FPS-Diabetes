@@ -6,8 +6,8 @@ using UnityEditor;
 [CreateAssetMenu(fileName =  "New Dialogue", menuName ="New dialogue/ Dialogue")] 
 public class DialogueSettings : ScriptableObject
 {
-    [Header("Settings")]//criaÁ„ de cabeÁalho "titulo de seÁ„o de variavel "
-    public GameObject actor;// referencia o npc que voce quer que exiba o dialogo( n„o sera utilizado no momento ) 
+    [Header("Settings")]//cria√ß√£ de cabe√ßalho "titulo de se√ß√£o de variavel "
+    public GameObject actor;// referencia o npc que voce quer que exiba o dialogo( n√£o sera utilizado no momento ) 
 
     [Header("Dialogue")]
     public Sprite speakerSprite;// seleciona a sprite do falante do dialogo
@@ -15,7 +15,7 @@ public class DialogueSettings : ScriptableObject
 
     public List<Sentences> dialogues = new List<Sentences>();
 }
-//sempre serializar, pois n„o ir· aparecer no inspector 
+//sempre serializar, pois n√£o ir√° aparecer no inspector 
 [System.Serializable]//responsavel por serializar as classes adicionais 
 public class Sentences
 {
@@ -30,19 +30,19 @@ public class Languages
     public string ingles;
     public string espanhol;
 }
-//if chamado apenas quando a unity atende uma determinada condiÁ„o para determinada plataforma ou interface
+//if chamado apenas quando a unity atende uma determinada condi√ß√£o para determinada plataforma ou interface
 
 #if UNITY_EDITOR
 [CustomEditor(typeof(DialogueSettings))]
-public class BiulderEditor : Editor
+public class BiulderEditor : UnityEditor.Editor
 {
     public override void OnInspectorGUI()//override sobreescreve algum metodo na classe herdada.
     {
         DrawDefaultInspector();
 
-        DialogueSettings ds =  (DialogueSettings)target;// onde vai armazenar as informaÁıes/ configuraÁıes  
+        DialogueSettings ds =  (DialogueSettings)target;// onde vai armazenar as informa√ß√µes/ configura√ß√µes  
         Languages l = new Languages();
-        l.Portugues =  ds.sentence;// armazena sentenÁas na lingua selecionada padronizada em portugues 
+        l.Portugues =  ds.sentence;// armazena senten√ßas na lingua selecionada padronizada em portugues 
 
         Sentences s = new Sentences();
         s.profile =  ds.speakerSprite;// armazena foto do perfil do personagem falando 
@@ -55,7 +55,7 @@ public class BiulderEditor : Editor
                 ds.dialogues.Add(s);
 
                 ds.speakerSprite = null;
-                ds.sentence = "";// apos criar fala, apaga fala e deixa o bot„o livre para criaÁ„o de um novo dialogo
+                ds.sentence = "";// apos criar fala, apaga fala e deixa o bot√£o livre para cria√ß√£o de um novo dialogo
 
             }
         }

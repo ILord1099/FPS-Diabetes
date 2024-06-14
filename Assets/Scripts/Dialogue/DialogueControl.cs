@@ -1,4 +1,3 @@
-
 using DG.Tweening;
 using System;
 using System.Collections;
@@ -9,65 +8,73 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 
-
 public class DialogueControl : MonoBehaviour
 {
     public Transform _punch;
+
     public enum idioma
     {
         pt,
         eng,
         spa
     }
+
     public idioma lingua;
 
-    [Header("Components")]// boa pratica para criar um cabeçalho 
-    public GameObject dialogueObj;// janela do dialogo 
-    public Image profileSprite;//foto de perfil
-    public TextMeshProUGUI speechText;//texto da fala 
-    public Text actorNameText;//nome do npc
-    public Button nextButton; // botão para a próxima fala
+    [Header("Components")] // boa pratica para criar um cabeï¿½alho 
+    public GameObject dialogueObj; // janela do dialogo 
+
+    public Image profileSprite; //foto de perfil
+    public TextMeshProUGUI speechText; //texto da fala 
+    public Text actorNameText; //nome do npc
+    public Button nextButton; // botï¿½o para a prï¿½xima fala
     public CanvasGroup canvasGroup;
     public RectTransform rectTransform;
     public Image Mentor;
     public Image Paciente;
     public Image Aluno;
     public string proximaCena;
+    [SerializeField] private DialogueSettings dialogueSettings;
 
 
-
-    [Header("Settings")]
-    public float typingSpeed;// velocidade de fala 
+    [Header("Settings")] public float typingSpeed; // velocidade de fala 
 
     //variaveis de controle 
-    private bool isShowing;// se a janela esta visivel
-    private int index;// index é usado para laços de repetição/index das sentenças, contagem de itens/texto dentro das falas 
-    private string[] sentences;// recebe todas as falas do referido npc
+    private bool isShowing; // se a janela esta visivel
+
+    private int
+        index; // index ï¿½ usado para laï¿½os de repetiï¿½ï¿½o/index das sentenï¿½as, contagem de itens/texto dentro das falas 
+
+    private string[] sentences; // recebe todas as falas do referido npc
     private bool dialogueInProgress = false;
-    
 
 
-    public static DialogueControl instance; //instanciando como variavel static posso utilizar qualquer variavel e metodo que esteja publico 
+    public static DialogueControl
+        instance; //instanciando como variavel static posso utilizar qualquer variavel e metodo que esteja publico 
 
-    //awake é chamado antes dos starts() na hierarquita de execução de scripts
+    //awake ï¿½ chamado antes dos starts() na hierarquita de execuï¿½ï¿½o de scripts
     private void Awake()
     {
         instance = this;
     }
+
     //chamado ao inicalizar, sendo depois do awake
     void Start()
     {
-        
-        Mentor.DOColor(Color.white, 0f);
-        Aluno.DOColor(Color.black, 0f);
-        Paciente.DOColor(Color.black, 0f);
+        var mentor = dialogueSettings.dialogues[0].actorName == "Mentor" ? Color.white : Color.black;
+        var aluno = dialogueSettings.dialogues[0].actorName == "Aluno" ? Color.white : Color.black;
+        var paciente = dialogueSettings.dialogues[0].actorName == "Paciente" ? Color.white : Color.black;
+        Mentor.DOColor(mentor, 0f);
+        Aluno.DOColor(aluno, 0f);
+        Paciente.DOColor(paciente, 0f);
         AvatarFade();
-        // Adicionar listener ao botão para chamar a função Punch e NextSentence
+        // Adicionar listener ao botï¿½o para chamar a funï¿½ï¿½o Punch e NextSentence
         if (nextButton != null)
         {
             nextButton.onClick.AddListener(OnNextButtonClick);
         }
     }
+
     void Update()
     {
         //Debug.Log(proximaCena);
@@ -77,40 +84,42 @@ public class DialogueControl : MonoBehaviour
     {
         if (!dialogueInProgress)
         {
-            Punch(); // Chama a função Punch
-            NextSentence(); // Avança para a próxima sentença do diálogo
+            Punch(); // Chama a funï¿½ï¿½o Punch
+            NextSentence(); // Avanï¿½a para a prï¿½xima sentenï¿½a do diï¿½logo
         }
     }
 
     //currotina metodo controlado por tempo.
     IEnumerator TypeSentence()
     {
-        dialogueInProgress = true; // Indica que o diálogo está em andamento
-        nextButton.interactable = false; // Desativa o botão enquanto a sentença está sendo exibida
-        foreach (char letter in sentences[index].ToCharArray())  // repete em uma array o numero de quantidade de elementos dentro do foreach/char armazena um caractere
+        dialogueInProgress = true; // Indica que o diï¿½logo estï¿½ em andamento
+        nextButton.interactable = false; // Desativa o botï¿½o enquanto a sentenï¿½a estï¿½ sendo exibida
+        foreach (char letter in
+                 sentences[index]
+                     .ToCharArray()) // repete em uma array o numero de quantidade de elementos dentro do foreach/char armazena um caractere
         {
             speechText.text += letter;
-            yield return new WaitForSeconds(typingSpeed);//controlar o tempo da velocidade de leitura das letras expostas pelo dialogo
+            yield return
+                new WaitForSeconds(
+                    typingSpeed); //controlar o tempo da velocidade de leitura das letras expostas pelo dialogo
         }
-        dialogueInProgress = false; // Indica que o diálogo terminou
-        nextButton.interactable = true; // Ativa o botão novamente
 
+        dialogueInProgress = false; // Indica que o diï¿½logo terminou
+        nextButton.interactable = true; // Ativa o botï¿½o novamente
     }
+
     // pular para proxima fala/frase
     public void NextSentence()
     {
-       
-        if (speechText.text == sentences[index])//checar se a frase que apareceu, apareceu por completo e so assim pode clicar no bot?o
+        if (speechText.text ==
+            sentences[index]) //checar se a frase que apareceu, apareceu por completo e so assim pode clicar no bot?o
         {
             if (index < sentences.Length - 1)
             {
-               
                 index++;
                 Debug.Log(index);
                 speechText.text = "";
                 StartCoroutine(TypeSentence());
-                
-                
             }
             else // quando termina os textos 
             {
@@ -120,19 +129,19 @@ public class DialogueControl : MonoBehaviour
                 sentences = null;
                 isShowing = false;
             }
-            Debug.Log(index);
 
+            Debug.Log(index);
         }
 
         MudarCena();
         ChangeColor();
     }
+
     // chamar a fala do npc, chamado sempre que o player entrar em contato 
     public void Speech(string[] txt)
     {
         if (!isShowing)
         {
-           
             dialogueObj.SetActive(true);
             sentences = txt;
             StartCoroutine(TypeSentence());
@@ -142,7 +151,6 @@ public class DialogueControl : MonoBehaviour
 
     public void MudarCena()
     {
-        
         if (index == 8)
 
         {
@@ -150,12 +158,10 @@ public class DialogueControl : MonoBehaviour
             Debug.Log(proximaCena);
             //Debug.Log("index 8 ");
             SceneManager.LoadScene(proximaCena);
-           // index = 9;
-
+            // index = 9;
         }
-
-       
     }
+
     public void Punch()
     {
         var duration = 0.5f;
@@ -175,20 +181,19 @@ public class DialogueControl : MonoBehaviour
 
     public void ChangeColor()
     {
-
         if (index == 1)
         {
             //Mentor On
-            
+
             Mentor.DOColor(Color.black, 1f);
             Aluno.DOColor(Color.black, 1f);
             Paciente.DOColor(Color.white, 1f);
-
         }
+
         if (index == 2)
         {
             //Paciente On
-           
+
             Aluno.DOColor(Color.white, 1f);
             Paciente.DOColor(Color.black, 1f);
         }
@@ -196,43 +201,39 @@ public class DialogueControl : MonoBehaviour
         if (index == 3)
         {
             //Aluno On
-            
+
             Aluno.DOColor(Color.black, 1f);
             Paciente.DOColor(Color.white, 1f);
-
         }
+
         if (index == 4)
         {
             //Mentor On
-            
+
             Mentor.DOColor(Color.white, 1f);
             Aluno.DOColor(Color.black, 1f);
             Paciente.DOColor(Color.black, 1f);
-
         }
+
         if (index == 5)
         {
             //alunoOn
             Mentor.DOColor(Color.black, 1f);
             Aluno.DOColor(Color.white, 1f);
-
-
         }
+
         if (index == 6)
         {
             //Mentor on
             Mentor.DOColor(Color.white, 1f);
             Aluno.DOColor(Color.black, 1f);
-
-
         }
+
         if (index == 7)
         {
             //aluno On
             Mentor.DOColor(Color.black, 1f);
             Aluno.DOColor(Color.white, 1f);
-
-
         }
     }
 }

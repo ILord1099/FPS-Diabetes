@@ -663,6 +663,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   form: {fileID: 11400000, guid: b348e6711c8d1b74c8918b450c78cacb, type: 2}
   quizView: {fileID: 1420092962}
+  timer: {fileID: 324608575}
   sceneToLoad: Video2
 --- !u!1 &324608574
 GameObject:
@@ -1616,7 +1617,7 @@ MonoBehaviour:
   walkSound: {fileID: 0}
   jumpSound: {fileID: 0}
   deadSound: {fileID: 0}
-  correctSound: {fileID: 8300000, guid: 60b3c3f662ba6c94091b8602fc03e094, type: 3}
+  correctSound: {fileID: 8300000, guid: bd6202115ebe711489683ca950f0a3c3, type: 3}
   incorrectSound: {fileID: 8300000, guid: e497ee7ed2dd3e14aba8d46486fe1f97, type: 3}
   selectSound: {fileID: 8300000, guid: 2c570ef2b199a5a4b864cdf7027a8f4b, type: 3}
 --- !u!82 &1042627111
@@ -1630,7 +1631,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -1919,7 +1920,7 @@ MonoBehaviour:
   walkSound: {fileID: 0}
   jumpSound: {fileID: 0}
   deadSound: {fileID: 0}
-  correctSound: {fileID: 8300000, guid: 60b3c3f662ba6c94091b8602fc03e094, type: 3}
+  correctSound: {fileID: 8300000, guid: bd6202115ebe711489683ca950f0a3c3, type: 3}
   incorrectSound: {fileID: 8300000, guid: e497ee7ed2dd3e14aba8d46486fe1f97, type: 3}
   selectSound: {fileID: 8300000, guid: 2c570ef2b199a5a4b864cdf7027a8f4b, type: 3}
 --- !u!82 &1113410379
@@ -1933,7 +1934,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -2282,7 +2283,7 @@ MonoBehaviour:
   walkSound: {fileID: 0}
   jumpSound: {fileID: 0}
   deadSound: {fileID: 0}
-  correctSound: {fileID: 8300000, guid: 60b3c3f662ba6c94091b8602fc03e094, type: 3}
+  correctSound: {fileID: 8300000, guid: bd6202115ebe711489683ca950f0a3c3, type: 3}
   incorrectSound: {fileID: 8300000, guid: e497ee7ed2dd3e14aba8d46486fe1f97, type: 3}
   selectSound: {fileID: 8300000, guid: 2c570ef2b199a5a4b864cdf7027a8f4b, type: 3}
 --- !u!82 &1258943081
@@ -2296,7 +2297,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -2585,7 +2586,7 @@ MonoBehaviour:
   walkSound: {fileID: 0}
   jumpSound: {fileID: 0}
   deadSound: {fileID: 0}
-  correctSound: {fileID: 8300000, guid: 60b3c3f662ba6c94091b8602fc03e094, type: 3}
+  correctSound: {fileID: 8300000, guid: bd6202115ebe711489683ca950f0a3c3, type: 3}
   incorrectSound: {fileID: 8300000, guid: e497ee7ed2dd3e14aba8d46486fe1f97, type: 3}
   selectSound: {fileID: 8300000, guid: 2c570ef2b199a5a4b864cdf7027a8f4b, type: 3}
 --- !u!82 &1372643949
@@ -2599,7 +2600,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -2714,7 +2715,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delayNextQuestion: 1.5
-  timer: {fileID: 324608575}
   answerButtons:
   - {fileID: 1372643946}
   - {fileID: 1258943079}

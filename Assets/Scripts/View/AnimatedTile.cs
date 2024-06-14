@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-
-#if UNITY_EDITOR
+﻿#if UNITY_EDITOR
 using UnityEditor;
 #endif
 
@@ -46,7 +43,7 @@ namespace Platformer.View
 
 #if UNITY_EDITOR
     [CustomEditor(typeof(AnimatedTile))]
-    public class AnimatedTileEditor : Editor
+    public class AnimatedTileEditor : UnityEditor.Editor
     {
         private AnimatedTile tile { get { return (target as AnimatedTile); } }
 

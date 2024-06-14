@@ -1,90 +1,77 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
+using Quiz.Components;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Quiz
 {
+    /// <summary>
+    /// view of the quiz
+    /// </summary>
     public class QuizView : MonoBehaviour
     {
-        [SerializeField] private float delayNextQuestion = 1.5f;//delay para a próxima pergunta
-        [SerializeField] private Timer timer;
+        [SerializeField] private ButtonsGroup buttonsGroup;
+        [SerializeField] private TMP_Text timer;
+        [SerializeField] private TMP_Text titleQuestion;
         [SerializeField] private List<AnswerButton> answerButtons;
-        [SerializeField] private TMP_Text questionText;
+        [SerializeField] private Button markQuestionButton;
+        [SerializeField] private Button nextButton;
 
-        private AnswerButton _currentSelectedButton;
-        
-        public event Action OnEndTimeQuestion;
+        [SerializeField] private Color wrongColor;
+        [SerializeField] private Color correctColor;
 
-        #region OnEnable/OnDisable
+        public event Action OnMarkedAnswer;
+        public event Action OnNextQuestion;
 
         private void OnEnable()
         {
-            timer.OnEnd += EndTimer;
-
-            foreach (var button in answerButtons)
-            {
-                button.OnAnswerSelected += OnAnswerSelected;
-            }
+            nextButton.onClick.AddListener(NextQuestion);
+            markQuestionButton.onClick.AddListener(MarkQuestion);
         }
 
         private void OnDisable()
         {
-            timer.OnEnd -= EndTimer;
-            
-            foreach (var button in answerButtons)
-            {
-                button.OnAnswerSelected -= OnAnswerSelected;
-            }
+            nextButton.onClick.RemoveAllListeners();
+            markQuestionButton.onClick.RemoveAllListeners();
         }
 
-        #endregion
+        private void NextQuestion() => OnNextQuestion?.Invoke();
 
-        private void EndTimer()
-        {
-            foreach (var button in answerButtons)
-            {
-                button.SetInteractable(false);
-                button.UpdateAnswerColor();
-            }
+        private void MarkQuestion() => OnMarkedAnswer?.Invoke();
 
-            OnEndTimeQuestion?.Invoke();
-        }
+        public void SetTitleQuestion(string question) => titleQuestion.SetText(question);
 
-        public void SetQuestion(string question) => questionText.text = question;
-        
-        public void SetAnswers(List<Answer> answers)
+        public void SetAnswers(string[] answers)
         {
-            StopCoroutine(nameof(DelaySetAnswers));
-            StartCoroutine(DelaySetAnswers(answers));
-        }
-        
-        private IEnumerator DelaySetAnswers(List<Answer> answers)
-        {
-            yield return new WaitForSeconds(delayNextQuestion);
-            
             for (var i = 0; i < answerButtons.Count; i++)
             {
-                answerButtons[i].SetText(answers[i].text);
-                answerButtons[i].IsCorrect = answers[i].isCorrect;
-                answerButtons[i].Deselect();
-                answerButtons[i].SetInteractable(true);
+                answerButtons[i].Text = answers[i];
             }
-            
-            _currentSelectedButton = null;
-            timer.ResetTimer();
-            timer.StartTimer();
         }
-        
-        private void OnAnswerSelected(AnswerButton button)
+
+        public void SetupButtons(int bufferCapacity = 1)
         {
-            if (button == _currentSelectedButton) return;
+            buttonsGroup.CreateBuffer(bufferCapacity);
+            if (buttonsGroup.Buttons.Length == 0 || buttonsGroup.Buttons == null)
+                buttonsGroup.Buttons = answerButtons.ToArray();
+        }
 
-            if (_currentSelectedButton != null)
-                _currentSelectedButton.Deselect();
+        public void Reset()
+        {
+            buttonsGroup.Reset();
+            foreach (var answerButton in answerButtons) answerButton.Deselect();
+        }
 
-            _currentSelectedButton = button;
+        public void ClosePopup() => NextQuestion();
+
+        public void UpdateTimer(float time) => timer.SetText($"{(int)time / 60:00}:{(int)time % 60:00}");
+
+        public void UpdateButtonColor(int index)
+        {
+            foreach (var answerButton in answerButtons) answerButton.UpdateColor(wrongColor);
+            answerButtons[index].UpdateColor(correctColor);
         }
     }
 }

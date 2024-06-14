@@ -1,0 +1,84 @@
+{
+  "questions": [
+    {
+      "id": "1",
+      "title": "What is the capital of France?",
+      "options": ["Paris", "London", "Berlin", "Madrid"],
+      "correctOption": [0],
+      "difficulty": "Easy",
+      "category": "Geography"
+    },
+    {
+      "id": "2",
+      "title": "Who wrote 'To Kill a Mockingbird'?",
+      "options": ["Harper Lee", "Mark Twain", "Ernest Hemingway", "F. Scott Fitzgerald"],
+      "correctOption": [0],
+      "difficulty": "Medium",
+      "category": "Literature"
+    },
+    {
+      "id": "3",
+      "title": "What is the largest planet in our solar system?",
+      "options": ["Earth", "Mars", "Jupiter", "Saturn"],
+      "correctOption": [2],
+      "difficulty": "Easy",
+      "category": "Science"
+    },
+    {
+      "id": "4",
+      "title": "Who painted the Mona Lisa?",
+      "options": ["Leonardo da Vinci", "Vincent van Gogh", "Pablo Picasso", "Claude Monet"],
+      "correctOption": [0],
+      "difficulty": "Easy",
+      "category": "Art"
+    },
+    {
+      "id": "5",
+      "title": "What is the square root of 64?",
+      "options": ["6", "7", "8", "9"],
+      "correctOption": [2],
+      "difficulty": "Easy",
+      "category": "Mathematics"
+    },
+    {
+      "id": "6",
+      "title": "Which element has the chemical symbol 'O'?",
+      "options": ["Oxygen", "Gold", "Silver", "Hydrogen"],
+      "correctOption": [0],
+      "difficulty": "Medium",
+      "category": "Science"
+    },
+    {
+      "id": "7",
+      "title": "What is the capital of Japan?",
+      "options": ["Seoul", "Beijing", "Tokyo", "Bangkok"],
+      "correctOption": [2],
+      "difficulty": "Easy",
+      "category": "Geography"
+    },
+    {
+      "id": "8",
+      "title": "Who is the author of the 'Harry Potter' series?",
+      "options": ["J.R.R. Tolkien", "George R.R. Martin", "J.K. Rowling", "C.S. Lewis"],
+      "correctOption": [2],
+      "difficulty": "Medium",
+      "category": "Literature"
+    },
+    {
+      "id": "9",
+      "title": "What is the smallest prime number?",
+      "options": ["0", "1", "2", "3"],
+      "correctOption": [2],
+      "difficulty": "Easy",
+      "category": "Mathematics"
+    },
+    {
+      "id": "10",
+      "title": "What year did the Titanic sink?",
+      "options": ["1905", "1912", "1918", "1923"],
+      "correctOption": [1],
+      "difficulty": "Medium",
+      "category": "History"
+    }
+  ]
+}

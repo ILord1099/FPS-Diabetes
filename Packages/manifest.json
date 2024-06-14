@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.notask.quiz-http-wrapper": "https://github.com/Magrove-Game-Studio/QuizHttpWrapper.git",
     "com.unity.2d.animation": "9.1.0",
     "com.unity.2d.sprite": "1.0.0",
     "com.unity.2d.spriteshape": "9.0.2",

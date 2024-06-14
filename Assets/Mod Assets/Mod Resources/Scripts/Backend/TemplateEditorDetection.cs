@@ -10,7 +10,7 @@ using UnityEditor;
 
 //Checks if we are in a certain template, as some scripts are template-specific.
 [InitializeOnLoad]
-public class TemplateEditorDetection : Editor {
+public class TemplateEditorDetection : UnityEditor.Editor {
 
     static TemplateEditorDetection() {
 
