@@ -139,7 +139,7 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 0
-  dialogue: {fileID: 11400000, guid: 3823aec9d751b9d4db59e4db6303dede, type: 2}
+  dialogue: {fileID: 11400000, guid: aa2d1444ffd07d6439bf2a672d640d51, type: 2}
   playerHit: 1
 --- !u!1 &73964837
 GameObject:

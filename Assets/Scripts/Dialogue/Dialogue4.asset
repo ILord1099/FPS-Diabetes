@@ -16,10 +16,10 @@ MonoBehaviour:
   speakerSprite: {fileID: 0}
   sentence: 
   dialogues:
-  - actorName: Mentor
+  - actorName: Tutor
     profile: {fileID: 0}
     sentence:
-      Portugues: "Preceptor: agora que temos nossa principal hip\xF3tese diagnostica,
+      Portugues: "Tutor: agora que temos nossa principal hip\xF3tese diagnostica,
         quais exames devemos solicitar?  "
       ingles: 
       espanhol: 
@@ -36,10 +36,10 @@ MonoBehaviour:
         que isso vai interferir?  "
       ingles: 
       espanhol: 
-  - actorName: Mentor
+  - actorName: Tutor
     profile: {fileID: 0}
     sentence:
-      Portugues: "Preceptor: voc\xEA sabe responder a d\xFAvida da paciente? "
+      Portugues: "Tutor: voc\xEA sabe responder a d\xFAvida da paciente? "
       ingles: 
       espanhol: 
   - actorName: Aluno
@@ -48,9 +48,9 @@ MonoBehaviour:
       Portugues: "Aluno: Humm.. n\xE3o tenho certeza  "
       ingles: 
       espanhol: 
-  - actorName: Mentor
+  - actorName: Tutor
     profile: {fileID: 0}
     sentence:
-      Portugues: "Preceptor: ent\xE3o vamos aprender sobre isso! "
+      Portugues: "Tutor: ent\xE3o vamos aprender sobre isso! "
       ingles: 
       espanhol: 

@@ -16,10 +16,10 @@ MonoBehaviour:
   speakerSprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
   sentence: 
   dialogues:
-  - actorName: Mentor
+  - actorName: Tutor
     profile: {fileID: -892086334, guid: 9167908b1de8b2d48807d56c3894cf5b, type: 3}
     sentence:
-      Portugues: 'Mentor: Bom dia, qual o Motivo da sua consulta hoje?'
+      Portugues: 'Tutor: Bom dia, qual o Motivo da sua consulta hoje?'
       ingles: good morning
       espanhol: 
   - actorName: Paciente
@@ -43,10 +43,10 @@ MonoBehaviour:
         normal e mesmo assim estou perdendo peso."
       ingles: "sei l\xE1 "
       espanhol: 
-  - actorName: Mentor
+  - actorName: Tutor
     profile: {fileID: -1599727536, guid: 5d2f7917d5c13b74c862fef05d8d4acb, type: 3}
     sentence:
-      Portugues: "Mentor: Diante das queixas do paciente o que voc\xEA acha que deveriamos
+      Portugues: "Tutor: Diante das queixas do paciente o que voc\xEA acha que deveriamos
         investigar?"
       ingles: "sei l\xE1 "
       espanhol: 
@@ -57,10 +57,10 @@ MonoBehaviour:
         investigar Diabetes!"
       ingles: "sei l\xE1 "
       espanhol: 
-  - actorName: Mentor
+  - actorName: Tutor
     profile: {fileID: -1599727536, guid: 5d2f7917d5c13b74c862fef05d8d4acb, type: 3}
     sentence:
-      Portugues: "Mentor: Interessante, parece uma \xF3tima oportunidade para testar
+      Portugues: "Tutor: Interessante, parece uma \xF3tima oportunidade para testar
         seus conhecimentos, voc\xEA est\xE1 pronto?"
       ingles: "sei l\xE1 "
       espanhol: 

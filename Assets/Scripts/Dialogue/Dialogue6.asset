@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f226a1a2b92ceba429ea7db1772ff1c4, type: 3}
+  m_Name: Dialogue6
+  m_EditorClassIdentifier: 
+  actor: {fileID: 0}
+  speakerSprite: {fileID: 0}
+  sentence: 
+  dialogues:
+  - actorName: Paciente
+    profile: {fileID: 0}
+    sentence:
+      Portugues: "Paciente:Bom dia,doutor. Aqui est\xE3o os novos exames que o senhor
+        pediu."
+      ingles: 
+      espanhol: 
+  - actorName: Tutor
+    profile: {fileID: 0}
+    sentence:
+      Portugues: "Tutor:Bom dia! Que bom v\xEA-la novamente. Vejo que suas taxas
+        est\xE3o normalizadas, isso \xE9 uma excelente not\xEDcia. Como voc\xEA tem
+        se sentido dsde a ultima consulta? "
+      ingles: 
+      espanhol: 
+  - actorName: Paciente
+    profile: {fileID: 0}
+    sentence:
+      Portugues: Paciente:Estou me sentido bem,doutor. Estou tomando os remedios
+        direitinho.
+      ingles: 
+      espanhol: 
+  - actorName: Tutor
+    profile: {fileID: 0}
+    sentence:
+      Portugues: "Que \xF3timo! \xC9 muito importante manter o tratamento e os cuidados
+        necess\xE1rios. Aluno, gostaria de explicar \xE0o paciente sobre os cuidados
+        cont\xEDnuos?"
+      ingles: 
+      espanhol: 
+  - actorName: Aluno
+    profile: {fileID: 0}
+    sentence:
+      Portugues: "Aluno:Claro, doutor. Mesmo com as taxas normalizadas e o medicamento,
+        \xE9 importante manter uma dieta equilibrada, praticar atividade f\xEDsica
+        regularmente."
+      ingles: 
+      espanhol: 
+  - actorName: Tutor
+    profile: {fileID: 0}
+    sentence:
+      Portugues: "Tutor:Exatamente. Al\xE9m disso, \xE9 importante estar atenta a
+        quaisquer sinais ou sintomas que possa mindicaralgumacomplica\xE7\xE3o relacionada
+        ao diabetes. Sempre que surgir alguma d\xFAvida ou sintoma novo, n\xE3o hesite
+        em entrarem contato conosco."
+      ingles: 
+      espanhol: 
+  - actorName: Aluno
+    profile: {fileID: 0}
+    sentence:
+      Portugues: "Aluno:Normalmente, recomenda-se refazer esses exames a cada seis
+        meses para monitorar o controle do diabetes e avaliar se o tratamento est\xE1
+        sendo eficaz. No entanto, isso pode variar de acordo com cada caso. "
+      ingles: 
+      espanhol: 
+  - actorName: Tutor
+    profile: {fileID: 0}
+    sentence:
+      Portugues: "Tutor:Isso mesmo, vamos agendar sua pr\xF3xima com seis meses e,
+        se houver necessidade, faremos os ajustes necess\xE1rios no acompanhamento."
+      ingles: 
+      espanhol: 
+  - actorName: Paciente
+    profile: {fileID: 0}
+    sentence:
+      Portugues: "Paciente:Est\xE1 certo, doutor. Obrigada."
+      ingles: 
+      espanhol: 
