@@ -38,10 +38,10 @@ namespace Quiz
         private Vector3 _originalScale;
         private sound soundButtons;
 
-        public UnityEngine.Transform popUpTransform; // Referência ao Transform do pop-up
-        public float duration = 0.5f; // Duração da animação
-        private Vector3 hiddenScale = new Vector3(0, 0, 0); // Escala inicial do pop-up (escondido)
-        private Vector3 shownScale = new Vector3(12, 8, 0); // Escala final do pop-up (visível)
+        public UnityEngine.Transform popUpTransform; // Referï¿½ncia ao Transform do pop-up
+        public float duration = 0.5f; // Duraï¿½ï¿½o da animaï¿½ï¿½o
+        private readonly Vector3 hiddenScale = new(0, 0, 0); // Escala inicial do pop-up (escondido)
+        private readonly Vector3 shownScale = new(12, 8, 0); // Escala final do pop-up (visï¿½vel)
 
 
 
@@ -128,7 +128,7 @@ namespace Quiz
 
         void ShowPopUp()
         {
-            // Anima o pop-up para a escala visível
+            // Anima o pop-up para a escala visï¿½vel
             popUpTransform.DOScale(shownScale, duration).SetEase(Ease.OutBack);
          
         }
