@@ -48,13 +48,19 @@ MonoBehaviour:
 
 '
     answers:
-    - text: 
+    - text: 'Todo ano.
+
+'
       isCorrect: 0
-    - text: 
+    - text: 'A cada 2-3 anos.
+
+'
+      isCorrect: 1
+    - text: 'A cada 4-5 anos
+
+'
       isCorrect: 0
-    - text: 
-      isCorrect: 0
-    - text: 
+    - text: A cada 3-4 anos
       isCorrect: 0
   - question: "Quais s\xE3o os grupos populacionais recomendados para realizar o
       rastreamento para diabetes mellitus tipo 2, de acordo com as diretrizes mencionadas
