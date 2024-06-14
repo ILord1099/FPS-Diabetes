@@ -9,6 +9,7 @@ namespace Quiz
         [SerializeField] private Form form;
         [SerializeField] private QuizView quizView;
         [SerializeField] private string sceneToLoad;
+        [SerializeField] private sound soundButtons;
 
         private int _currentQuestionIndex = 0;
 
@@ -34,25 +35,30 @@ namespace Quiz
         {
             _currentQuestionIndex++;
 
-            if (_currentQuestionIndex == form.GetQuestionsCount())
+            if (quizView.SelectedAnswer.IsCorrect)
             {
-
-                StartSceneTransition();  
+                quizView.SelectedAnswer.CorrectAnim();
+                soundButtons.PlaySFX(soundButtons.correctSound);
+                quizView.ShowPopUp();
                 return;
             }
 
+            quizView.SelectedAnswer.IncorrectAnim();
+            soundButtons.PlaySFX(soundButtons.incorrectSound);
+            quizView.ShowPopUpError();
+        }
+
+        public void NextQuestion()
+        {
+            if (_currentQuestionIndex == form.GetQuestionsCount())
+            {
+                SceneManager.LoadScene(sceneToLoad);
+                return;
+            }
+            
             var question = form.GetQuestion(_currentQuestionIndex);
             quizView.SetQuestion(question.question);
             quizView.SetAnswers(question.answers);
-        }
-        public void StartSceneTransition()
-        {
-            StartCoroutine(LoadSceneAfterDelay());
-        }
-        private IEnumerator LoadSceneAfterDelay()
-        {
-            yield return new WaitForSeconds(2f);
-            SceneManager.LoadScene(sceneToLoad);
         }
     }
 }
