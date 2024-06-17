@@ -224,8 +224,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.1581, y: 2.07134}
-  m_SizeDelta: {x: 86.806, y: 86.73318}
+  m_AnchoredPosition: {x: -0.8321701, y: 2.07134}
+  m_SizeDelta: {x: 86.19962, y: 86.73318}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!328 &420095563
 VideoPlayer:
@@ -373,8 +373,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5, y: -3.544}
-  m_SizeDelta: {x: 91.0007, y: 95.5738}
+  m_AnchoredPosition: {x: -9.3847, y: 0.4869}
+  m_SizeDelta: {x: 99.0954, y: 102.1759}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1109913326
 MonoBehaviour:
@@ -534,7 +534,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   videoPlayer: {fileID: 420095563}
   yourButton: {fileID: 1895826161}
-  videoName: Objetivo4.mp4
+  videoName: Objetivo 4-Libras.mp4
 --- !u!224 &1799591684
 RectTransform:
   m_ObjectHideFlags: 0

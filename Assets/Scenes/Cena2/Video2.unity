@@ -534,7 +534,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   videoPlayer: {fileID: 66815452}
   yourButton: {fileID: 1895826161}
-  videoName: Objetivo2.mp4
+  videoName: Objetivo 2-Libras.mp4
 --- !u!224 &1799591684
 RectTransform:
   m_ObjectHideFlags: 0
