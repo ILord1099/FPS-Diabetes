@@ -494,11 +494,11 @@ MonoBehaviour:
   canvasGroup: {fileID: 91110757}
   rectTransform: {fileID: 91110753}
   itens:
-  - {fileID: 1769219099}
   - {fileID: 824393985}
   - {fileID: 88034396}
   - {fileID: 1615904765}
   - {fileID: 1972482459}
+  - {fileID: 1769219099}
   nomeCena: 
   Avatar: {fileID: 1769219103}
 --- !u!225 &91110757
