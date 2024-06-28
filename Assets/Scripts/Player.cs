@@ -100,46 +100,10 @@ public class Player : MonoBehaviour
         {
             isJumping=false;
         }
-        if (colisor.gameObject.layer == 9)
+        if (colisor.gameObject.layer == 12)
         {
-            
-            SceneManager.LoadScene(sceneName);
-        }
-        if (colisor.gameObject.layer == 10)
-        {
-
-            SceneManager.LoadScene("Dialogue");   
-        }
-        if (colisor.gameObject.layer == 11)
-        {
-
-            SceneManager.LoadScene("Quiz2");
-        }
-        if (colisor.gameObject.layer == 13)
-        {
-
-            SceneManager.LoadScene("Quiz3");
-        }
-
-        if (colisor.gameObject.layer == 14)
-        {
-            SceneManager.LoadScene("Dialogue4");
-           
-        }
-        if (colisor.gameObject.layer == 15)
-        {
-            SceneManager.LoadScene("Quiz5");
-
-        }
-        if (colisor.gameObject.layer == 16)
-        {
-            SceneManager.LoadScene("Quiz6");
-
+            GameController.instance.NextLVL();
         }
     }
     #endregion
-
-    
-   
-
 }
