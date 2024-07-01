@@ -2676,6 +2676,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1d393b95e1ef4e44b5c6df54ed61af9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  extraTime: 10
 --- !u!212 &200151544
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13342,6 +13343,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LvlName: Dialogue
+  deadlvlName: Platform1
 --- !u!4 &1099893193
 Transform:
   m_ObjectHideFlags: 0
