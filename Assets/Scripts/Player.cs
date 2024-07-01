@@ -104,6 +104,19 @@ public class Player : MonoBehaviour
         {
             GameController.instance.NextLVL();
         }
+
+        if (colisor.gameObject.layer == 9)
+        { 
+            playerAudio.PlaySFX(playerAudio.deadSound);
+            StartCoroutine(HandleDeath());
+        }
+    }
+
+    private IEnumerator HandleDeath()
+    {
+        yield return new WaitForSeconds(0.2f); // 1 second delay
+        GameController.instance.Dead();
+       
     }
     #endregion
 }
