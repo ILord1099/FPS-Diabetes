@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -108,7 +108,28 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Atlas_GameFPS_Diabetes_Tela_Perguntas-01 Atualizado_0
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 448
+        width: 307
+        height: 428
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 74, y: 92, z: 74, w: 125}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4edcbbca362cbf458e0e2b42b96e196
+      internalID: 689571666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +140,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Atlas_GameFPS_Diabetes_Tela_Perguntas-01 Atualizado_0: 689571666
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

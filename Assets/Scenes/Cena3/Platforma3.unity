@@ -7165,7 +7165,7 @@ GameObject:
   - component: {fileID: 902760192}
   m_Layer: 0
   m_Name: Logo Collect
-  m_TagString: Untagged
+  m_TagString: AddTime
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7198,6 +7198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1d393b95e1ef4e44b5c6df54ed61af9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  extraTime: 10.05
 --- !u!61 &902760193
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9493,7 +9494,7 @@ GameObject:
   - component: {fileID: 1122348948}
   m_Layer: 0
   m_Name: Logo Collect
-  m_TagString: Untagged
+  m_TagString: AddTime
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9526,6 +9527,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1d393b95e1ef4e44b5c6df54ed61af9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  extraTime: 10
 --- !u!61 &1122348949
 BoxCollider2D:
   m_ObjectHideFlags: 0

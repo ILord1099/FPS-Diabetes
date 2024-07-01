@@ -1,12 +1,18 @@
 using DG.Tweening;
+using Platformer.Mechanics;
+using Quiz;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+
 
 public class LogoScript : MonoBehaviour
 {
     private Tween movementTween;
     private Vector3 originalPosition;
+    [SerializeField] public float extraTime = 10f;  // Quantidade de tempo extra que este item concede
+    
     void Start()
     {
         originalPosition = transform.position;
@@ -23,8 +29,8 @@ public class LogoScript : MonoBehaviour
 
     void Collect()
     {
-       
-        Destroy(gameObject);  
+        GameManager.ExtraTime += extraTime;  // Adiciona o tempo extra ao GameManager
+        Destroy(gameObject);
         OnDestroy();
     }
 
@@ -40,4 +46,6 @@ public class LogoScript : MonoBehaviour
             movementTween.Kill();
         }
     }
+
+
 }

@@ -35,4 +35,9 @@ namespace Platformer.Mechanics
             if (Instance == this) Simulation.Tick();
         }
     }
+
+    public static class GameManager
+    {
+        public static float ExtraTime { get; set; } = 0;
+    }
 }

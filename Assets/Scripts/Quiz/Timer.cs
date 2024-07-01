@@ -1,3 +1,4 @@
+using Platformer.Mechanics;
 using System;
 using System.Collections;
 using TMPro;
@@ -7,8 +8,10 @@ namespace Quiz
 {
     public class Timer : MonoBehaviour
     {
-        [SerializeField] private float seconds = 60f;
+        [SerializeField] public float seconds = 60f;
         [SerializeField] private TMP_Text timerText;
+
+        public static Timer instance;
         
         private float _timeLeft;
         private Color _defaultColor;
@@ -19,7 +22,9 @@ namespace Quiz
         private void Start()
         {
             _defaultColor = timerText.color;
-            _timeLeft = seconds;
+            _timeLeft = seconds + GameManager.ExtraTime; 
+            GameManager.ExtraTime = 0;  // Reseta o tempo extra após usá-lo
+            
         }
         
         public void ResetTimer() => _timeLeft = seconds;
