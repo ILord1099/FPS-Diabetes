@@ -541,7 +541,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -979,7 +979,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1036,11 +1036,7 @@ MonoBehaviour:
   actorNameText: {fileID: 0}
   nextButton: {fileID: 0}
   canvasGroup: {fileID: 650628598}
-  rectTransform: {fileID: 650628595}
-  Mentor: {fileID: 1748112440}
-  Paciente: {fileID: 445301098}
-  Aluno: {fileID: 650628596}
-  proximaCena: 
+  NextScene: 
   typingSpeed: 0
   index: 0
 --- !u!1 &779627980
@@ -1685,11 +1681,7 @@ MonoBehaviour:
   actorNameText: {fileID: 0}
   nextButton: {fileID: 0}
   canvasGroup: {fileID: 1212799423}
-  rectTransform: {fileID: 0}
-  Mentor: {fileID: 1748112440}
-  Paciente: {fileID: 650628596}
-  Aluno: {fileID: 445301098}
-  proximaCena: 
+  NextScene: 
   typingSpeed: 0
   index: 0
 --- !u!225 &1212799423
@@ -2199,11 +2191,7 @@ MonoBehaviour:
   actorNameText: {fileID: 0}
   nextButton: {fileID: 529926478}
   canvasGroup: {fileID: 1730981779}
-  rectTransform: {fileID: 0}
-  Mentor: {fileID: 1748112440}
-  Paciente: {fileID: 445301098}
-  Aluno: {fileID: 650628596}
-  proximaCena: Quiz
+  NextScene: Quiz
   typingSpeed: 0.05
   index: 0
 --- !u!4 &1730981778
@@ -2283,7 +2271,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.2924528, g: 0.2924528, b: 0.2924528, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

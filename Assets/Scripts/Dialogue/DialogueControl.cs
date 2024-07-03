@@ -28,9 +28,10 @@ public class DialogueControl : MonoBehaviour
     public Text actorNameText;//nome do npc
     public Button nextButton; // botão para a próxima fala
     public CanvasGroup canvasGroup;
-    public RectTransform rectTransform;
+    public string NextScene;
     
-    public string proximaCena;
+    
+    private GameController gameController;
 
 
 
@@ -63,6 +64,7 @@ public class DialogueControl : MonoBehaviour
         {
             nextButton.onClick.AddListener(OnNextButtonClick);
         }
+        
     }
     void Update()
     {
@@ -102,11 +104,12 @@ public class DialogueControl : MonoBehaviour
             {
                
                 index++;
-               
+                
+
                 speechText.text = "";
                 StartCoroutine(TypeSentence());
                 
-                
+
             }
             else // quando termina os textos 
             {
@@ -115,6 +118,10 @@ public class DialogueControl : MonoBehaviour
                 dialogueObj.SetActive(false);
                 sentences = null;
                 isShowing = false;
+                if(sentences  == null)
+                {
+                    SceneManager.LoadScene(NextScene);
+                }
             }
             
 
@@ -154,6 +161,6 @@ public class DialogueControl : MonoBehaviour
         canvasGroup.DOFade(1, 1f);
     }
 
-
+    
     
 }

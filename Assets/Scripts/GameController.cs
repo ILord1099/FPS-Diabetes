@@ -11,7 +11,7 @@ public class GameController : MonoBehaviour
     public string LvlName;
     public static GameController instance;
     public string deadlvlName;
-    private string actualScene;
+    public string actualScene;
     public Image Mentor;
     public Image Aluno;
     public Image Paciente;
@@ -19,7 +19,8 @@ public class GameController : MonoBehaviour
     private void Awake()
     {
         instance = this;
-        CaracterFade();
+        
+        
     }
 
     public void NextLVL()
@@ -38,108 +39,151 @@ public class GameController : MonoBehaviour
         
             if(actualScene == "Dialogue") 
             {
-                if (DialogueControl.instance.index == 1)
+                switch (DialogueControl.instance.index)
                 {
-                    //Mentor On
+                    case 1:
+                        //Paciente On
+                        Mentor.DOColor(Color.black, 1f);
+                        Aluno.DOColor(Color.black, 1f);
+                        Paciente.DOColor(Color.white, 1f);
+                        break;
+                    case 2:
+                        //Aluno On
+                        Aluno.DOColor(Color.white, 1f);
+                        Paciente.DOColor(Color.black, 1f);
+                        break;
+                    case 3:
+                        //Paciente On
 
-                    Mentor.DOColor(Color.black, 1f);
-                    Aluno.DOColor(Color.black, 1f);
-                    Paciente.DOColor(Color.white, 1f);
+                        Aluno.DOColor(Color.black, 1f);
+                        Paciente.DOColor(Color.white, 1f);
+                        break;
+                    case 4:
+                        //Mentor On
+                        Mentor.DOColor(Color.white, 1f);
+                        Aluno.DOColor(Color.black, 1f);
+                        Paciente.DOColor(Color.black, 1f);
+                        break;
+                    case 5:
+                        //alunoOn
+                        Mentor.DOColor(Color.black, 1f);
+                        Aluno.DOColor(Color.white, 1f);
+                        break;
+                    case 6:
+                        //Mentor on
+                        Mentor.DOColor(Color.white, 1f);
+                        Aluno.DOColor(Color.black, 1f);
+                        break;
+                    case 7:
+                        //aluno On
+                        Mentor.DOColor(Color.black, 1f);
+                        Aluno.DOColor(Color.white, 1f);
+                    break;
 
                 }
-                if (DialogueControl.instance.index == 2)
-                {
-                    //Paciente On
 
-                    Aluno.DOColor(Color.white, 1f);
-                    Paciente.DOColor(Color.black, 1f);
-                }
-
-                if (DialogueControl.instance.index == 3)
-                {
-                    //Aluno On
-
-                    Aluno.DOColor(Color.black, 1f);
-                    Paciente.DOColor(Color.white, 1f);
-
-                }
-                if (DialogueControl.instance.index == 4)
-                {
-                    //Mentor On
-
-                    Mentor.DOColor(Color.white, 1f);
-                    Aluno.DOColor(Color.black, 1f);
-                    Paciente.DOColor(Color.black, 1f);
-
-                }
-                if (DialogueControl.instance.index == 5)
-                {
-                    //alunoOn
-                    Mentor.DOColor(Color.black, 1f);
-                    Aluno.DOColor(Color.white, 1f);
-
-
-                }
-                if (DialogueControl.instance.index == 6)
-                {
-                    //Mentor on
-                    Mentor.DOColor(Color.white, 1f);
-                    Aluno.DOColor(Color.black, 1f);
-
-
-                }
-                if (DialogueControl.instance.index == 7)
-                {
-                    //aluno On
-                    Mentor.DOColor(Color.black, 1f);
-                    Aluno.DOColor(Color.white, 1f);
-
-
-                }
-                if (DialogueControl.instance.index == 8)
-                {
-                     SceneManager.LoadScene("Quiz");
-                }
             
-
-        }
+            }
             else if (actualScene == "Dialogue4")
             {
-                if (DialogueControl.instance.index == 0)
+                switch (DialogueControl.instance.index)
                 {
-                    //Mentor On
+                    case 1:
+                        //Aluno On
+                        Mentor.DOColor(Color.black, 1f);
+                        Aluno.DOColor(Color.white, 1f);
+                        Paciente.DOColor(Color.white, 1f);
+                        Debug.Log("1");
+                        break;
+                    case 2:
+                        //Paciente On
+                        Aluno.DOColor(Color.black, 1f);
+                        Paciente.DOColor(Color.white, 1f);
+                        Debug.Log("2");
+                        break;
+                    case 3:
+                        //Mentor On
 
-                    Mentor.DOColor(Color.white, 1f);
-                    Aluno.DOColor(Color.black, 1f);
-                    Paciente.DOColor(Color.black, 1f);
+                        Mentor.DOColor(Color.white, 1f);
+                        Paciente.DOColor(Color.black, 1f);
+                        Debug.Log("3");
+                        break;
+                    case 4:
+                        //Aluno On
+                        Mentor.DOColor(Color.black, 1f);
+                        Aluno.DOColor(Color.white, 1f);
+                        Debug.Log("4");
+                        break;
+                    case 5:
+                        //Mentor On
+                        Mentor.DOColor(Color.white, 1f);
+                        Aluno.DOColor(Color.black, 1f);
+                        Debug.Log("5");
+                        break;
+                }
+ 
+
+             }
+        else if (actualScene == "Dialogue6")
+            {
+
+                switch (DialogueControl.instance.index)
+                {
+                    case 1:
+                        //Tutor On
+                        Mentor.DOColor(Color.white, 1f);
+                        Aluno.DOColor(Color.black, 1f);
+                        Paciente.DOColor(Color.black, 1f);
+                        Debug.Log("1");
+                        break;
+                    case 2:
+                        //Paciente On
+                        Mentor.DOColor(Color.black, 1f);
+                        Paciente.DOColor(Color.white, 1f);
+                        Debug.Log("2");
+                        break;
+                    case 3:
+                        //tutor On
+
+                        Mentor.DOColor(Color.white, 1f);
+                        Paciente.DOColor(Color.black, 1f);
+                        Debug.Log("3");
+                        break;
+                    case 4:
+                        //Aluno On
+                        Mentor.DOColor(Color.black, 1f);
+                        Aluno.DOColor(Color.white, 1f);
+                        Debug.Log("4");
+                        break;
+                    case 5:
+                        //tutor On
+                        Mentor.DOColor(Color.white, 1f);
+                        Aluno.DOColor(Color.black, 1f);
+                        Debug.Log("5");
+                        break;
+                    case 6:
+                        //aluno on
+                        Mentor.DOColor(Color.black, 1f);
+                        Aluno.DOColor(Color.white, 1f);
+                        Debug.Log("6");
+                        break;
+                    case 7:
+                        //tutor On
+                        Mentor.DOColor(Color.white, 1f);
+                        Aluno.DOColor(Color.black, 1f);
+                        Debug.Log("7");
+                        break;
+                    case 8:
+                        //Paciente on
+                        Mentor.DOColor(Color.black, 1f);
+                        Paciente.DOColor(Color.white, 1f);
+                        Debug.Log("8");
+                    break;
 
                 }
-                if (DialogueControl.instance.index == 1)
-                {
-                    //Mentor On
-
-                    Mentor.DOColor(Color.black, 1f);
-                    Aluno.DOColor(Color.white, 1f);
-                    Paciente.DOColor(Color.black, 1f);
-
-                }
-
-
-                if (DialogueControl.instance.index == 7)
-                {
-                   
-                    SceneManager.LoadScene("Quiz4");
-                }
-        }
-            else if (actualScene == "Dialogue6")
-             {
-                
-                if (DialogueControl.instance.index == 9)
-                {
-                   SceneManager.LoadScene("Menu");
-                }
-        }
+            }
 
     }
-    
+
+
 }
