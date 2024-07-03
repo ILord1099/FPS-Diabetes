@@ -120,7 +120,7 @@ public class DialogueControl : MonoBehaviour
 
         }
 
-        MudarCena();
+      
         GameController.instance.CaracterFade();
     }
     // chamar a fala do npc, chamado sempre que o player entrar em contato 
@@ -136,22 +136,7 @@ public class DialogueControl : MonoBehaviour
         }
     }
 
-    public void MudarCena()
-    {
-        
-        if (index == 8)
-
-        {
-            proximaCena = proximaCena;
-            Debug.Log(proximaCena);
-            //Debug.Log("index 8 ");
-            SceneManager.LoadScene(proximaCena);
-           // index = 9;
-
-        }
-
-       
-    }
+    
     public void Punch()
     {
         var duration = 0.5f;

@@ -11,7 +11,7 @@ public class GameController : MonoBehaviour
     public string LvlName;
     public static GameController instance;
     public string deadlvlName;
-    public string actualScene;
+    private string actualScene;
     public Image Mentor;
     public Image Aluno;
     public Image Paciente;
@@ -96,8 +96,13 @@ public class GameController : MonoBehaviour
 
 
                 }
-           
-            }
+                if (DialogueControl.instance.index == 8)
+                {
+                     SceneManager.LoadScene("Quiz");
+                }
+            
+
+        }
             else if (actualScene == "Dialogue4")
             {
                 if (DialogueControl.instance.index == 0)
@@ -118,11 +123,23 @@ public class GameController : MonoBehaviour
                     Paciente.DOColor(Color.black, 1f);
 
                 }
+
+
+                if (DialogueControl.instance.index == 7)
+                {
+                   
+                    SceneManager.LoadScene("Quiz4");
+                }
         }
             else if (actualScene == "Dialogue6")
              {
-                Debug.Log("DialogoFinal");
-               
-             }
+                
+                if (DialogueControl.instance.index == 9)
+                {
+                   SceneManager.LoadScene("Menu");
+                }
+        }
+
     }
+    
 }
