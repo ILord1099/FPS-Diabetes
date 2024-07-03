@@ -29,9 +29,7 @@ public class DialogueControl : MonoBehaviour
     public Button nextButton; // botão para a próxima fala
     public CanvasGroup canvasGroup;
     public RectTransform rectTransform;
-    public Image Mentor;
-    public Image Paciente;
-    public Image Aluno;
+    
     public string proximaCena;
 
 
@@ -41,7 +39,7 @@ public class DialogueControl : MonoBehaviour
 
     //variaveis de controle 
     private bool isShowing;// se a janela esta visivel
-    private int index;// index é usado para laços de repetição/index das sentenças, contagem de itens/texto dentro das falas 
+    public int index;// index é usado para laços de repetição/index das sentenças, contagem de itens/texto dentro das falas 
     private string[] sentences;// recebe todas as falas do referido npc
     private bool dialogueInProgress = false;
     
@@ -58,9 +56,7 @@ public class DialogueControl : MonoBehaviour
     void Start()
     {
         
-        Mentor.DOColor(Color.white, 0f);
-        Aluno.DOColor(Color.black, 0f);
-        Paciente.DOColor(Color.black, 0f);
+       
         AvatarFade();
         // Adicionar listener ao botão para chamar a função Punch e NextSentence
         if (nextButton != null)
@@ -106,7 +102,7 @@ public class DialogueControl : MonoBehaviour
             {
                
                 index++;
-                Debug.Log(index);
+               
                 speechText.text = "";
                 StartCoroutine(TypeSentence());
                 
@@ -120,12 +116,12 @@ public class DialogueControl : MonoBehaviour
                 sentences = null;
                 isShowing = false;
             }
-            Debug.Log(index);
+            
 
         }
 
         MudarCena();
-        ChangeColor();
+        GameController.instance.CaracterFade();
     }
     // chamar a fala do npc, chamado sempre que o player entrar em contato 
     public void Speech(string[] txt)
@@ -173,66 +169,6 @@ public class DialogueControl : MonoBehaviour
         canvasGroup.DOFade(1, 1f);
     }
 
-    public void ChangeColor()
-    {
 
-        if (index == 1)
-        {
-            //Mentor On
-            
-            Mentor.DOColor(Color.black, 1f);
-            Aluno.DOColor(Color.black, 1f);
-            Paciente.DOColor(Color.white, 1f);
-
-        }
-        if (index == 2)
-        {
-            //Paciente On
-           
-            Aluno.DOColor(Color.white, 1f);
-            Paciente.DOColor(Color.black, 1f);
-        }
-
-        if (index == 3)
-        {
-            //Aluno On
-            
-            Aluno.DOColor(Color.black, 1f);
-            Paciente.DOColor(Color.white, 1f);
-
-        }
-        if (index == 4)
-        {
-            //Mentor On
-            
-            Mentor.DOColor(Color.white, 1f);
-            Aluno.DOColor(Color.black, 1f);
-            Paciente.DOColor(Color.black, 1f);
-
-        }
-        if (index == 5)
-        {
-            //alunoOn
-            Mentor.DOColor(Color.black, 1f);
-            Aluno.DOColor(Color.white, 1f);
-
-
-        }
-        if (index == 6)
-        {
-            //Mentor on
-            Mentor.DOColor(Color.white, 1f);
-            Aluno.DOColor(Color.black, 1f);
-
-
-        }
-        if (index == 7)
-        {
-            //aluno On
-            Mentor.DOColor(Color.black, 1f);
-            Aluno.DOColor(Color.white, 1f);
-
-
-        }
-    }
+    
 }
