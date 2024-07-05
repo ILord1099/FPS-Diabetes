@@ -35,7 +35,7 @@ namespace Quiz
         {
             _currentQuestionIndex++;
 
-            if (quizView.SelectedAnswer.IsCorrect)
+            if (quizView.SelectedAnswer != null && quizView.SelectedAnswer.IsCorrect)
             {
                 quizView.SelectedAnswer.CorrectAnim();
                 soundButtons.PlaySFX(soundButtons.correctSound);
@@ -43,7 +43,8 @@ namespace Quiz
                 return;
             }
 
-            quizView.SelectedAnswer.IncorrectAnim();
+            if(quizView.SelectedAnswer != null)
+                quizView.SelectedAnswer.IncorrectAnim();
             soundButtons.PlaySFX(soundButtons.incorrectSound);
             quizView.ShowPopUpError();
         }
