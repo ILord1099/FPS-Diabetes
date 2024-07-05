@@ -13344,6 +13344,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LvlName: Dialogue
   deadlvlName: Platform1
+  actualScene: 
+  Mentor: {fileID: 0}
+  Aluno: {fileID: 0}
+  Paciente: {fileID: 0}
 --- !u!4 &1099893193
 Transform:
   m_ObjectHideFlags: 0

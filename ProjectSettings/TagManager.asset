@@ -7,6 +7,7 @@ TagManager:
   - TutorialRequirement
   - Platform
   - AddTime
+  - Item
   layers:
   - Default
   - TransparentFX
