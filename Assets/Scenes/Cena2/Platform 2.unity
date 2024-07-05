@@ -8394,7 +8394,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkSound: {fileID: 0}
   jumpSound: {fileID: 8300000, guid: d8046e802633e114288530cb5685e404, type: 3}
-  deadSound: {fileID: 0}
+  deadSound: {fileID: 8300000, guid: 6c05149e5a2fba64ba172e25a61074b7, type: 3}
   correctSound: {fileID: 0}
   incorrectSound: {fileID: 0}
   selectSound: {fileID: 0}
@@ -10640,6 +10640,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LvlName: Quiz2
+  deadlvlName: Platform 2
+  actualScene: 
+  Mentor: {fileID: 0}
+  Aluno: {fileID: 0}
+  Paciente: {fileID: 0}
 --- !u!4 &996599870
 Transform:
   m_ObjectHideFlags: 0
@@ -12718,6 +12723,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1d393b95e1ef4e44b5c6df54ed61af9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  extraTime: 10
 --- !u!212 &1185088676
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15040,6 +15046,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1390572562}
   - component: {fileID: 1390572561}
+  - component: {fileID: 1390572563}
   m_Layer: 9
   m_Name: Asset4u_HD_25
   m_TagString: Untagged
@@ -15114,6 +15121,41 @@ Transform:
   m_Children: []
   m_Father: {fileID: 616908589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &1390572563
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1390572560}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.052968696, y: 1.3518083}
+  serializedVersion: 2
+  m_Radius: 1.3800806
 --- !u!1 &1396761053
 GameObject:
   m_ObjectHideFlags: 0

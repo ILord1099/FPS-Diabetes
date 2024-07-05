@@ -39,7 +39,7 @@ MonoBehaviour:
   - actorName: Tutor
     profile: {fileID: 0}
     sentence:
-      Portugues: "Tutor: voc\xEA sabe responder a d\xFAvida da paciente? "
+      Portugues: "Tutor: voc\xEA sabe responder a d\xFAvida do paciente? "
       ingles: 
       espanhol: 
   - actorName: Aluno

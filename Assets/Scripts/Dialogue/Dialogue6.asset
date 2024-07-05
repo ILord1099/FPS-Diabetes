@@ -19,7 +19,7 @@ MonoBehaviour:
   - actorName: Paciente
     profile: {fileID: 0}
     sentence:
-      Portugues: "Paciente:Bom dia,doutor. Aqui est\xE3o os novos exames que o senhor
+      Portugues: "Paciente:Bom dia, doutor. Aqui est\xE3o os novos exames que o senhor
         pediu."
       ingles: 
       espanhol: 
@@ -34,15 +34,15 @@ MonoBehaviour:
   - actorName: Paciente
     profile: {fileID: 0}
     sentence:
-      Portugues: Paciente:Estou me sentido bem,doutor. Estou tomando os remedios
-        direitinho.
+      Portugues: "Paciente:Estou me sentido bem,doutor. Estou tomando os rem\xE9dios
+        direitinho."
       ingles: 
       espanhol: 
   - actorName: Tutor
     profile: {fileID: 0}
     sentence:
       Portugues: "Que \xF3timo! \xC9 muito importante manter o tratamento e os cuidados
-        necess\xE1rios. Aluno, gostaria de explicar \xE0o paciente sobre os cuidados
+        necess\xE1rios. Aluno, gostaria de explicar ao paciente sobre os cuidados
         cont\xEDnuos?"
       ingles: 
       espanhol: 
@@ -58,9 +58,9 @@ MonoBehaviour:
     profile: {fileID: 0}
     sentence:
       Portugues: "Tutor:Exatamente. Al\xE9m disso, \xE9 importante estar atenta a
-        quaisquer sinais ou sintomas que possa mindicaralgumacomplica\xE7\xE3o relacionada
-        ao diabetes. Sempre que surgir alguma d\xFAvida ou sintoma novo, n\xE3o hesite
-        em entrarem contato conosco."
+        quaisquer sinais ou sintomas que possa me indicar alguma complica\xE7\xE3o
+        relacionada ao diabetes. Sempre que surgir alguma d\xFAvida ou sintoma novo,
+        n\xE3o hesite em entrarem contato conosco."
       ingles: 
       espanhol: 
   - actorName: Aluno

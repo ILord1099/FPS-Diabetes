@@ -3414,6 +3414,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1d393b95e1ef4e44b5c6df54ed61af9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  extraTime: 10
 --- !u!212 &400275046
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4071,6 +4072,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LvlName: Quiz5
+  deadlvlName: Platforma4
+  actualScene: 
+  Mentor: {fileID: 0}
+  Aluno: {fileID: 0}
+  Paciente: {fileID: 0}
 --- !u!4 &468839800
 Transform:
   m_ObjectHideFlags: 0
@@ -16323,6 +16329,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1d393b95e1ef4e44b5c6df54ed61af9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  extraTime: 10
 --- !u!212 &1915911462
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -19,7 +19,7 @@ MonoBehaviour:
   - actorName: Tutor
     profile: {fileID: -892086334, guid: 9167908b1de8b2d48807d56c3894cf5b, type: 3}
     sentence:
-      Portugues: 'Tutor: Bom dia, qual o Motivo da sua consulta hoje?'
+      Portugues: 'Tutor: Bom dia, qual o motivo da sua consulta hoje?'
       ingles: good morning
       espanhol: 
   - actorName: Paciente
@@ -39,8 +39,8 @@ MonoBehaviour:
     profile: {fileID: -1599727536, guid: 5d2f7917d5c13b74c862fef05d8d4acb, type: 3}
     sentence:
       Portugues: "Paciente: Eu gosto muito de refrigerante, doces e fast food, raramente
-        como coisas saud\xE1veis. Alem disso ultimamente Estou comendo mais que o
-        normal e mesmo assim estou perdendo peso."
+        como coisas saud\xE1veis. Al\xE9m disso ultimamente Estou comendo mais que
+        o normal e mesmo assim estou perdendo peso."
       ingles: "sei l\xE1 "
       espanhol: 
   - actorName: Tutor
@@ -73,6 +73,6 @@ MonoBehaviour:
   - actorName: empty
     profile: {fileID: -1599727536, guid: 5d2f7917d5c13b74c862fef05d8d4acb, type: 3}
     sentence:
-      Portugues: 
+      Portugues: '        '
       ingles: "sei l\xE1 "
       espanhol: 
