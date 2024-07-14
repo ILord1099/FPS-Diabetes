@@ -2,6 +2,14 @@ using System;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using static UnityEngine.RuleTile.TilingRuleOutput;
+using DG.Tweening;
+using Unity.VisualScripting;
+using System.Text;
+using JetBrains.Annotations;
+
+
+
 
 namespace Quiz
 {
@@ -11,7 +19,7 @@ namespace Quiz
         [SerializeField] private Color selectedColor;
         [SerializeField] private Color correctColor;
         [SerializeField] private Color wrongColor;
-
+        
         public bool IsCorrect { get; set; }
 
         public event Action<AnswerButton> OnAnswerSelected;
@@ -23,6 +31,19 @@ namespace Quiz
         private bool _isSelected;
         
         private bool _isInteractable;
+
+        private Vector3 _scaleTo;
+        private Vector3 _originalScale;
+        
+
+
+
+        void Start()
+        {
+            _originalScale = transform.localScale;
+            _scaleTo = _originalScale * 1.3f;
+           
+        }
 
         private void Awake()
         {
@@ -37,6 +58,8 @@ namespace Quiz
             if(!_isInteractable) return;
             if (_isSelected) return;
             Select();
+            
+            
         }
 
         public void Select()
@@ -54,8 +77,33 @@ namespace Quiz
 
         public void SetInteractable(bool value) => _isInteractable = value;
 
-        public void UpdateAnswerColor() => _image.color = IsCorrect ? correctColor : wrongColor;
+        public void UpdateAnswerColor() 
+        {
+            if (IsCorrect)
+            {
+                _image.color = correctColor;
+                transform.DOScale(_scaleTo, 0.1f)
+                .SetEase(Ease.InOutSine)
+                .OnComplete(() =>
+                {
+                transform.DOScale(_originalScale, 0.3f)
+                    .SetEase(Ease.OutBounce)
+                    .SetDelay(0.1f);
+
+                });
+               
+            }
+            else
+            {
+                _image.color = wrongColor;
+                transform.DOShakePosition(1f, 17f, 20, 100f);
+                
+            }
+            
+        }
         
         public void SetText(string text) => _text.text = text;
+
     }
+
 }
