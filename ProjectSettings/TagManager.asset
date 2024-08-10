@@ -8,6 +8,7 @@ TagManager:
   - Platform
   - AddTime
   - Item
+  - Plataform UP
   layers:
   - Default
   - TransparentFX

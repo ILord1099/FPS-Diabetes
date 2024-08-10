@@ -324,8 +324,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 6
-  m_fontSizeBase: 6
+  m_fontSize: 5.4
+  m_fontSizeBase: 5.4
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -360,7 +360,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 3.0629349, y: 4.931528, z: 3.4457932, w: 0}
+  m_margin: {x: 3.0629349, y: 4.931528, z: 0.8046036, w: -1.2757492}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -949,6 +949,7 @@ MonoBehaviour:
   Mentor: {fileID: 1748112440}
   Aluno: {fileID: 650628596}
   Paciente: {fileID: 445301098}
+  NextLvl: 
 --- !u!4 &704564380
 Transform:
   m_ObjectHideFlags: 0

@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,13 +12,24 @@ public class Plataformup : MonoBehaviour
     public bool upMove;
     private float timer;
 
+    private Vector3 originalPosition;
+    private Tween movementTween;
+
+
+
+    private void Start()
+    {
+        originalPosition = transform.position;
+        movementTween = transform.DOLocalMoveY(originalPosition.y - 4f, 2f).SetLoops(-1, LoopType.Yoyo).SetEase(Ease.InOutSine);
+    }
+
     public void Update()
     {
-        MoveUp();
+        //MoveUp();
     }
     void MoveUp()
     {
-        {
+        /*{
 
             if (upMove)
             {
@@ -35,6 +47,16 @@ public class Plataformup : MonoBehaviour
                 upMove = !upMove;
                 timer = 0f;
             }
-        }
+        }*/
+
+      
+        
     }
+
+    public Vector3 GetOriginalPosition()
+    {
+        return originalPosition;
+    }
+
+
 }

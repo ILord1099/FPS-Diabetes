@@ -15,6 +15,7 @@ public class Player : MonoBehaviour
     private bool isJumping;
     private bool doubleJump;
     public string sceneName;
+    private int AuxDirecao;
 
 
 
@@ -35,6 +36,35 @@ public class Player : MonoBehaviour
     void FixedUpdate()
     {
         move();
+        if (AuxDirecao != 0)
+        {
+            transform.Translate(speed * Time.deltaTime * AuxDirecao, 0, 0);
+            if (!isJumping)
+            {
+                anim.SetInteger("Transition", 1);
+            }
+        }
+
+        if (AuxDirecao > 0)
+        {
+            GetComponent<SpriteRenderer>().flipX = false;
+            anim.SetInteger("Transition", 1);
+            if (!isJumping)
+            {
+                anim.SetInteger("Transition", 1);
+
+            }
+        }
+        if (AuxDirecao < 0)
+        {
+            GetComponent<SpriteRenderer>().flipX = true;
+            anim.SetInteger("Transition", 1);
+            if (!isJumping)
+            {
+                anim.SetInteger("Transition", 1);
+
+            }
+        }
     }
     #region Movimentação
     void move()
@@ -76,21 +106,21 @@ public class Player : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space))
         {
            if (!isJumping) 
-            {
+           {
                 anim.SetInteger("Transition", 2);
                 rig.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
                 isJumping = true;
                 doubleJump =  true;
                 playerAudio.PlaySFX(playerAudio.jumpSound);
-            }
+           }
            else if (doubleJump) 
-            {
+           {
                 //
                 anim.SetInteger("Transition", 2);
                 rig.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
                 doubleJump = false;
                 playerAudio.PlaySFX(playerAudio.jumpSound);
-            }
+           }
 
         }
     }
@@ -110,6 +140,11 @@ public class Player : MonoBehaviour
             playerAudio.PlaySFX(playerAudio.deadSound);
             StartCoroutine(HandleDeath());
         }
+
+        if (colisor.gameObject.CompareTag("Plataform UP"))
+        {
+            transform.parent = colisor.transform;
+        }
     }
 
     private IEnumerator HandleDeath()
@@ -119,4 +154,36 @@ public class Player : MonoBehaviour
        
     }
     #endregion
+
+    public void TouchHorizontal(int direcao)
+    {
+        AuxDirecao = direcao;
+    }
+
+    public void Pular()
+    {
+        if (!isJumping)
+        {
+            anim.SetInteger("Transition", 2);
+            rig.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            isJumping = true;
+            doubleJump = true;
+            playerAudio.PlaySFX(playerAudio.jumpSound);
+        }
+        else if (doubleJump)
+        {
+            //
+            anim.SetInteger("Transition", 2);
+            rig.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            doubleJump = false;
+            playerAudio.PlaySFX(playerAudio.jumpSound);
+        }
+    }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Plataform UP"))
+        {
+            transform.parent = null;
+        }
+    }
 }

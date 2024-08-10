@@ -28,6 +28,7 @@ public class PopUpManager : MonoBehaviour
 
     }
 
+    
     void ShowPopUp()
     {
         // Anima o pop-up para a escala visível

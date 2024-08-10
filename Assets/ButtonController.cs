@@ -18,7 +18,7 @@ public class ButtonController : MonoBehaviour
         GetComponent<Button>().onClick.AddListener(OnClick);  
     }
 
-    void OnClick()
+   void OnClick()
     {
         // Carrega a próxima cena quando o botão é clicado
         SceneManager.LoadScene(nextSceneName);

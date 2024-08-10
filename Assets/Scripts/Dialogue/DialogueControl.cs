@@ -97,18 +97,18 @@ public class DialogueControl : MonoBehaviour
     // pular para proxima fala/frase
     public void NextSentence()
     {
-       
+
         if (speechText.text == sentences[index])//checar se a frase que apareceu, apareceu por completo e so assim pode clicar no bot?o
         {
             if (index < sentences.Length - 1)
             {
-               
+
                 index++;
-                
+
 
                 speechText.text = "";
                 StartCoroutine(TypeSentence());
-                
+
 
             }
             else // quando termina os textos 
@@ -116,19 +116,18 @@ public class DialogueControl : MonoBehaviour
                 speechText.text = "";
                 index = 0;
                 dialogueObj.SetActive(false);
-                sentences = null;
                 isShowing = false;
-                if(sentences  == null)
-                {
-                    SceneManager.LoadScene(NextScene);
-                }
+
+                // Carrega a próxima cena
+                SceneManager.LoadScene(NextScene);
             }
-            
+
 
         }
 
-      
+
         GameController.instance.CaracterFade();
+    
     }
     // chamar a fala do npc, chamado sempre que o player entrar em contato 
     public void Speech(string[] txt)

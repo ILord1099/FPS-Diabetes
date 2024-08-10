@@ -15,7 +15,9 @@ public class GameController : MonoBehaviour
     public Image Mentor;
     public Image Aluno;
     public Image Paciente;
-    
+    public string NextLvl;
+
+
     private void Awake()
     {
         instance = this;
@@ -185,5 +187,8 @@ public class GameController : MonoBehaviour
 
     }
 
-
+    public void NextScene()
+    {
+        SceneManager.LoadScene(NextLvl);
+    }
 }
