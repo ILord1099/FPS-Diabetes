@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -10,7 +11,11 @@ public class PlataformMoveUp : MonoBehaviour
 
     public bool dirRight;
     private float timer;
+
     // Update is called once per frame
+
+
+
     void Update()
     {
 
