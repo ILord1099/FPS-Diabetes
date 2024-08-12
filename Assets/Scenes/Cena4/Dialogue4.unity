@@ -158,6 +158,7 @@ MonoBehaviour:
   Mentor: {fileID: 1748112440}
   Aluno: {fileID: 650628596}
   Paciente: {fileID: 445301098}
+  NextLvl: 
 --- !u!4 &15638880
 Transform:
   m_ObjectHideFlags: 0
@@ -1916,7 +1917,7 @@ MonoBehaviour:
   nextButton: {fileID: 529926478}
   canvasGroup: {fileID: 1730981779}
   NextScene: Quiz4
-  typingSpeed: 0.05
+  typingSpeed: 0.04
   index: 0
 --- !u!4 &1730981778
 Transform:

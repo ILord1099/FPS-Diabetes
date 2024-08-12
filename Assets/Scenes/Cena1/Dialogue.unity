@@ -1679,7 +1679,7 @@ MonoBehaviour:
   nextButton: {fileID: 529926478}
   canvasGroup: {fileID: 1730981779}
   NextScene: Quiz2
-  typingSpeed: -1.16
+  typingSpeed: 0.04
   index: 0
 --- !u!4 &1730981778
 Transform:

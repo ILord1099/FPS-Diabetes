@@ -61,7 +61,7 @@ namespace Quiz
         
         public AnswerButton SelectedAnswer => _currentSelectedButton;
 
-        public void SetQuestion(string question) => questionText.text = question;
+        public void SetQuestion(string question) => questionText.text = question;  
 
         public void SetAnswers(List<Answer> answers)
         {
