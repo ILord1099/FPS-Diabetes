@@ -13667,7 +13667,7 @@ MonoBehaviour:
   Mentor: {fileID: 0}
   Aluno: {fileID: 0}
   Paciente: {fileID: 0}
-  NextLvl: 
+  NextLvl: Quiz
 --- !u!4 &1099893193
 Transform:
   m_ObjectHideFlags: 0
