@@ -35,7 +35,7 @@ namespace Quiz
         {
             _currentQuestionIndex++;
 
-            if (quizView.SelectedAnswer != null && quizView.SelectedAnswer.IsCorrect)
+            if (quizView.SelectedAnswer && quizView.SelectedAnswer.IsCorrect)
             {
                 quizView.SelectedAnswer.CorrectAnim();
                 soundButtons.PlaySFX(soundButtons.correctSound);
@@ -43,7 +43,7 @@ namespace Quiz
                 return;
             }
 
-            if(quizView.SelectedAnswer != null)
+            if (quizView.SelectedAnswer)
                 quizView.SelectedAnswer.IncorrectAnim();
             soundButtons.PlaySFX(soundButtons.incorrectSound);
             quizView.ShowPopUpError();
@@ -56,7 +56,7 @@ namespace Quiz
                 SceneManager.LoadScene(sceneToLoad);
                 return;
             }
-            
+
             var question = form.GetQuestion(_currentQuestionIndex);
             quizView.SetQuestion(question.question);
             quizView.SetAnswers(question.answers);

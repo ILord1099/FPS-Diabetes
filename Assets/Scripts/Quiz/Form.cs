@@ -7,9 +7,9 @@ namespace Quiz
     public class Form : ScriptableObject
     {
         [SerializeField] private List<Question> questions;
-        
+
         public Question GetQuestion(int index) => questions[index];
-        
+
         public int GetQuestionsCount() => questions.Count;
     }
 

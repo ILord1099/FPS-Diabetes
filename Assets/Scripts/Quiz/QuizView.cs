@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using DG.Tweening;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Quiz
 {
@@ -11,6 +12,7 @@ namespace Quiz
         [SerializeField] private Timer timer;
         [SerializeField] private List<AnswerButton> answerButtons;
         [SerializeField] private TMP_Text questionText;
+        [SerializeField] private Button confirmButton;
         public Transform popUpTransform;
         public Transform popUpErrorTransform;
         public float duration = 0.5f;
@@ -23,6 +25,7 @@ namespace Quiz
         private void Start()
         {
             popUpTransform.localScale = Vector3.zero;
+            confirmButton.transform.localScale = Vector3.zero;
         }
 
         #region OnEnable/OnDisable
@@ -35,6 +38,8 @@ namespace Quiz
             {
                 button.OnAnswerSelected += OnAnswerSelected;
             }
+
+            confirmButton.onClick.AddListener(ClickedConfirmButton);
         }
 
         private void OnDisable()
@@ -45,6 +50,8 @@ namespace Quiz
             {
                 button.OnAnswerSelected -= OnAnswerSelected;
             }
+
+            confirmButton.onClick.RemoveAllListeners();
         }
 
         #endregion
@@ -58,10 +65,27 @@ namespace Quiz
 
             OnEndTimeQuestion?.Invoke();
         }
-        
+
+        private void ClickedConfirmButton()
+        {
+            soundButtons.PlaySFX(soundButtons.selectSound);
+            HideConfirmButton();
+            timer.StopTimer();
+        }
+
+        private void ShowConfirmButton()
+        {
+            confirmButton.transform.DOScale(Vector3.one, duration).SetEase(Ease.InBack);
+        }
+
+        private void HideConfirmButton()
+        {
+            confirmButton.transform.DOScale(Vector3.zero, duration).SetEase(Ease.OutBack);
+        }
+
         public AnswerButton SelectedAnswer => _currentSelectedButton;
 
-        public void SetQuestion(string question) => questionText.text = question;  
+        public void SetQuestion(string question) => questionText.text = question;
 
         public void SetAnswers(List<Answer> answers)
         {
@@ -83,10 +107,13 @@ namespace Quiz
             soundButtons.PlaySFX(soundButtons.selectSound);
             if (button == _currentSelectedButton) return;
 
-            if (_currentSelectedButton != null)
+            if (_currentSelectedButton)
                 _currentSelectedButton.Deselect();
 
             _currentSelectedButton = button;
+
+            if (confirmButton.transform.localScale == Vector3.zero)
+                ShowConfirmButton();
         }
 
         public void ShowPopUp()
@@ -94,7 +121,7 @@ namespace Quiz
             // Anima o pop-up para a escala vis�vel
             popUpTransform.DOScale(new Vector3(12, 8, 0), duration).SetEase(Ease.InBack);
         }
-        
+
         public void ShowPopUpError()
         {
             // Anima o pop-up para a escala vis�vel
@@ -106,7 +133,7 @@ namespace Quiz
             // Anima o pop-up de volta para a escala escondida
             popUpTransform.DOScale(Vector3.zero, duration).SetEase(Ease.OutBack);
         }
-        
+
         public void HidePopUpError()
         {
             // Anima o pop-up de volta para a escala escondida
