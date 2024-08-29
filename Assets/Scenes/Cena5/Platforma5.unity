@@ -5201,8 +5201,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70a7b395782ad2e46b237476044a3e20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LvlName: Quiz3
-  deadlvlName: Platforma3
+  LvlName: Quiz5
+  deadlvlName: Platforma5
   actualScene: 
   Mentor: {fileID: 0}
   Aluno: {fileID: 0}
@@ -6485,7 +6485,7 @@ MonoBehaviour:
   speed: 6
   jumpForce: 8
   anim: {fileID: 779627987}
-  sceneName: Platforma3
+  sceneName: Platforma5
 --- !u!111 &779627986
 Animation:
   m_ObjectHideFlags: 0

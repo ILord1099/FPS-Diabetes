@@ -42,7 +42,7 @@ public class VideoController : MonoBehaviour
 
     public void Acelerador()
     {
-        videoPlayer.playbackSpeed = 2;
+        videoPlayer.playbackSpeed = 1.5f;
         Button2x.gameObject.SetActive(false);
         Button3x.gameObject.SetActive(true);
     }
@@ -53,9 +53,9 @@ public class VideoController : MonoBehaviour
         Button2x.gameObject.SetActive(true);
         Button3x.gameObject.SetActive(false);
     }
-    public void Acelerador3()
+    public void Acelerador2()
     {
-        videoPlayer.playbackSpeed = 3;
+        videoPlayer.playbackSpeed = 2;
         Button1x.gameObject.SetActive(true);
         Button3x.gameObject.SetActive(false);
     }

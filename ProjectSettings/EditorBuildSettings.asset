@@ -43,7 +43,7 @@ EditorBuildSettings:
     guid: 37393cfe0ac064248ab5e09a5851ea01
   - enabled: 1
     path: Assets/Scenes/Cena4/Platforma4.unity
-    guid: b7ea7b8673231cf4086e8930b6317945
+    guid: 9fffb747838f0b94583f200ae6e20eec
   - enabled: 1
     path: Assets/Scenes/Cena4/Dialogue4.unity
     guid: 169cb75f9e9fcf74294c335ca1ce682c
@@ -55,7 +55,7 @@ EditorBuildSettings:
     guid: 3e8042a4223636a4a88a08199e046d70
   - enabled: 1
     path: Assets/Scenes/Cena5/Platforma5.unity
-    guid: e9625be1b07e10845a16e49b73430c8d
+    guid: dc66ffb922bdfff408924801bca459ac
   - enabled: 1
     path: Assets/Scenes/Cena5/Quiz5.unity
     guid: 493521ec367eba043a5dcdfe71aa238c
@@ -64,7 +64,7 @@ EditorBuildSettings:
     guid: 132ddb4c8ebec0b4ba0b32a792a90a8e
   - enabled: 1
     path: Assets/Scenes/Cena6/Platforma6.unity
-    guid: dfe8d9ae374d7174ca6ee2327ffc5640
+    guid: b2f86a76191c59341a84cb711c87528f
   - enabled: 1
     path: Assets/Scenes/Cena6/Quiz6.unity
     guid: 7ffd68394a6db924d958d2b15d89313f
