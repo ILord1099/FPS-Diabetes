@@ -46,7 +46,10 @@ public class VideoController : MonoBehaviour
     {
         // Inicia a reprodu��o do v�deo
         videoPlayer.Play();
-        
+        PauseButton.gameObject.SetActive(true);
+        PlayButton.gameObject.SetActive(false);
+
+
 
     }
 

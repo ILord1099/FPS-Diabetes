@@ -682,7 +682,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0.34703833, y: 4.211807, z: -2.9612427, w: -5.877319}
+  m_margin: {x: 10.692909, y: -4.620419, z: 7.3847656, w: -14.709549}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1092,8 +1092,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 201, y: 101}
-  m_SizeDelta: {x: 1358.3849, y: 560.011}
+  m_AnchoredPosition: {x: 201, y: 103.78918}
+  m_SizeDelta: {x: 1358.3849, y: 553.6448}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &828492866
 MonoBehaviour:
@@ -1628,7 +1628,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 41.445335, y: 14.731601, z: 42.246796, w: 12.698051}
+  m_margin: {x: 53.860405, y: 3.219203, z: 52.592804, w: -0.73306656}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2110,7 +2110,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 1.719719, y: 3.551994, z: 3.9023438, w: 2.3582783}
+  m_margin: {x: 11.92614, y: -9.999536, z: 10.026215, w: -13.129087}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2158,8 +2158,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000091552734, y: 5.465393}
-  m_SizeDelta: {x: -86.055, y: -39.5503}
+  m_AnchoredPosition: {x: 0.000091552734, y: -1.3121033}
+  m_SizeDelta: {x: -86.055, y: -9.9218}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1179277407
 MonoBehaviour:
@@ -2245,7 +2245,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -3.19059, y: 1.2222059, z: -2.9612427, w: -5.877319}
+  m_margin: {x: 5.298195, y: -8.539609, z: 7.650223, w: -2.604847}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
