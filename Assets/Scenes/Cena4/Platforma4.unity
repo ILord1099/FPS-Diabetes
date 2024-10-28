@@ -2251,6 +2251,16 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 7225817133983408611, guid: 91017054142d8754aa1eb9d85bc334f4,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.031208992
+      objectReference: {fileID: 0}
+    - target: {fileID: 7225817133983408611, guid: 91017054142d8754aa1eb9d85bc334f4,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.72431016
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8261,7 +8271,7 @@ MonoBehaviour:
   jumpForce: 8
   layer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
   dir: {x: 0, y: 0}
   groundPivot: {fileID: 33292239}
   isGrounded: 0

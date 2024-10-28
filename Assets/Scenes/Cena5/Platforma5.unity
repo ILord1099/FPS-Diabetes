@@ -3256,6 +3256,37 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91017054142d8754aa1eb9d85bc334f4, type: 3}
+--- !u!1 &421367231
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 421367232}
+  m_Layer: 0
+  m_Name: GroundPivot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &421367232
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 421367231}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.01, y: -2.51, z: 6.4487343}
+  m_LocalScale: {x: 2.7639112, y: 2.924451, z: 4.3047924}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 779627984}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &426773923 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1935641893112703736, guid: 333f59180b2629949b006972eb4e40b6,
@@ -6369,6 +6400,7 @@ GameObject:
   - component: {fileID: 779627988}
   - component: {fileID: 779627990}
   - component: {fileID: 779627989}
+  - component: {fileID: 779627991}
   m_Layer: 12
   m_Name: Player
   m_TagString: Player
@@ -6467,7 +6499,8 @@ Transform:
   m_LocalPosition: {x: -26.59, y: 1.53, z: 0}
   m_LocalScale: {x: 0.3618061, y: 0.34194452, z: 0.23229925}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 421367232}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &779627985
@@ -6484,8 +6517,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 6
   jumpForce: 8
+  layer:
+    serializedVersion: 2
+    m_Bits: 256
+  dir: {x: 0, y: 0}
+  groundPivot: {fileID: 421367232}
+  isGrounded: 0
+  DetectionGround: 0.08
+  sr: {fileID: 779627983}
   anim: {fileID: 779627987}
   sceneName: Platforma5
+  maxJumps: 2
 --- !u!111 &779627986
 Animation:
   m_ObjectHideFlags: 0
@@ -6671,6 +6713,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &779627991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 779627980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7cac044e8f688e4b988b2f11f86f136, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Anim: {fileID: 779627987}
+  rig: {fileID: 779627981}
+  Player: {fileID: 779627985}
 --- !u!1001 &797360297
 PrefabInstance:
   m_ObjectHideFlags: 0
