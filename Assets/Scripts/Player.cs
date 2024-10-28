@@ -10,12 +10,21 @@ public class Player : MonoBehaviour
     public float speed;
     public float jumpForce;
     private sound playerAudio;
+    public LayerMask layer;
+    public Vector2 dir;
+    public Transform groundPivot;
+    public bool isGrounded;
+    public float DetectionGround;
+    public SpriteRenderer sr;
 
     public Animator anim;
     private bool isJumping;
     private bool doubleJump;
     public string sceneName;
     private int AuxDirecao;
+    int jumpCount = 0;
+    public int maxJumps = 2;
+
 
 
 
@@ -23,6 +32,7 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         rig = GetComponent<Rigidbody2D>();
         playerAudio = GetComponent<sound>();
 
@@ -31,12 +41,27 @@ public class Player : MonoBehaviour
     void Update()
     {
         Jump();
-        
+        dir.x = Input.GetAxisRaw("Horizontal") * speed;
+        dir.y = rig.velocity.y;
+
+        if (Input.GetAxisRaw("Horizontal") < 0)
+        {
+            sr.flipX = true;
+        }
+
+        if (Input.GetAxisRaw("Horizontal") > 0)
+        {
+            sr.flipX = false;
+        }
+
     }
     void FixedUpdate()
     {
-        move();
-        if (AuxDirecao != 0)
+
+        rig.velocity = dir;
+
+        //move();
+        /*if (AuxDirecao != 0)
         {
             transform.Translate(speed * Time.deltaTime * AuxDirecao, 0, 0);
             if (!isJumping)
@@ -64,10 +89,10 @@ public class Player : MonoBehaviour
                 anim.SetInteger("Transition", 1);
 
             }
-        }
+        }*/
     }
     #region Movimentação
-    void move()
+    /*void move()
     {
         float movement = Input.GetAxis("Horizontal");
 
@@ -100,10 +125,27 @@ public class Player : MonoBehaviour
         {
             anim.SetInteger("Transition", 0 );
         }
-    }
+    }*/
     void Jump()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
+        isGrounded = Physics2D.OverlapCircle(groundPivot.position, DetectionGround, layer);
+
+        // Reseta o contador de pulos quando o jogador está no chão
+        if (isGrounded)
+        {
+            jumpCount = 0;
+        }
+
+        // Verifica se o jogador pode pular (no chão ou pulo duplo)
+        if ((isGrounded || jumpCount < maxJumps) && Input.GetKeyDown(KeyCode.Space))
+        {
+            rig.velocity = new Vector2(rig.velocity.x, jumpForce);
+            jumpCount++; // Incrementa o contador de pulos
+        }
+
+        // Depuração: exibir no console o estado de isGrounded
+        Debug.Log("Está no chão: " + isGrounded);
+        /*if(Input.GetKeyDown(KeyCode.Space))
         {
            if (!isJumping) 
            {
@@ -122,8 +164,15 @@ public class Player : MonoBehaviour
                 playerAudio.PlaySFX(playerAudio.jumpSound);
            }
 
-        }
+        }*/
     }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(groundPivot.position, DetectionGround);
+    }
+    public bool IsGrounded { get { return isGrounded; } }
     void OnCollisionEnter2D(Collision2D colisor)
     {
         if (colisor.gameObject.layer ==  8)
