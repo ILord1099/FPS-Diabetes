@@ -16,6 +16,11 @@ public class GameController : MonoBehaviour
     public Image Aluno;
     public Image Paciente;
     public string NextLvl;
+    public Image Avatar;
+    public Image Perigos;
+    public Image portal;
+    public Image plataformas;
+
 
 
     private void Awake()
@@ -183,7 +188,35 @@ public class GameController : MonoBehaviour
                     break;
 
                 }
+
             }
+        else if (actualScene == "Tutorial")
+        {
+
+            switch (DialogueControl.instance.index)
+            {
+                case 1:
+                    Avatar.gameObject.SetActive(true);
+                    break;
+                case 2:
+                    Avatar.gameObject.SetActive(false);
+                    Perigos.gameObject.SetActive(true);
+                    break;
+                case 3:
+                   Perigos.gameObject.SetActive(false);
+                    plataformas.gameObject.SetActive(true);
+                    break;
+                case 4:
+                    plataformas.gameObject.SetActive(false);
+                    portal.gameObject.SetActive(true);
+                    break;
+                case 5:
+                    portal.gameObject.SetActive(false);
+                    break;
+
+            }
+
+        }
 
     }
 
