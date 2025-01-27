@@ -388,6 +388,10 @@ MonoBehaviour:
   Aluno: {fileID: 650628596}
   Paciente: {fileID: 445301098}
   NextLvl: Quiz
+  Avatar: {fileID: 0}
+  Perigos: {fileID: 0}
+  portal: {fileID: 0}
+  plataformas: {fileID: 0}
 --- !u!4 &171688882
 Transform:
   m_ObjectHideFlags: 0
@@ -1649,7 +1653,7 @@ MonoBehaviour:
   nextButton: {fileID: 529926478}
   canvasGroup: {fileID: 1730981779}
   NextScene: Quiz
-  typingSpeed: 0.04
+  typingSpeed: -0.08
   index: 0
 --- !u!4 &1730981778
 Transform:
