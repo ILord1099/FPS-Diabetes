@@ -19,14 +19,14 @@ MonoBehaviour:
   - actorName: Bem vindo
     profile: {fileID: -892086334, guid: 9167908b1de8b2d48807d56c3894cf5b, type: 3}
     sentence:
-      Portugues: Bem vindo ao Mellirus, vou te ensinar como as coisas funcionam por
+      Portugues: Bem vindo ao Mellitus, vou te ensinar como as coisas funcionam por
         aqui.
       ingles: good morning
       espanhol: 
   - actorName: Avatar
     profile: {fileID: -63671856, guid: 5d2f7917d5c13b74c862fef05d8d4acb, type: 3}
     sentence:
-      Portugues: "Este \xE9 o paciente, voc\xEAtem que ajuda-lo a chegar no consltorio
+      Portugues: "Este \xE9 o paciente, voc\xEA tem que ajuda-lo a chegar no consltorio
         evitando os perigos no caminho."
       ingles: "sei l\xE1 "
       espanhol: 

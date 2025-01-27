@@ -1402,7 +1402,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Fade: {fileID: 839783608}
-  nextSceneName: Platform1
+  nextSceneName: Tutorial
 --- !u!114 &839783610
 MonoBehaviour:
   m_ObjectHideFlags: 0
