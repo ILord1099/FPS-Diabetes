@@ -74,4 +74,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cena6/Dialogue6.unity
     guid: 743501e3b11a878449d47933553799fa
+  - enabled: 1
+    path: Assets/Scenes/Cena6/Feedback.unity
+    guid: f8f8791a719d94445971118c5814b7ea
   m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0
