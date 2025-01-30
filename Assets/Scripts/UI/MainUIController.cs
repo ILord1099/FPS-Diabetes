@@ -1,4 +1,5 @@
-﻿using DG.Tweening;
+﻿using DefaultNamespace;
+using DG.Tweening;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -27,6 +28,8 @@ namespace Platformer.UI
 
         void Start ()
         {
+            var points = Resources.Load<Points>("points"); // Carregar o scriptable object da pasta Resources
+            points.Delete(); // Deletar os pontos
 
             //originalScale = logoTransform.localScale;
             Debug.Log(logoTransform);
