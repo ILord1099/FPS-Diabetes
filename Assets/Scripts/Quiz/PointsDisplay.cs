@@ -13,7 +13,7 @@ public class PointsDisplay : MonoBehaviour
         int correctAnswers = PlayerPrefs.GetInt("CorrectAnswers", 0);
         int totalQuestions = PlayerPrefs.GetInt("TotalQuestions", 0);
 
-        correctAnswersText.text = $"Acertos: {correctAnswers}";
-        totalQuestionsText.text = $"Total: {totalQuestions}";
+        correctAnswersText.text = $"{correctAnswers}";
+        totalQuestionsText.text = $"/ {totalQuestions}";
     }
 }
