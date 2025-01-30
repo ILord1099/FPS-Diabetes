@@ -110,10 +110,10 @@ TextureImporter:
       name: Atlas_GameFPS_Diabetes_Tela_Perguntas-01_0
       rect:
         serializedVersion: 2
-        x: 255
-        y: 1077
-        width: 1654
-        height: 850
+        x: 124
+        y: 967
+        width: 1924
+        height: 1081
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
