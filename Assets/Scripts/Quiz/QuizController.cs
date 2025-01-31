@@ -35,6 +35,7 @@ namespace Quiz
         private void Start()
         {
             _currentQuestionIndex = 0;
+            points.Load();//carrega os pontos
             var question = form.GetQuestion(_currentQuestionIndex);
             quizView.SetQuestion(question.question);
             quizView.SetAnswers(question.answers);
@@ -64,11 +65,7 @@ namespace Quiz
         {
             if (_currentQuestionIndex == form.GetQuestionsCount())
             {
-                Debug.LogWarning($"Você acertou {points.CorrectAnswers} de {points.TotalQuestions}");
-                // Salvar os pontos antes de carregar a próxima cena
-                PlayerPrefs.SetInt("CorrectAnswers", points.CorrectAnswers);
-                PlayerPrefs.SetInt("TotalQuestions", points.TotalQuestions);
-                PlayerPrefs.Save();
+                Debug.LogWarning($"Vocï¿½ acertou {points.CorrectAnswers} de {points.TotalQuestions}");
                 StartCoroutine(LoadScene());
                 return;
             }
@@ -80,6 +77,7 @@ namespace Quiz
 
         IEnumerator LoadScene()
         {
+            points.Save();//salva os pontos
             yield return new WaitForSeconds(1.4f);
             SceneManager.LoadScene(sceneToLoad);
         }
