@@ -67,12 +67,6 @@ MonoBehaviour:
   - actorName: Aluno
     profile: {fileID: -1599727536, guid: 5d2f7917d5c13b74c862fef05d8d4acb, type: 3}
     sentence:
-      Portugues: "Aluno: Claro vamos l\xE1!"
-      ingles: "sei l\xE1 "
-      espanhol: 
-  - actorName: empty
-    profile: {fileID: -1599727536, guid: 5d2f7917d5c13b74c862fef05d8d4acb, type: 3}
-    sentence:
-      Portugues: '        '
+      Portugues: "  Aluno: Claro vamos l\xE1!"
       ingles: "sei l\xE1 "
       espanhol: 
