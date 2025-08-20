@@ -21,150 +21,80 @@ public class Player : MonoBehaviour
     private bool isJumping;
     private bool doubleJump;
     public string sceneName;
-    private int AuxDirecao;
+    private int AuxDirecao; // usado para bot√µes
     int jumpCount = 0;
     public int maxJumps = 2;
 
-
-
-
-
-    // Start is called before the first frame update
     void Start()
     {
-        
         rig = GetComponent<Rigidbody2D>();
         playerAudio = GetComponent<sound>();
-
     }
-    // Update is called once per frame
+
     void Update()
     {
-        Jump();
-        dir.x = Input.GetAxisRaw("Horizontal") * speed;
+        CheckJump();
+
+        // Movimento pelo teclado
+        float move = Input.GetAxisRaw("Horizontal");
+
+        // Se n√£o houver input do teclado, usa o valor dos bot√µes
+        if (move == 0)
+            move = AuxDirecao;
+
+        // Define a dire√ß√£o
+        dir.x = move * speed;
         dir.y = rig.velocity.y;
 
-        if (Input.GetAxisRaw("Horizontal") < 0)
-        {
+        // Virar o sprite
+        if (move < 0)
             sr.flipX = true;
-        }
-
-        if (Input.GetAxisRaw("Horizontal") > 0)
-        {
+        else if (move > 0)
             sr.flipX = false;
-        }
-
     }
+
     void FixedUpdate()
     {
-
         rig.velocity = dir;
-
-        //move();
-        /*if (AuxDirecao != 0)
-        {
-            transform.Translate(speed * Time.deltaTime * AuxDirecao, 0, 0);
-            if (!isJumping)
-            {
-                anim.SetInteger("Transition", 1);
-            }
-        }
-
-        if (AuxDirecao > 0)
-        {
-            GetComponent<SpriteRenderer>().flipX = false;
-            anim.SetInteger("Transition", 1);
-            if (!isJumping)
-            {
-                anim.SetInteger("Transition", 1);
-
-            }
-        }
-        if (AuxDirecao < 0)
-        {
-            GetComponent<SpriteRenderer>().flipX = true;
-            anim.SetInteger("Transition", 1);
-            if (!isJumping)
-            {
-                anim.SetInteger("Transition", 1);
-
-            }
-        }*/
     }
-    #region MovimentaÁ„o
-    /*void move()
+
+    #region Movimenta√ß√£o
+
+    // Verifica inputs de pulo (teclado)
+    void CheckJump()
     {
-        float movement = Input.GetAxis("Horizontal");
-
-        rig.velocity = new Vector2 (movement * speed, rig.velocity.y);
-
-        if (movement > 0 )
-
-        {
-            //playerAudio.PlaySFX(playerAudio.walkSound);
-            //mudanÁa de angulo da sprite(direita) 
-            if (!isJumping)
-            {
-                anim.SetInteger("Transition", 1);
-
-            }
-            transform.eulerAngles = new Vector3 (0, 0, 0);
-        }
-        if(movement < 0 )
-        {
-          //  playerAudio.PlaySFX(playerAudio.walkSound);
-            if (!isJumping)
-            {
-                anim.SetInteger("Transition", 1);
-            }
-            //mudanÁa de angulo da sprite(esquerda)
-            transform.eulerAngles =  new Vector3(0, 180, 0);
-            //ativar apenas quando inserir as sprites
-        }
-        if (movement ==  0 && !isJumping)
-        {
-            anim.SetInteger("Transition", 0 );
-        }
-    }*/
-    void Jump()
-    {
+        // Verifica se est√° no ch√£o
         isGrounded = Physics2D.OverlapCircle(groundPivot.position, DetectionGround, layer);
 
-        // Reseta o contador de pulos quando o jogador est· no ch„o
-        if (isGrounded)
+        // Reseta contador de pulos somente quando tocando o ch√£o e n√£o subindo
+        if (isGrounded && rig.velocity.y <= 0.01f)
         {
             jumpCount = 0;
         }
 
-        // Verifica se o jogador pode pular (no ch„o ou pulo duplo)
-        if ((isGrounded || jumpCount < maxJumps) && Input.GetKeyDown(KeyCode.Space))
+        // Pulo com teclado
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            rig.velocity = new Vector2(rig.velocity.x, jumpForce);
-            jumpCount++; // Incrementa o contador de pulos
+            TryJump();
         }
+    }
 
-        // DepuraÁ„o: exibir no console o estado de isGrounded
-        Debug.Log("Est· no ch„o: " + isGrounded);
-        /*if(Input.GetKeyDown(KeyCode.Space))
+    // Fun√ß√£o chamada tanto pelo teclado quanto pelo bot√£o
+    void TryJump()
+    {
+        if (jumpCount < maxJumps)
         {
-           if (!isJumping) 
-           {
-                anim.SetInteger("Transition", 2);
-                rig.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-                isJumping = true;
-                doubleJump =  true;
-                playerAudio.PlaySFX(playerAudio.jumpSound);
-           }
-           else if (doubleJump) 
-           {
-                //
-                anim.SetInteger("Transition", 2);
-                rig.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-                doubleJump = false;
-                playerAudio.PlaySFX(playerAudio.jumpSound);
-           }
+            DoJump();
+        }
+    }
 
-        }*/
+    // Fun√ß√£o unificada para aplicar o pulo
+    void DoJump()
+    {
+        // anim.SetInteger("Transition", 2); // descomente se quiser anima√ß√£o
+        rig.velocity = new Vector2(rig.velocity.x, jumpForce);
+        jumpCount++;
+        playerAudio.PlaySFX(playerAudio.jumpSound);
     }
 
     private void OnDrawGizmos()
@@ -172,12 +102,14 @@ public class Player : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(groundPivot.position, DetectionGround);
     }
+
     public bool IsGrounded { get { return isGrounded; } }
+
     void OnCollisionEnter2D(Collision2D colisor)
     {
-        if (colisor.gameObject.layer ==  8)
+        if (colisor.gameObject.layer == 8)
         {
-            isJumping=false;
+            isJumping = false;
         }
         if (colisor.gameObject.layer == 12)
         {
@@ -185,7 +117,7 @@ public class Player : MonoBehaviour
         }
 
         if (colisor.gameObject.layer == 9)
-        { 
+        {
             playerAudio.PlaySFX(playerAudio.deadSound);
             StartCoroutine(HandleDeath());
         }
@@ -198,36 +130,29 @@ public class Player : MonoBehaviour
 
     private IEnumerator HandleDeath()
     {
-        yield return new WaitForSeconds(0.2f); // 1 second delay
+        yield return new WaitForSeconds(0.2f);
         GameController.instance.Dead();
-       
     }
     #endregion
+
+    // ==== CONTROLES DE BOT√ïES UI ====
 
     public void TouchHorizontal(int direcao)
     {
         AuxDirecao = direcao;
     }
 
+    public void Soltar()
+    {
+        AuxDirecao = 0;
+    }
+
+    // Pulo via bot√£o
     public void Pular()
     {
-        if (!isJumping)
-        {
-            anim.SetInteger("Transition", 2);
-            rig.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-            isJumping = true;
-            doubleJump = true;
-            playerAudio.PlaySFX(playerAudio.jumpSound);
-        }
-        else if (doubleJump)
-        {
-            //
-            anim.SetInteger("Transition", 2);
-            rig.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-            doubleJump = false;
-            playerAudio.PlaySFX(playerAudio.jumpSound);
-        }
+        TryJump();
     }
+
     private void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Plataform UP"))

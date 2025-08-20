@@ -26,7 +26,7 @@ MonoBehaviour:
   - actorName: Avatar
     profile: {fileID: -63671856, guid: 5d2f7917d5c13b74c862fef05d8d4acb, type: 3}
     sentence:
-      Portugues: "Este \xE9 o paciente, voc\xEA tem que ajuda-lo a chegar no consltorio
+      Portugues: "Este \xE9 o paciente, voc\xEA tem que ajuda-lo a chegar no consultorio
         evitando os perigos no caminho."
       ingles: "sei l\xE1 "
       espanhol: 
@@ -52,11 +52,5 @@ MonoBehaviour:
     profile: {fileID: -1599727536, guid: 5d2f7917d5c13b74c862fef05d8d4acb, type: 3}
     sentence:
       Portugues: Boa sorte!
-      ingles: "sei l\xE1 "
-      espanhol: 
-  - actorName: empty
-    profile: {fileID: -1599727536, guid: 5d2f7917d5c13b74c862fef05d8d4acb, type: 3}
-    sentence:
-      Portugues: 
       ingles: "sei l\xE1 "
       espanhol: 
