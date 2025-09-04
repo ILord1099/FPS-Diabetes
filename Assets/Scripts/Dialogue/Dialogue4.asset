@@ -19,38 +19,38 @@ MonoBehaviour:
   - actorName: Tutor
     profile: {fileID: 0}
     sentence:
-      Portugues: "Tutor: agora que temos nossa principal hip\xF3tese diagnostica,
-        quais exames devemos solicitar?  "
+      Portugues: "Tutor: Agora que temos nossa principal hip\xF3tese diagn\xF3stica,
+        quais exames devemos solicitar?"
       ingles: 
       espanhol: 
   - actorName: Aluno
     profile: {fileID: 0}
     sentence:
-      Portugues: 'Aluno: Talvez a glicemia de jejum?  '
+      Portugues: 'Aluno: Talvez a glicemia de jejum?'
       ingles: 
       espanhol: 
   - actorName: Paciente
     profile: {fileID: 0}
     sentence:
-      Portugues: "Paciente: eu comi tantos doces que esses dias, doutor, ser\xE1
-        que isso vai interferir?  "
+      Portugues: "Paciente: Eu comi tantos doces esses dias, doutor. Ser\xE1 que
+        isso vai interferir?"
       ingles: 
       espanhol: 
   - actorName: Tutor
     profile: {fileID: 0}
     sentence:
-      Portugues: "Tutor: voc\xEA sabe responder a d\xFAvida do paciente? "
+      Portugues: "Tutor: Voc\xEA sabe responder \xE0 d\xFAvida do paciente?"
       ingles: 
       espanhol: 
   - actorName: Aluno
     profile: {fileID: 0}
     sentence:
-      Portugues: "Aluno: Humm.. n\xE3o tenho certeza  "
+      Portugues: "Aluno: Humm... n\xE3o tenho certeza."
       ingles: 
       espanhol: 
   - actorName: Tutor
     profile: {fileID: 0}
     sentence:
-      Portugues: "Tutor: ent\xE3o vamos aprender sobre isso! "
+      Portugues: "Tutor: Ent\xE3o vamos aprender sobre isso!"
       ingles: 
       espanhol: 

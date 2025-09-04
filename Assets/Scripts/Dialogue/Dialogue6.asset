@@ -19,68 +19,69 @@ MonoBehaviour:
   - actorName: Paciente
     profile: {fileID: 0}
     sentence:
-      Portugues: "Paciente:Bom dia, doutor. Aqui est\xE3o os novos exames que o senhor
-        pediu."
+      Portugues: "Paciente: Bom dia, doutor. Aqui est\xE3o os novos exames que o
+        senhor pediu."
       ingles: 
       espanhol: 
   - actorName: Tutor
     profile: {fileID: 0}
     sentence:
-      Portugues: "Tutor:Bom dia! Que bom v\xEA-la novamente. Vejo que suas taxas
+      Portugues: "Tutor: Bom dia! Que bom v\xEA-la novamente. Vejo que suas taxas
         est\xE3o normalizadas, isso \xE9 uma excelente not\xEDcia. Como voc\xEA tem
-        se sentido dsde a ultima consulta? "
+        se sentido desde a \xFAltima consulta?"
       ingles: 
       espanhol: 
   - actorName: Paciente
     profile: {fileID: 0}
     sentence:
-      Portugues: "Paciente:Estou me sentido bem,doutor. Estou tomando os rem\xE9dios
+      Portugues: "Paciente: Estou me sentindo bem, doutor. Estou tomando os rem\xE9dios
         direitinho."
       ingles: 
       espanhol: 
   - actorName: Tutor
     profile: {fileID: 0}
     sentence:
-      Portugues: "Que \xF3timo! \xC9 muito importante manter o tratamento e os cuidados
-        necess\xE1rios. Aluno, gostaria de explicar ao paciente sobre os cuidados
-        cont\xEDnuos?"
+      Portugues: "Tutor: Que \xF3timo! \xC9 muito importante manter o tratamento
+        e os cuidados necess\xE1rios. Aluno, gostaria de explicar ao paciente sobre
+        os cuidados cont\xEDnuos?"
       ingles: 
       espanhol: 
   - actorName: Aluno
     profile: {fileID: 0}
     sentence:
-      Portugues: "Aluno:Claro, doutor. Mesmo com as taxas normalizadas e o medicamento,
-        \xE9 importante manter uma dieta equilibrada, praticar atividade f\xEDsica
-        regularmente."
+      Portugues: "Aluno: Claro, doutor. Mesmo com as taxas normalizadas e o uso do
+        medicamento, \xE9 importante manter uma dieta equilibrada e praticar atividade
+        f\xEDsica regularmente."
       ingles: 
       espanhol: 
   - actorName: Tutor
     profile: {fileID: 0}
     sentence:
-      Portugues: "Tutor:Exatamente. Al\xE9m disso, \xE9 importante estar atenta a
-        quaisquer sinais ou sintomas que possa me indicar alguma complica\xE7\xE3o
+      Portugues: "Tutor: Exatamente. Al\xE9m disso, \xE9 importante estar atenta
+        a quaisquer sinais ou sintomas que possam indicar alguma complica\xE7\xE3o
         relacionada ao diabetes. Sempre que surgir alguma d\xFAvida ou sintoma novo,
-        n\xE3o hesite em entrarem contato conosco."
+        n\xE3o hesite em entrar em contato conosco."
       ingles: 
       espanhol: 
   - actorName: Aluno
     profile: {fileID: 0}
     sentence:
-      Portugues: "Aluno:Normalmente, recomenda-se refazer esses exames a cada seis
+      Portugues: "Aluno: Normalmente, recomenda-se refazer esses exames a cada seis
         meses para monitorar o controle do diabetes e avaliar se o tratamento est\xE1
-        sendo eficaz. No entanto, isso pode variar de acordo com cada caso. "
+        sendo eficaz. No entanto, isso pode variar de acordo com cada caso."
       ingles: 
       espanhol: 
   - actorName: Tutor
     profile: {fileID: 0}
     sentence:
-      Portugues: "Tutor:Isso mesmo, vamos agendar sua pr\xF3xima com seis meses e,
-        se houver necessidade, faremos os ajustes necess\xE1rios no acompanhamento."
+      Portugues: "Tutor: Isso mesmo. Vamos agendar sua pr\xF3xima consulta para daqui
+        a seis meses e, se houver necessidade, faremos os ajustes necess\xE1rios
+        no acompanhamento."
       ingles: 
       espanhol: 
   - actorName: Paciente
     profile: {fileID: 0}
     sentence:
-      Portugues: "Paciente:Est\xE1 certo, doutor. Obrigada."
+      Portugues: "Paciente: Est\xE1 certo, doutor. Obrigado."
       ingles: 
       espanhol: 
